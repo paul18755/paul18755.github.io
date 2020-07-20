@@ -6,8 +6,8 @@
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200720175047.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200720175047.png">
   <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.wztzuibang.cn","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"www.wztzuibang.cn","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="自谈拙见，不足挂齿！">
@@ -213,10 +213,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-02-19 20:13:16 / Modified: 20:15:03" itemprop="dateCreated datePublished" datetime="2020-02-19T20:13:16+08:00">2020-02-19</time>
+              <time title="Created: 2020-02-19 20:13:16" itemprop="dateCreated datePublished" datetime="2020-02-19T20:13:16+08:00">2020-02-19</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-07-20 17:44:21" itemprop="dateModified" datetime="2020-07-20T17:44:21+08:00">2020-07-20</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -234,14 +240,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span></span>
+              <span>3.3k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>NaN:aN</span>
+              <span>3 mins.</span>
             </span>
 
         </div>
@@ -253,32 +259,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h4 id="把txt格式的数据文件转为csv文件方便后续处理"><a href="#把txt格式的数据文件转为csv文件方便后续处理" class="headerlink" title="把txt格式的数据文件转为csv文件方便后续处理"></a>把txt格式的数据文件转为csv文件方便后续处理</h4><p>从E-prime中选择把数据导出为Excel时，实际转换出的是txt的文本格式文件，虽然可以直接用excel打开，但是在Python中是无法直接用xlrd库进行处理。尝试了采用更改后缀名的形式，但是<strong>直接更改为xlsx时会破坏文件的格式</strong>，还是无法进行处理，因此选择将后缀名更改为csv。在文件夹中尝试将一个文件转换为csv文件后可以成功打开。批量更换文件名主要采用os模块的listdir方法和rename方法。</p>
-<ul>
-<li><code>os.listdir(dir)</code>: 获取指定目录下的所有子目录和文件名</li>
-<li><code>os.rename(原文件名，新文件名）</code>: 对文件或目录改名</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os, sys</span><br><span class="line"><span class="comment">#改变当前工作目录到指定的路径</span></span><br><span class="line">os.chdir(<span class="string">r'/Users/ywb/Desktop/sample'</span>)</span><br><span class="line"><span class="comment">#列出当前目录下所有的文件。但是这里面一般会存在一些隐藏文件，要进行清理</span></span><br><span class="line">file = os.listdir(<span class="string">'./'</span>)</span><br><span class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> file:</span><br><span class="line">    <span class="comment">#这一步将文件的名称与后缀名进行分割，portion[0]是文件名，portion[1]是后缀名</span></span><br><span class="line">    portion = os.path.splitext(filename)</span><br><span class="line">    <span class="comment">#判断后缀名是否是自己需要的</span></span><br><span class="line">    <span class="keyword">if</span> portion[<span class="number">1</span>] == <span class="string">'.csv'</span>:</span><br><span class="line">        <span class="comment">#进行文件后缀名的修改</span></span><br><span class="line">        name_new = portion[<span class="number">0</span>] + <span class="string">'.txt'</span></span><br><span class="line">        os.rename(filename, name_new)</span><br></pre></td></tr></table></figure>
-
-<h4 id="处理csv文件"><a href="#处理csv文件" class="headerlink" title="处理csv文件"></a>处理csv文件</h4><p>主要是用pandas将csv文件中的数据导入到DataFrame中。使用read_csv方法导入。这里有两个坑，一是一般的csv文件都是以逗号作为分隔符，<strong>但是e-prime的导出使用一段空格作为分割符</strong>所以在导入的时候需要在sep参数特别设置。然后是编码的方式，不适用于一般的‘utf-8’，<strong>需要将encoding参数设置为‘utf-16’</strong></p>
-<p>数据导入后需要将不需要的数据剔除，先获得不需要的数据的行序号,然后使用dataframe类的del方法结合columns方法进行删除，注意del中需要注明要删除的行全名，不能使用索引，所以要借助column方法（可以索引切片）。同时以dataframe[‘name’]的方式进行数据的判断。然后根据判断结果计算正确率。</p>
-<ul>
-<li><code>pandas.read_csv(path, encoding=&#39;utf-16&#39;,sep=&#39;\t&#39;,skiprows=[0])</code>:读取csv文件数据并以dataframe保存，如果在jupyter中会呈现较可读。</li>
-<li><code>DataFrame.columns</code>:会以Series的形式呈现数据所有的行标题</li>
-<li><code>del DataFrame[&#39;行名&#39;]</code>:删除该行的数据</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">del_non</span><span class="params">(path)</span>:</span></span><br><span class="line">    <span class="comment">#path指csv文件的路径；encoding为编码，sep为分割符，skiprows指跳过第一行的内容，因为e-prime导出数据的第一行一般是文件的路径可以忽略</span></span><br><span class="line">    df = pd.read_csv(path, encoding=<span class="string">'utf-16'</span>, sep=<span class="string">'\t'</span>, skiprows=[<span class="number">0</span>])</span><br><span class="line">    <span class="comment">#清理不需要的数据行</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> df.columns[:<span class="number">24</span>]:</span><br><span class="line">        <span class="keyword">del</span> df[i]</span><br><span class="line">    <span class="comment">#可以直接用dataframe['name']在dataframe中加入新的行列</span></span><br><span class="line">    <span class="comment">#此处是验证被试计算和再认的正确与否，以布尔值表示</span></span><br><span class="line">    df[<span class="string">'Answer'</span>] = df[df.columns[<span class="number">0</span>]] == df[df.columns[<span class="number">1</span>]]</span><br><span class="line">    df[<span class="string">'Answer_2'</span>] = df[df.columns[<span class="number">28</span>]] == df[df.columns[<span class="number">32</span>]]</span><br><span class="line">    <span class="keyword">return</span> df</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_ratio_calculate</span><span class="params">(df,num,column_name,a,b)</span>:</span></span><br><span class="line">    n = <span class="number">0</span></span><br><span class="line">    <span class="comment"># 因为计算和再认不是全部，所以要先看好数据索引从哪里开始到哪里结束，即a,b。</span></span><br><span class="line">    <span class="keyword">for</span> answer <span class="keyword">in</span> df[column_name][a:b]:</span><br><span class="line">        <span class="keyword">if</span> answer == <span class="literal">True</span>:</span><br><span class="line">            n+=<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> float(n/int(num))</span><br></pre></td></tr></table></figure>
-
-<h4 id="将处理后的数据写入csv文件（即Dataframe写入csv）"><a href="#将处理后的数据写入csv文件（即Dataframe写入csv）" class="headerlink" title="将处理后的数据写入csv文件（即Dataframe写入csv）"></a>将处理后的数据写入csv文件（即Dataframe写入csv）</h4><p>流程是先把数据整理为一个字典内嵌套列表的形式，然后dataframe可以接受字典，直接以字典创建新的dateframe，然后使用to_csv方法写入csv，最后写出来的csv文件，字典的key就像excel中的第一行，value即列表中的数据就是纵向的数据了。</p>
-<p>其次由于字典内可能不会按顺序排序，所以在用字典形成DataFrame的时候需要定义columns=[]参数确定顺序</p>
-<ul>
-<li><code>d = {key1 : value1, key2 : value2} =》d = {属性1:具体数据, 属性2:具体数据}</code></li>
-<li><code>frame = pd.DataFrame(d, columns=[&#39;属性1&#39;，&#39;属性2&#39;])</code></li>
-<li><code>frame.to_csv(&#39;path&#39;)</code></li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> restore <span class="keyword">import</span> del_non, get_ratio_calculate</span><br><span class="line"></span><br><span class="line">serial_numbers = []</span><br><span class="line">list_ratio_calculates = []</span><br><span class="line">list_ratio_Recognises = []</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_to_list</span><span class="params">(path_csv)</span>:</span></span><br><span class="line">    csv_1 = del_non(<span class="string">'/Users/ywb/Desktop/Thesceonddate/'</span> + path_csv)</span><br><span class="line">    ratio_calculate = get_ratio_calculate(csv_1,column_name=<span class="string">'Answer'</span>,num=<span class="number">30</span>,a=<span class="number">68</span>,b=<span class="number">98</span>)</span><br><span class="line">    ratio_Recognise = get_ratio_calculate(csv_1,column_name=<span class="string">'Answer_2'</span>,num=<span class="number">60</span>,a=<span class="number">98</span>,b=<span class="number">158</span>)</span><br><span class="line">    serial_number = path_csv[:<span class="number">-4</span>]</span><br><span class="line">    serial_numbers.append(serial_number)</span><br><span class="line">    list_ratio_calculates.append(ratio_calculate)</span><br><span class="line">    list_ratio_Recognises.append(ratio_Recognise)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    filepath = <span class="string">'/Users/ywb/Desktop/Thesceonddate'</span></span><br><span class="line">    <span class="comment"># 获取目录下的文件名</span></span><br><span class="line">    l = os.listdir(filepath)</span><br><span class="line">    ll = []</span><br><span class="line">    <span class="comment">#筛选出含有csv的文件，因为有些隐藏文件可能也在其中</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> l:</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'csv'</span> <span class="keyword">in</span> i:</span><br><span class="line">            ll.append(i)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line">    <span class="comment"># 使用上述的add_to_list函数将数据加入list中</span></span><br><span class="line">    <span class="keyword">for</span> path_name <span class="keyword">in</span> ll:</span><br><span class="line">        add_to_list(path_csv=path_name)</span><br><span class="line">    <span class="comment"># 以字典内嵌套列表的方式建立字典</span></span><br><span class="line">    data_1 = &#123;</span><br><span class="line">        <span class="string">'serial_numbers'</span>: serial_numbers,</span><br><span class="line">        <span class="string">'ratio_calculates'</span>: list_ratio_calculates,</span><br><span class="line">        <span class="string">'ratio_Recognises'</span>: list_ratio_Recognises</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">#写入DataFrame并导出到csv</span></span><br><span class="line">    frame = pd.DataFrame(data_1,columns=[<span class="string">'serial_numbers'</span>, <span class="string">'ratio_calculates'</span>, <span class="string">'ratio_Recognises'</span>])</span><br><span class="line">    frame.to_csv(<span class="string">'/Users/ywb/Desktop/Thesceonddate/Pywzt/all.csv'</span>)</span><br></pre></td></tr></table></figure>
-
-
+          <h4 id="把txt格式的数据文件转为csv文件方便后续处理"><a href="#把txt格式的数据文件转为csv文件方便后续处理" class="headerlink" title="把txt格式的数据文件转为csv文件方便后续处理"></a>把txt格式的数据文件转为csv文件方便后续处理</h4>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/02/19/%E7%94%A8Python%E5%A4%84%E7%90%86E-prime%E5%AF%BC%E5%87%BA%E7%9A%84%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -426,10 +415,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-02-18 10:52:12 / Modified: 10:53:34" itemprop="dateCreated datePublished" datetime="2020-02-18T10:52:12+08:00">2020-02-18</time>
+              <time title="Created: 2020-02-18 10:52:12" itemprop="dateCreated datePublished" datetime="2020-02-18T10:52:12+08:00">2020-02-18</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-07-20 17:47:19" itemprop="dateModified" datetime="2020-07-20T17:47:19+08:00">2020-07-20</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -447,14 +442,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span></span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>NaN:aN</span>
+              <span>1 mins.</span>
             </span>
 
         </div>
@@ -467,31 +462,15 @@
 
       
           <p>操作列表</p>
-<h3 id="4-1遍历整个列表"><a href="#4-1遍历整个列表" class="headerlink" title="4.1遍历整个列表"></a>4.1遍历整个列表</h3><blockquote>
-<p>用for循环 </p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">magicians = [<span class="string">'alice'</span>, <span class="string">'david'</span>, <span class="string">'carolina'</span>]</span><br><span class="line"><span class="keyword">for</span> magician <span class="keyword">in</span> magicians:</span><br><span class="line">	print(i)</span><br><span class="line">	</span><br><span class="line"><span class="comment"># 忘记缩进的警告：</span></span><br><span class="line"><span class="comment">#  File "/Users/ywb/Desktop/magicians.py", line 8</span></span><br><span class="line"><span class="comment">#   print(magician)</span></span><br><span class="line"><span class="comment">#       ^</span></span><br><span class="line"><span class="comment">#IndentationError: expected an indented block</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 不必要的缩进警告：</span></span><br><span class="line"><span class="comment">#   File "/Users/ywb/Desktop/magicians.py", line 11</span></span><br><span class="line"><span class="comment">#     print(a)</span></span><br><span class="line"><span class="comment">#     ^</span></span><br><span class="line"><span class="comment"># IndentationError: unexpected indent</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="4-3创建数值列表"><a href="#4-3创建数值列表" class="headerlink" title="4.3创建数值列表"></a>4.3创建数值列表</h3><blockquote>
-<p>range(1,5)方法实现生成1到4的数值列表<br>range(2,11,2)方法指定步长，最大值到11，从2开始每次增加2生成数值列表</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> value <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">5</span>):</span><br><span class="line">	print(value)</span><br><span class="line">	</span><br><span class="line">numbers = list(range(<span class="number">1</span>,<span class="number">6</span>))</span><br><span class="line">print(numbers)</span><br><span class="line"></span><br><span class="line">even_numbers = list(range(<span class="number">2</span>,<span class="number">11</span>,<span class="number">2</span>)) <span class="comment">#指定步长</span></span><br><span class="line">print(even_numbers)</span><br><span class="line"></span><br><span class="line">squares = []</span><br><span class="line"><span class="keyword">for</span> value <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">11</span>):</span><br><span class="line">	squares.append(value**<span class="number">2</span>) <span class="comment">#**代表乘方运算</span></span><br><span class="line">print(squares)</span><br><span class="line"><span class="comment">#上述等价于</span></span><br><span class="line">squares = [value**<span class="number">2</span> <span class="keyword">for</span> value <span class="keyword">in</span> range(<span class="number">1.11</span>)]</span><br></pre></td></tr></table></figure>
-
-<h4 id="4-3-3统计计算"><a href="#4-3-3统计计算" class="headerlink" title="4.3.3统计计算"></a>4.3.3统计计算</h4><blockquote>
-<p>min(), max(),sum()分布计算数字列表的最小值，最大值和总和</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">digits = range(<span class="number">1</span>,<span class="number">11</span>)</span><br><span class="line">print(min(digits))</span><br><span class="line">print(<span class="string">'\n'</span>)</span><br><span class="line">print(max(digits))</span><br><span class="line">print(<span class="string">'\n'</span>)</span><br><span class="line">print(sum(digits))</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-4-切片"><a href="#4-4-切片" class="headerlink" title="4.4 切片"></a>4.4 切片</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 提取列表的2到4个元素，将起始索引指定为1，终止索引指定为4</span></span><br><span class="line">players = [<span class="string">'charles'</span>, <span class="string">'martina'</span>, <span class="string">'michael'</span>, <span class="string">'florence'</span>, <span class="string">'eli'</span>]</span><br><span class="line">print(players[<span class="number">1</span>:<span class="number">4</span>])</span><br><span class="line"><span class="comment"># 负数索引返回离列表末尾相应距离的元素，输出名单最后三位：</span></span><br><span class="line">print(players[<span class="number">-3</span>:])</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-5-元组"><a href="#4-5-元组" class="headerlink" title="4.5 元组"></a>4.5 元组</h3><blockquote>
-<p>元组用圆括号来标示，类似列表但是其中的值不能修改。同样可以用for循环</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dimensions=(<span class="number">200</span>,<span class="number">50</span>)</span><br><span class="line">print(dimensions[<span class="number">1</span>])</span><br><span class="line"><span class="keyword">for</span> dimension <span class="keyword">in</span> dimensions:</span><br><span class="line">	print(dimension)</span><br></pre></td></tr></table></figure>
-<p>count方法，用于计算某个数值在元祖中出现的次数</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>)</span><br><span class="line">print(a.count(<span class="number">2</span>))</span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
-
-
+<h3 id="4-1遍历整个列表"><a href="#4-1遍历整个列表" class="headerlink" title="4.1遍历整个列表"></a>4.1遍历整个列表</h3>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/02/18/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B54/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -541,7 +520,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-03-22 09:47:26" itemprop="dateModified" datetime="2020-03-22T09:47:26+08:00">2020-03-22</time>
+                <time title="Modified: 2020-07-20 17:47:26" itemprop="dateModified" datetime="2020-07-20T17:47:26+08:00">2020-07-20</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -560,14 +539,14 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span></span>
+              <span>1.1k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>NaN:aN</span>
+              <span>1 mins.</span>
             </span>
 
         </div>
@@ -581,8 +560,15 @@
       
           <img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200322094644.jpg" height="1610" width="1080"/>
 
-<p>亚历山大·伊里奇·罗斯托夫 伯爵<br>    1月21日读完，整本书唯一值得吐槽的点可能就是那种奇怪的比喻腔调了，可能是因为翻译的问题，其原本语言应该是十分诙谐的。但是翻译过来感觉就不是那么趣味了，就好像以前那种“噢，我亲爱的达令，这可真是”等等那种。<br>    除去这些之外，其实一开始会有些看不下去，可能是因为对于绅士和莫斯科俄罗斯的历史并不理解，很多东西是挺难代入的。但一开始与尼娜的玩耍还是挺有意思的。但是中途的许多故事，例如三巨头的组成和经历之类的、和安娜的情感、与政府官员上课经历等等其实可以说我是处于一种昏昏欲睡的情况下去读的。但是越到后面Book4Book5的时候越有一种沉浸感，就像读东野圭吾的小说不想停下的感觉。<br>    整本书的高潮部分我觉得是在Book5，当我看到中间隔了一两卷之后，又再次出现了尼娜给伯爵的万能钥匙时，突然有一种感动和欣喜的感觉，就像是突然回忆起了自己生活中以前一件小事或者说突然捡到了自己很久之前丢失的一样东西，虽提不上宝贵，但却弥足珍贵，虽然书中的内容前后只有几百页纸的间隔。不得不说的是作者真的好似创造了一个世界，读到尼娜这把钥匙的时候感觉自己就在那个世界里面栩栩如生。<br>    当然觉得是Book5也是因为谈及了伯爵的整个“逃跑计划”，相比大半个辈子都在酒店里，暮年却像少年一样勇敢的出逃，这是让我印象深刻的一点。当然与其说其在暮年之时才决心逃出大都会酒店，前人民的软禁，倒不如说其自软禁开始就在越狱，努力让自己还是保有之前的绅士生活、成为酒店的领班等等生活中的许多时间，很明显不是一个囚禁狱中的被软禁者的悲观表现。他给索菲亚的忠告很有意思：<strong>假如你不去掌控形势，你就会被形势掌控。</strong>我会想真正的掌控是什么样的？ 如伯爵从巴黎回到了莫斯科，从旁人的观点来说，回不回莫斯科肯定得考虑情况，十月革命的政治环境会有所考虑，在这个思考背景下，那么旁人便会认为伯爵有勇气等等其他一系列道德品质上的赞美之词。可以看看书一开头的法庭审判，对于伯爵前往巴黎，认为是“迫于形势远走高飞”；对于伯爵回来，会询问其“是不是抱有武装起义的打算，支持革命还是反对革命”。反观伯爵的回答，我想念这里的气候。这是绅士情怀对于无谓的阶级斗争的抗击，更是掌控与被掌控的深刻表达。每个人都有能力掌控自己的生活，但当以一个旁人的角度来考虑别人的生活的时候，往往会发现别人总被生活所掌控，因为旁人看的太多。而反观为什么我们会对自己的生活形势有不可掌控感，我想可能是因为我们也曾站在一个旁人的角度来考虑或评价我们自己的生活，当我们看的太多，可能往往看不见我们真正想要的，如何掌握形势？我觉得这个问题适合“自问自答”！当一个掌控形势的绅士再好不过了。或者是夜空中最亮的星也说不定☺️</p>
-
+<p>亚历山大·伊里奇·罗斯托夫 伯爵</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/02/18/%E3%80%8A%E8%8E%AB%E6%96%AF%E7%A7%91%E7%BB%85%E5%A3%AB%E3%80%8B%E2%80%94%E2%80%94%E4%BA%9A%E5%8E%86%E5%B1%B1%E5%A4%A7%C2%B7%E4%BC%8A%E9%87%8C%E5%A5%87%C2%B7%E7%BD%97%E6%96%AF%E6%89%98%E5%A4%AB%E4%BC%AF%E7%88%B5/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -710,10 +696,16 @@ categories: Read
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-02-04 16:34:01 / Modified: 16:35:55" itemprop="dateCreated datePublished" datetime="2020-02-04T16:34:01+08:00">2020-02-04</time>
+              <time title="Created: 2020-02-04 16:34:01" itemprop="dateCreated datePublished" datetime="2020-02-04T16:34:01+08:00">2020-02-04</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-07-20 17:47:19" itemprop="dateModified" datetime="2020-07-20T17:47:19+08:00">2020-07-20</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -731,14 +723,14 @@ categories: Read
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span></span>
+              <span>1k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>NaN:aN</span>
+              <span>1 mins.</span>
             </span>
 
         </div>
@@ -750,22 +742,15 @@ categories: Read
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="第三章-列表简介"><a href="#第三章-列表简介" class="headerlink" title="第三章 列表简介"></a>第三章 列表简介</h2><h3 id="3-1-列表"><a href="#3-1-列表" class="headerlink" title="3.1 列表"></a>3.1 列表</h3><p><strong>Python用方括号（[ ]）表示列表，并用逗号分隔其中的元素</strong></p>
-<h4 id="3-1-1-访问列表元素"><a href="#3-1-1-访问列表元素" class="headerlink" title="3.1.1 访问列表元素"></a>3.1.1 访问列表元素</h4><blockquote>
-<p>提取元素从<strong>0</strong>开始<br>提取最后一个值可以让索引等于-1</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">bicycles = [<span class="string">'trek'</span>, <span class="string">'cannondale'</span>, <span class="string">'redline'</span>, <span class="string">'specialized'</span>]</span><br><span class="line">print(bicycles[<span class="number">0</span>])</span><br><span class="line">print(bicycles[<span class="number">0</span>].title())</span><br><span class="line">print(bicycles[<span class="number">1</span>]) <span class="comment">#索引1是第二个值</span></span><br><span class="line">print(bicycles[<span class="number">-1</span>])</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-2-修改、添加和删除元素"><a href="#3-2-修改、添加和删除元素" class="headerlink" title="3.2 修改、添加和删除元素"></a>3.2 修改、添加和删除元素</h3><blockquote>
-<p>append()在列表末尾添加元素<br>insert(1,’<em>‘) 在列表[1]处添加</em>元素<br>del 列表名[索引] 该语句实现删除列表中的元素的作用<br>pop()方法用于即删除元素的同时又使用这个元素<br>remove()方法用于删除已知的值而不知道索引的情况下</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">motorcycles = [<span class="string">'honda'</span>, <span class="string">'yamaha'</span>, <span class="string">'suzuki'</span>]</span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles[<span class="number">0</span>] = <span class="string">'ducati'</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles[<span class="number">0</span>] = <span class="string">'honda'</span></span><br><span class="line">motorcycles.append(<span class="string">'ducati'</span>) <span class="comment">#添加在末尾</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles.insert(<span class="number">0</span>,<span class="string">'ducati2'</span>) <span class="comment">#指定位置添加</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line"><span class="keyword">del</span> motorcycles[<span class="number">0</span>]</span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">popped_motorcycles = motorcycles.pop() <span class="comment">#括号中可以指定索引，不指定则随机</span></span><br><span class="line">print(motorcycles)</span><br><span class="line">print(popped_motorcycles)</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-3-组织列表"><a href="#3-3-组织列表" class="headerlink" title="3.3 组织列表"></a>3.3 组织列表</h3><h4 id="3-3-1-永久性排序"><a href="#3-3-1-永久性排序" class="headerlink" title="3.3.1 永久性排序"></a>3.3.1 永久性排序</h4><blockquote>
-<p>sort()方法实现列表的永久性排序,传递reverse=True则表示与字母顺序相反<br>sorted(列表名)方法实现暂时对列表的排序<br>reverse()方法实现对列表中元素的顺序的反转（不按字母表顺序）<br>len(列表名)确定列表长度</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">cars = [<span class="string">'bmw'</span>, <span class="string">'audi'</span>, <span class="string">'toyota'</span>, <span class="string">'subaru'</span>]</span><br><span class="line">cars.sort()</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">cars.sort(reverse=<span class="literal">True</span>)</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">cars.reverse()</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">print(len(cars))</span><br></pre></td></tr></table></figure>
-
+          <h2 id="第三章-列表简介"><a href="#第三章-列表简介" class="headerlink" title="第三章 列表简介"></a>第三章 列表简介</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/02/04/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B53/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -807,10 +792,16 @@ categories: Read
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-02-03 17:30:49 / Modified: 17:35:59" itemprop="dateCreated datePublished" datetime="2020-02-03T17:30:49+08:00">2020-02-03</time>
+              <time title="Created: 2020-02-03 17:30:49" itemprop="dateCreated datePublished" datetime="2020-02-03T17:30:49+08:00">2020-02-03</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-07-20 17:47:26" itemprop="dateModified" datetime="2020-07-20T17:47:26+08:00">2020-07-20</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -828,14 +819,14 @@ categories: Read
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span></span>
+              <span>2.3k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>NaN:aN</span>
+              <span>2 mins.</span>
             </span>
 
         </div>
@@ -848,14 +839,16 @@ categories: Read
 
       
           <blockquote>
-<p>“愈方便的东西愈容易被钻漏洞，当所有事情彼此相连，你只要找出最弱的一环，便能轻易击碎整条锁链。<br>“天下间最容易击破的‘最弱一环’，就是‘人类’。电脑系统能随岁月发展得更完善，但人性弱点却永远无法改变。”<br>“先入为主是调查大忌，你可以作出假设，但要记得，‘假设’不一定是事实，你作出假设，便要更努力去证明这个假设是错误，而不是找出支持这个假设的证据。”阿怡点点头，明白阿涅的意思。她曾读过关于逻辑学的书，书里举出乌鸦作为例子：因为看过一万只黑色的乌鸦便认定“乌鸦都是黑色的”是不合理的，因为只要找到一只白色的乌鸦，便全盘推翻了“乌鸦都是黑色的”这命题。要证明“乌鸦都是黑色的”，便要反过来，假设“世上有不是黑色的乌鸦存在”，然后证明这假设不可能。”<br>“人啊，就是一种既善忘又自私的动物。”阿涅语气平静，表情跟之前没两样，但阿怡隐约觉得他暂时卸下了面具，“寻求他人原谅，不过是一种利己主义的投影，因为得到对方的谅解，自己就可以洒脱地大步向前走了，但说到底，那不过是伪善。你觉得小雯不会原谅你嘛，那你就背负着这份愧疚，无时无刻记住你曾经亏待了一位好朋友，而且你永远无法补偿。你余下的人生永远无法摆脱这罪恶感，你可能会不时反省当年为什么没多走一步、多说一句话，后悔得心里绞痛，但你同时要记着，你有责任好好活着，因为你只有通过倾听自己的内心、做正确的决定，来消减心里的苦、赎自己的罪。这份沉重的愧疚会成为你的血肉，也会成为你是一个好人的证明。”<br>“这个年纪的孩子，有多少个可以不在乎他人眼光、我行我素地过活？当所有人都同意‘二加二等于五’时，你敢力排众议，冒着被他人排挤孤立而大声反对吗？假如郡主的姐妹们觉得郡主是个弱者，她肯定不到一天便会被贬为‘庶民’咧。国泰也好、郡主也好，全都挂着不同厚度的假面具，为了成为他人眼中的理想形象，他们都在勉强自己。本来成年人该告诉他们要有自信、由衷地做自己就好，可是我们这个病态社会只在乎教育能否制造出一批批服从权威、配合主流、具备相同学识与能力的机器人，而这些机器人又将下一代塑造成另一批机器人。”<br>“人类能够想出邪恶的意念、说出歹毒的言语，但要正眼看待由它们衍生出来的残酷，大部分人却做不到。”<br>“为了妹妹’？你有问过她的意愿吗？为了她牺牲自己，她会高兴吗？她会不会因为你的‘伟大情操’，背负太多期望而喘不过气？今天有不少人犯这种毛病，老是一厢情愿地自把自为，说穿了不过是无穷的控制欲，强加自己的标准在他人身上。”<br>“我们总有选择，重点只是我们是否愿意承受那个选择带来的后果、付出那个选择的代价。这个社会之所以变得腐败，就是有不少这种‘平庸之恶’，凡事衡量利害先于真伪和对错，将谎言粉饰成事实。<br>“整件事出错的地方，不在传递讯息的网路，不在用来交流情报的网站，而在愚昧的人心；因为渴求真相，结果选择相信不实的线索，甚至本着‘分享’精神将谣言散播出去，做成难以收拾的灾难。”</p>
+<p>“愈方便的东西愈容易被钻漏洞，当所有事情彼此相连，你只要找出最弱的一环，便能轻易击碎整条锁链。</p>
 </blockquote>
-<img src="https://raw.githubusercontent.com/paul18755/ppppp/master/20200203173338.jpg" width = "500" height = "700" alt="图片名称" align=center />
-  凡事衡量厉害先于真伪和对错，这句话给我很深的感触！我联想到的是一种权衡利弊的一种思维方式，我曾经很受那些天才类的描述所吸引，或者说不是天才类，而是那种所谓的科学怪人或者天赋异禀之人生来所有的情感缺陷所吸引，以为那是一种怎么说，天才的特权吗？就是面对一件事情可以理性地分析利弊，不受情感的摆布。当然并不是说这不好，只是这句话给我敲响了警钟！如文中所表述的，那个被诬陷的书店店长选择了承认罪责，这样有更小的惩罚，更小的损失。其实这很符合我前文所说的那种分析利弊的方式，与其争辩最后可能有更久的刑期，主动认罪悔过确实是更“利”。但是后面的事情发展证明了如果他当时去争辩，是有很大可能完全不会服刑的，虽然这么说有点马后炮。回到我们这句话，在衡量厉害先于真伪和对错，我的理解中有两个方面：一是我们认识的局限性，利弊的衡量前提必然是对利弊全面的理解，之后看到ABCD四个选项之后才能有答案之间的抉择，看到A就选A倒不如是为武断更加合适。但很难说我们可以有全面的理解，倒不是说不可能，只是代价过于巨大，不论是作者需要花费将近四分之一的篇幅（虽然有别的情节的发展）才能道清书店店长的“正当行为”；抑或是我们了解一件事背后运作的时间成本，都不能肯定地说值得去深入探究；而另一种情况是我们根本就无法全面地理解，这个全面是什么程度的全面？很难断定。书中表现出来的全面，是对两个家庭，两个女孩，三个人之间的蛛丝马迹。书中的侦探手段虽不能说都是假的，但是还是与现实有些许差距。当然这是我们从旁人的角度来看书店的店长。另一个方面我斗胆想从其自身做出此决定的可能性出发，选择认罪接受莫须有的罪名，可能是比花钱请律师，努力为自己辩白、寻找证据来说成本是低一些。这个“低”很多时候会成为极端的利弊分析的强劲理由，我想作者想谈的就是这么一种情况，书店店主自己是知道的，他没有猥亵。他知道真伪先于利弊，但他选择了利弊，因为真伪辨别的代价太大。所以将“谎言粉丝成了事实”。对错我不敢说，但“先于真伪”我是挺支持的，也是这四个字给我反思自己的机会，为我敲响了警钟是否我陷入了一种极端的状态？感谢
-
-<p>之后书中谈的关于“相信不实的现实，本着分享精神将耀眼散播出去”，我觉得对于网络现状描写的很形象了，包括新闻形式的改革，我觉得在我们现实社会都可以找到映射，现在的微博的实时性毋庸置疑。不要误会的是这并不是说这就不好，或者说“本着分享精神将谣言散播出去”就是不好的。“本着‘分享’”这四个字足以。恶意散播谣言的才是谴责的对象，而我们，应该渴求真相，但切勿成为迷雾的推波助澜者！</p>
-<p>谈及寻求原谅的伪善，为了他人等等，倒是让我倍感亲切，人总是一个利己的动物，但如何才是利己，什么样的表现才是利己，这值得探讨。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/02/03/%E3%80%8A%E7%BD%91%E5%86%85%E4%BA%BA%E3%80%8B%E2%80%94%E5%AF%BB%E6%B1%82%E4%BB%96%E4%BA%BA%E5%8E%9F%E8%B0%85%EF%BC%8C%E4%B8%8D%E8%BF%87%E6%98%AF%E4%B8%80%E7%A7%8D%E5%88%A9%E5%B7%B1%E4%B8%BB%E4%B9%89%E7%9A%84%E6%8A%95%E5%BD%B1/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -897,10 +890,16 @@ categories: Read
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-02-03 17:13:16 / Modified: 17:15:20" itemprop="dateCreated datePublished" datetime="2020-02-03T17:13:16+08:00">2020-02-03</time>
+              <time title="Created: 2020-02-03 17:13:16" itemprop="dateCreated datePublished" datetime="2020-02-03T17:13:16+08:00">2020-02-03</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-07-20 17:47:18" itemprop="dateModified" datetime="2020-07-20T17:47:18+08:00">2020-07-20</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -918,14 +917,14 @@ categories: Read
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span></span>
+              <span>723</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>NaN:aN</span>
+              <span>1 mins.</span>
             </span>
 
         </div>
@@ -937,25 +936,15 @@ categories: Read
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Python编程：从入门到实践2"><a href="#Python编程：从入门到实践2" class="headerlink" title="Python编程：从入门到实践2"></a>Python编程：从入门到实践2</h1><h2 id="第二章-变量和简单数据类型"><a href="#第二章-变量和简单数据类型" class="headerlink" title="第二章 变量和简单数据类型"></a>第二章 变量和简单数据类型</h2><h3 id="2-3-字符串"><a href="#2-3-字符串" class="headerlink" title="2.3 字符串"></a>2.3 字符串</h3><blockquote>
-<p>用引号括起的都是字符串（<strong>包括单引号和双引号</strong>）</p>
-</blockquote>
-<p>也就意味着如果要在字符串中使用引号和撇号可以这样:<code>&#39;I told my friend, &quot;Python is my favorite language!&quot;&#39;</code></p>
-<h4 id="2-3-1-修改字符串的大小写"><a href="#2-3-1-修改字符串的大小写" class="headerlink" title="2.3.1 修改字符串的大小写"></a>2.3.1 修改字符串的大小写</h4><blockquote>
-<p>.title方法 将以首字母大写的方式显示每个单词<br>.upper方法，将字符串改为全部大写<br>.lower方法，将字符串改为全部小写</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">"ada lovelace"</span></span><br><span class="line">print(name.title())</span><br><span class="line">print(b.upper()) <span class="comment">#全部大写</span></span><br><span class="line">print(b.lower()) <span class="comment">#全部小写</span></span><br></pre></td></tr></table></figure>
-<h4 id="2-3-2-使用-合并字符串"><a href="#2-3-2-使用-合并字符串" class="headerlink" title="2.3.2 使用+合并字符串"></a>2.3.2 使用+合并字符串</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">first_name = <span class="string">"ada"</span></span><br><span class="line">last_name = <span class="string">"lovelace"</span></span><br><span class="line">full_name = first_name + <span class="string">" "</span> + last_name</span><br><span class="line">print(<span class="string">"Hello, "</span> + full_name.title() + <span class="string">"!"</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="2-3-3-使用制表符或换行符添加空白"><a href="#2-3-3-使用制表符或换行符添加空白" class="headerlink" title="2.3.3 使用制表符或换行符添加空白"></a>2.3.3 使用制表符或换行符添加空白</h4><blockquote>
-<p>\t表示添加制表符<br>\n表示添加换行符</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"\tpython"</span>)</span><br><span class="line">print(<span class="string">"languages:\nPython\nC\nJavaScript"</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="2-3-4-删除空白"><a href="#2-3-4-删除空白" class="headerlink" title="2.3.4 删除空白"></a>2.3.4 删除空白</h4><blockquote>
-<p>rstrip()方法能够删除字符串末尾的空格<br>lstrip()剔除字符串开头空白<br>strip()同时剔除两端空白</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">favorite_language = <span class="string">' python '</span></span><br><span class="line">print(favorite_language.rstrip()) <span class="comment">#原变量还是不变的</span></span><br><span class="line">print(favorite_language.lstrip()) </span><br><span class="line">print(favorite_language.strip())</span><br></pre></td></tr></table></figure>
-
-
+          <h1 id="Python编程：从入门到实践2"><a href="#Python编程：从入门到实践2" class="headerlink" title="Python编程：从入门到实践2"></a>Python编程：从入门到实践2</h1>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/02/03/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B52/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -997,10 +986,16 @@ categories: Read
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2020-02-02 12:22:37 / Modified: 16:55:21" itemprop="dateCreated datePublished" datetime="2020-02-02T12:22:37+08:00">2020-02-02</time>
+              <time title="Created: 2020-02-02 12:22:37" itemprop="dateCreated datePublished" datetime="2020-02-02T12:22:37+08:00">2020-02-02</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-07-20 17:47:10" itemprop="dateModified" datetime="2020-07-20T17:47:10+08:00">2020-07-20</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -1018,14 +1013,14 @@ categories: Read
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">Symbols count in article: </span>
-              <span></span>
+              <span>6.2k</span>
             </span>
             <span class="post-meta-item" title="Reading time">
               <span class="post-meta-item-icon">
                 <i class="far fa-clock"></i>
               </span>
                 <span class="post-meta-item-text">Reading time &asymp;</span>
-              <span>NaN:aN</span>
+              <span>6 mins.</span>
             </span>
 
         </div>
@@ -1037,101 +1032,15 @@ categories: Read
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="认知心理学：注意部分笔记"><a href="#认知心理学：注意部分笔记" class="headerlink" title="认知心理学：注意部分笔记"></a>认知心理学：注意部分笔记</h1><blockquote>
-<p><strong>注意</strong>：一种聚焦于特定刺激或特定位置的能力<br><strong>选择性注意</strong>：将聚焦于某一客体、特定的位置或信息上的过程<br><strong>分配性注意</strong>：指同一时间内注意两件或多件事情，可能是内隐，也可能是外显，或者是两者的结合<br><strong>外显性注意</strong>：通过<strong>眼动</strong>将注意从一个位置转移到另一个位置的过程<br><strong>内隐性注意</strong>：没有眼动参与的注意转移过程，即通过眼角来看刺激</p>
-</blockquote>
-<h3 id="选择性注意的过滤器模型（瓶颈、衰减等都属于过滤器模型）"><a href="#选择性注意的过滤器模型（瓶颈、衰减等都属于过滤器模型）" class="headerlink" title="选择性注意的过滤器模型（瓶颈、衰减等都属于过滤器模型）"></a>选择性注意的过滤器模型（瓶颈、衰减等都属于过滤器模型）</h3><p>选择性注意不仅凸显了我们所注意到的事物，而且使我们远离自己未注意到的事物。下面这些模型之所以为“早期”不是因为时间，而是<strong>因为其认为信息的过滤是在早期阶段对信息留进行操作的。</strong>早期过滤器模型多认为通过过滤器，我们可以在信息过滤的前提下，允许另一些信息进入高层次的加工，实验多采用<strong>听觉刺激</strong>。</p>
-<h5 id="瓶颈模型-Broadbent"><a href="#瓶颈模型-Broadbent" class="headerlink" title="瓶颈模型 - Broadbent"></a>瓶颈模型 - Broadbent</h5><blockquote>
-<p><strong>Cherry（1953）双耳分听实验</strong>：该实验主要是在被试两耳分别呈现不同的信息下，要求注意其中一只耳朵传入的信息并对该通道进行追随<br><strong>双耳分听实验中的追随</strong>：不断重复一个信息并大声说出来的程序，用以确保被试只关注注意通道内的信息。</p>
-</blockquote>
-<p>可以证明上述观点的是<strong>双耳分听实验</strong>的结论，即被试对于非追随耳通道内的信息，仅仅只能判断通道内存在信息但是无法对信息进行深层次加工。针对此Broadbent提出了瓶颈模型：<img src="https://raw.githubusercontent.com/paul18755/ppppp-/master/%E6%88%AA%E5%B1%8F2020-01-27%E4%B8%8B%E5%8D%883.39.36.png" alt="瓶颈模型"><br>信息进入感觉记忆后，过滤器会开始发挥作用，根据信息的物理特性过滤其他信息 —》 被注意到的信息到达探测器阶段，探测器对其加工决定其是否可以得到进一步的加工 —》可以进一步加工的信息进入短时记忆。要注意的是过滤器并不是完全决定什么信息加工什么信息不加工，在其之后还有进一步的由探测器主导的筛选。这其中信息能否通过取决的其物理特性。Broadbent的瓶颈模型为选择性注意提供了可验证的假设。</p>
-<h6 id="针对此类假设的挑战"><a href="#针对此类假设的挑战" class="headerlink" title="针对此类假设的挑战"></a>针对此类假设的挑战</h6><p><strong>鸡尾酒会效应</strong> Moray（1959）同样做了双耳分听实验，但是当其在非追随耳中呈现被试的姓名时，有1/3的被试能过听到。但这并不意味着这些信息被注意到了。——针对瓶颈模型提出的“在非注意通道内的信息将不能进入注意”的假设</p>
-<hr>
-<h5 id="衰减模型-—Treisman"><a href="#衰减模型-—Treisman" class="headerlink" title="衰减模型 —Treisman"></a>衰减模型 —Treisman</h5><blockquote>
-<p><strong>字典单元</strong>：包含存储单词，每个单词都有一个激活阈限</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/paul18755/ppppp/master/11.png" alt=""><br>衰减模型来自受到挑战的瓶颈模型的改善。除了分析信息的物理特性外，Treisman增加了对信息的语义上的分析（其认为这只在有必要的时候才会进行）。所以信息都进入衰减器，但非追随耳的信息会被衰减器减弱。信息通过衰减器后经由字典单元，根据阈限和衰减后的信息强度决定信息是否能过被探测到。</p>
-<p>注意分析上述内容的实验是如何将一个认知现象概念化为一个信息加工问题</p>
-<hr>
-<blockquote>
-<p><strong>MacKay（1973）的实验</strong>:基于双耳分听实验的流程，MacKey在追随耳给被试提供一些模棱两可的句子（eg. Bank可以有银行的意思，也可以有河堤的意思），在非追随耳提供其中一种意思。最后呈现模棱两可的句子的各种可能的解释，让被试选择，实验证明被试倾向于选择出现在非追随耳的那种意思的句子。</p>
-</blockquote>
-<p>&nbsp;&nbsp;有早期，当然也有晚期的选择性注意模型，即认为选择信息的过程发生在信息加工的较晚阶段（基于信息的意义），MacKay的实验为信息在进一步加工前会进行意义加工做了证明。即非追随耳内的信息会影响到被试的判断，也就意味的对非追随耳提供的“单词”有意义上的加工。当然早期或者晚期的理论是否适用很明显是取决于当下的实验环境，因此早期晚期并没有一个确定的答案。因此，可以谈谈影响注意的因素了。</p>
-<h3 id="认知资源、认知负载以及与任务无关的刺激"><a href="#认知资源、认知负载以及与任务无关的刺激" class="headerlink" title="认知资源、认知负载以及与任务无关的刺激"></a>认知资源、认知负载以及与任务无关的刺激</h3><blockquote>
-<p><strong>认知资源</strong>： 一种认为一个人有一定的认知能力以执行不同的任务的观点<br><strong>认知负载</strong>： 指一个人在执行某项认知任务时所需要的认知资源的数量</p>
-</blockquote>
-<p><strong>认知资源理论</strong>的基本原理主要是高低负载的任务分布使用较少或较多的认知资源，而在已使用的情况下剩余的认知资源决定了是否能有效地避免注意到与任务无关的刺激。可以理解为任务难度较低时，较容易被外界刺激所影响。该理论解释了受非注意刺激影响的其中一个因素，<strong>目标注意刺激本身的强度的大小</strong>。证明此的有侧干扰相容任务</p>
-<h5 id="侧干扰相容任务"><a href="#侧干扰相容任务" class="headerlink" title="侧干扰相容任务"></a>侧干扰相容任务</h5><blockquote>
-<p><strong>侧干扰相容任务</strong>：要求被试集中注意特定刺激而忽略其他刺激的任务<br><strong>（不）相容侧干扰项</strong>： 侧干扰项与目标项对应着（不）相同的反应</p>
-</blockquote>
-<p>侧干扰相容任务主要是让被试根据中间项目的刺激做出反应，同时两侧会出现与中间项目相同或者与中间项目不同的（不）相容侧干扰项或中性刺激项，重点在于需要注意力集中的中间项目所需要的认知资源是不多的，（Eriksen &amp; Eriksen，1974）的实验使用的是对字母的加工，在这种情况下，如果符合认知资源理论基本原理，被试在没有刻意加工侧干扰项时，这些侧干扰项仍会被加工。实验结果，不相容侧干扰项条件下的被试反应速度要<strong>慢于</strong>相容侧干扰项条件或中性刺激项条件证明了认知资源理论基本原理的假设。这个反应速度慢的原理是，对不相容的项目要做出的反应与目标项目要做出的反应产生了竞争。</p>
-<p>受非注意刺激影响的另一个因素是<strong>非目标刺激物的强度大小</strong>（相似的生活情景可以有‘一声巨响’）。于此相关的有stroop效应的实验，也就是当汉字代表一种颜色，而汉字本身的书写是另一种颜色的时候，两种颜色的反应会出现竞争，导致反应时间变慢。这个实验可以看作以侧干扰相容任务为基础，汉字本身的颜色是我们的目标刺激，而汉字字义代表的颜色则是不相容的侧干扰项。与上述不同的是，此时的侧干扰项的强度非常大，这个大表现在我们看到汉字自动加工理解其字义的习惯性动作。</p>
-<hr>
-<h3 id="注意分配-分配性注意（主动将注意分配到多任务）"><a href="#注意分配-分配性注意（主动将注意分配到多任务）" class="headerlink" title="注意分配-分配性注意（主动将注意分配到多任务）"></a>注意分配-分配性注意（主动将注意分配到多任务）</h3><blockquote>
-<p><strong>自动化加工</strong> ：此类加工有两个特点，一是非刻意即自动发生；二是处于消耗较少认知资源的低负载任务。</p>
-</blockquote>
-<h5 id="练习与自动化加工实验（Schneider-amp-Shiffrin）"><a href="#练习与自动化加工实验（Schneider-amp-Shiffrin）" class="headerlink" title="练习与自动化加工实验（Schneider &amp; Shiffrin）"></a>练习与自动化加工实验（Schneider &amp; Shiffrin）</h5><blockquote>
-<p><strong>分心物</strong>： 探测序列中与目标刺激不同的项目<br><strong>一致的映现条件</strong>：指目标刺激的类型与分心物的类型不同的实验条件（eg. 目标是数字，分心物是字母）</p>
-</blockquote>
-<p>该实验是在“一致的映现条件”下进行的。<strong>一个试次</strong>指的是“首先呈现给被试记忆集中的目标刺激要求被试记忆，然后呈现一系列“探测序列”，要求最后被试判断目标刺激是否有出现在探测序列中”这么一个流程。被试会进行多个试次。“<strong>在一半的试次中，探测序列中会存在目标刺激</strong>；另一半则没有”相当于目标刺激是否出现在探测序列中的几率是50%。<strong>每个试次的记忆集都会更新</strong>，也就是说目标刺激每次都不同，一方面被试每个试次都需要重新分配注意去记忆目标刺激，同时也避免被试后期成功率升高是因为记忆目标刺激的认知负载逐渐降低。注意分配在这个实验中的表现是，被试在面对每一个探测序列时，一方面需要分配认知资源到“分心物”上，辨别分心物是否与目标刺激不同；另一方面需要分配认知资源到“记忆目标刺激”上，可能是重复目标刺激或者其他方法，但是总需要“努力”地去记得目标刺激是什么（因为目标与分心物在每次试次之间是不断变化的）。根据实验结果，在被试试次达到600个之后，被试就会出现<strong>自动化加工</strong>的表现，不需要有意思思考就能够判断目标刺激是否出现在探测序列中。也因此证明“多次练习可以产生自动化加工”。</p>
-<p>再谈目标刺激与分心物的类型是一样的情况下（文中是目标与分心物都为字母）。即在“变化的映现条件”下，除了分心物与目标刺激之间可以相互转换外，其他与“一致的映现条件”下实验一致。根据实验结果，要达到90%作用的正确率，需要将每个探测序列的呈现时间从100ms提高至400ms；另一点是被试无论经过多少次练习都无法进入自动化加工的情况——控制性加工。可见在自动化加工要产生的因素，一是<strong>必须经过足够次数的练习</strong>，二是<strong>任务的认知负载低</strong>。如果任务较难，分配性注意就较难，需进行“控制性加工”。</p>
-<hr>
-<h3 id="注意和视知觉"><a href="#注意和视知觉" class="headerlink" title="注意和视知觉"></a>注意和视知觉</h3><blockquote>
-<p><strong>变化盲视</strong>： 在一个场景中探测变化之处的困难想象。<br><strong>非注意盲视</strong>： 对于未加注意的探测刺激产生了”视盲“的现象</p>
-</blockquote>
-<p>证实注意对知觉十分重要</p>
-<h5 id="非注意盲视"><a href="#非注意盲视" class="headerlink" title="非注意盲视"></a>非注意盲视</h5><p>实验逻辑：要求被试注意一种任务，并且判断被试是否能够较为容易地知觉到附近一个可见刺激的出现。根据此逻辑，文中提出两个实验</p>
-<ol>
-<li>Mack &amp; Rock：被试辨别哪一个线段长，经过几个试次后，在线段旁边会出现几何图形，最后让被试对几何图形进行再认。被试辨别线段为主要的注意任务，几何图像则是要求被试知觉的可见刺激。</li>
-<li>Simons &amp; Chabris：要求被试数出篮球在黑白两队中传递了几次，这是主要的注意任务。在传球中途，会有一只大猩猩出现，实验的再认任务则是针对大猩猩。（该实验结果是接近一半的被试报告并没有发觉有黑猩猩）</li>
-</ol>
-<h5 id="变化盲视"><a href="#变化盲视" class="headerlink" title="变化盲视"></a>变化盲视</h5><p>实验逻辑：给被试呈现有细微变化的刺激，分别在有提示和没提示的情况下让被试判断是否能发现变化。有提示和没提示对应着有注意参与和无注意参与。文中提到的实验为Rensink的<strong>探测变化实验</strong>：提供一张图片，在呈现黑屏，最后呈现有变化的图片。如此重复，把被试能成功辨别需要重复的次数作为指标。自变量为（不）给被试提供变化的线索。</p>
-<hr>
-<h3 id="外显性注意—眼动"><a href="#外显性注意—眼动" class="headerlink" title="外显性注意—眼动"></a>外显性注意—眼动</h3><blockquote>
-<p><strong>视觉凸显</strong>：指刺激的物理属性，比如颜色、对比度或者运动等影响了注意的情况。<br><strong>情景图式</strong>：指对于典型的情景中应该包含什么物体的知识水平。（例如厨房应该有菜刀而不是电脑）</p>
-</blockquote>
-<p><strong>注意的转移需要眼动的支持的原因</strong>可以参考上述的“盲视”现象。影响眼动甚至于转移注意的因素，可以从两个方面来看：<strong>自上而下和自下而上的因素</strong>。自下而上主要是基于刺激的物理属性；自上而下则主要基于被试和所在场景之间的关系。</p>
-<h5 id="自下而上的加工影响"><a href="#自下而上的加工影响" class="headerlink" title="自下而上的加工影响"></a>自下而上的加工影响</h5><p>如文中P127所说‘由于刺激的凸显而导致的注意捕获是一种自下而上的加工过程，因为这种过程依赖于刺激的明暗、颜色以及对比度‘。Noted此处的刺激凸显并不是单独指有巨大声响、颜色特别独特显眼的物理刺激凸显，而包含于一切对物理属性的反应而不涉及意义加工的眼动情况即<strong>视觉凸显</strong>。例如“寻找图片中一个带有条纹帽子的人”。但自下而上的加工过程并不能单独主导一个眼动注意的过程。自下而上的加工于自上而下的加工是一种交互的状态。</p>
-<h5 id="自上而下的加工影响"><a href="#自上而下的加工影响" class="headerlink" title="自上而下的加工影响"></a>自上而下的加工影响</h5><p>再谈自上而下，基于被试和所在场景之间的关系可以用<strong>情景图式</strong>来解释，对于不符合情景图式的刺激物，会更有可能促使眼动转移和更长的注视时间。此处的“知识水平”就是自上而下的<strong>上</strong>的表现。从这个层面上来说，<strong>注意会受到一个特定观察者的知识水平和兴趣的影响</strong>。自上而下的另一个水平是“任务需求”，即被试在动态的执行任务过程中，不会注视与任务无关的客体或者区域。在这个层面上，<strong>任务要求的作用是大于类似于刺激凸显性这样的因素</strong>，而眼动轨迹有任务具体需求决定。</p>
-<h3 id="内隐性注意：无眼动参与的注意定向。"><a href="#内隐性注意：无眼动参与的注意定向。" class="headerlink" title="内隐性注意：无眼动参与的注意定向。"></a>内隐性注意：无眼动参与的注意定向。</h3><blockquote>
-<p><strong>预线索化</strong>： 指先给被试呈现一个能够预示刺激最有可能出现在哪里的“线索”的实验程序或者说研究方法。</p>
-</blockquote>
-<p>两个研究方向：研究基于位置的注意 &amp; 基于客体的注意</p>
-<h5 id="基于位置的注意"><a href="#基于位置的注意" class="headerlink" title="基于位置的注意"></a>基于位置的注意</h5><blockquote>
-<p>问题：注意定位到一个特定的位置能否促进人对该位置上呈现出的刺激的快速反应？</p>
-</blockquote>
-<p>对基于位置的注意采用的研究方法是<strong>预线索化实验</strong>，通过给被试提供能预示探测刺激出现的位置的线索，要求被试在目标刺激（方块）消失后，尽快按键反应。在实验中，表明无需眼动参与的因素时，要求被试始终注视要求的注视点。区分的自变量是线索预测的准与不准：在Posner的实验中，线索预测正确的有效试次与线索预测不正确的无效试次比率是8:2。如果说线索并没有作用的话，那么不管目标位置出现在线索预测的位置还是不是线索预测的位置，被试有效试次和无效试次的反应时间应该没有太大的区别。从实验的结果来看，被试对有效试次的反应明显快于无效试次，说明“在注意定位到的位置，对信息的加工更加有效”。这也是<strong>聚光灯理论</strong>的主要内容：注意像一盏聚光灯，当注意趋向一个特定的位置时，那个位置上的信息就得到了更充分的加工。</p>
-<h5 id="基于客体的注意"><a href="#基于客体的注意" class="headerlink" title="基于客体的注意"></a>基于客体的注意</h5><p>基于客体的注意的研究实验基于预线索化的实验范式，同样要求被试注视中央的注视点，并且会给出有效（无效）的关于目标刺激的线索。不同的是目标刺激的出现有三种情况：</p>
-<ol>
-<li>符合线索提供的位置</li>
-<li>不符合线索提供的位置，但是和线索提供的位置处于同一客体。</li>
-<li>不符合线索提供的位置，和线索提供的位置也不属于同一客体。</li>
-</ol>
-<p>有一个需要注意点：不符合线索提供位置的两个情况，相对于符合的情况出现的可能性要相同。也就是如文中所提：“位置B和位置C相对于位置A来说距离是相等的。”从结果来看，除了符合线索的情况，另外两种情况中对与线索提供位置属于同一客体的目标刺激的反应时间是要短于另一种情况的。基于此给出“相同客体优势”：<strong>即当注意定位到某个位置上的某个客体时，这种注意的提高效果会扩散到整个客体上。</strong></p>
-<h3 id="特征整合理论（论注意在特征整合理论中的作用）—Anne-Treisman"><a href="#特征整合理论（论注意在特征整合理论中的作用）—Anne-Treisman" class="headerlink" title="特征整合理论（论注意在特征整合理论中的作用）—Anne Treisman"></a>特征整合理论（论注意在特征整合理论中的作用）—Anne Treisman</h3><blockquote>
-<p><strong>前注意阶段</strong>：指客体被分解为独立的特征的阶段，这一阶段各个特征的加工是彼此独立的。（我们之所以意识不到是因为其发生于知觉的早期阶段）</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/paul18755/ppppp/master/20200131210549.jpeg" alt=""><br><strong>特征整合</strong>指尽管大脑加工客体的不同属性特征（颜色、形状等）是在不同的大脑区域，但是我们的知觉一个物体时能够将其不同的特征整合于一个客体而非不同的特征。依据Treisman的特征整合模型，客体加工有<strong>前注意阶段</strong>和<strong>集中注意阶段</strong>。证明特征知觉过程中存在前注意阶段使用的是<strong>关联整合实验</strong>。</p>
-<hr>
-<blockquote>
-<p><strong>关联整合实验</strong>： 给被试在快速呈现不同特征的客体以及侧抑制项目，之后通过掩蔽屏消除知觉后像，最后要求被试报告呈现的客体的形状<br><strong>关联整合</strong>：不同刺激的特征之间的结合，例如红色方形和绿色圆形，结合后认知为红色圆形。<br><strong>巴林特综合症</strong>：关键特征是不能将注意集中在单独的客体上的一类病症</p>
-</blockquote>
-<p>通过关联整合实验来证明前注意阶段的逻辑在于，如果知觉过程不存在分解客体特征的过程，那么被试可能报告不出来客体是什么，或者能够成功报告出来客体，但是不可能在报告时出现不同客体的特征之间结合的情况。但是从实验结果出现的情况，被试有18%的可能会出现两个刺激的不同特征混搭的<strong>关联整合</strong>的情况，即使刺激在形状上和大小上存在很大的差异。“18%”的解释可能是因为前注意阶段的时间非常短。同时通过掩蔽屏消除知觉后像的实验操作也值得重视。<img src="https://raw.githubusercontent.com/paul18755/ppppp/master/20200131212806.png" alt=""></p>
-<p>从特征整合模型的角度来看，特征整合模型中注意起作用的点就在于集中注意阶段。特征整合可以看作一个<strong>多种选择</strong>的情况，不同的特征之间可以相互整合成整体，如果依据一个客体两个特征，组合的可能结果便根据客体的数量N而有$2N$个可能性。在这些可能性中如何找到正确的一个？就是注意的作用：<strong>增加特征整合的成功几率</strong>。集中注意阶段的证明可以根据Treisman基于关联整合实验的改动实验来证明，她要求被试忽视侧抑制项，<strong>同时将所有的注意力聚焦在客体上</strong>。在这种情况下，关联整合的情况减少了。另一个证明是<strong>巴林特综合症</strong>。</p>
-<p>从关联整合的角度来看，在集中注意阶段减少关联整合<strong>一是可以施加注意</strong>，<strong>二是可以从自上而下的加工方面来促进减少</strong>，但是自上而下的加工帮助只有在要识别的客体特征确实符合个体的背景知识的情况下才发挥促进作用，否则可能起到一种“定势”的反作用。</p>
-<h3 id="注意的生理学基础"><a href="#注意的生理学基础" class="headerlink" title="注意的生理学基础"></a>注意的生理学基础</h3><p>由注意的生理机制而来的重要结果：</p>
-<ol>
-<li>注意能够增强神经反应</li>
-<li>注意加工涉及大脑的众多区域</li>
-</ol>
-<p>注意第一点的研究主要是针对内隐性注意，外显注意因为有眼动的参与，不能排除因为眼动而促进神经反应的可能性。</p>
-<h6 id="孤独症社交异常的注意机制方面的解释"><a href="#孤独症社交异常的注意机制方面的解释" class="headerlink" title="孤独症社交异常的注意机制方面的解释"></a>孤独症社交异常的注意机制方面的解释</h6><p>孤独症与正常被试在注意机制上的不同：</p>
-<ol>
-<li>孤独症患者观察社交情景的方式异于正常人（主要表现在关注点的不同）</li>
-<li>孤独症被试较难将注意定位于他人眼神指向的地方</li>
-</ol>
-<p>当然，不能否认他们体验到的消极情感可能对于他们的症状起更大的影响。-</p>
-
+          <h1 id="认知心理学：注意部分笔记"><a href="#认知心理学：注意部分笔记" class="headerlink" title="认知心理学：注意部分笔记"></a>认知心理学：注意部分笔记</h1>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/02/02/%E8%AE%A4%E7%9F%A5%E5%BF%83%E7%90%86%E5%AD%A6%EF%BC%9A%E6%B3%A8%E6%84%8F%E9%83%A8%E5%88%86%E7%AC%94%E8%AE%B0/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1368,7 +1277,7 @@ categories: Read
     </span>
     <span title="Reading time total">NaN:aN</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
 
 
@@ -1423,7 +1332,7 @@ show_date_time();
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/pisces.js"></script>
+<script src="/js/schemes/muse.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
@@ -1456,6 +1365,10 @@ show_date_time();
   
 
   
+
+  
+
+  <script async src="/js/cursor/fireworks.js"></script>
 
 </body>
 </html>
