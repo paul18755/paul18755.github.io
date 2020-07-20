@@ -1,33 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Python编程：从入门到实践3</title>
-    <url>/2020/02/04/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B53/</url>
-    <content><![CDATA[<h2 id="第三章-列表简介"><a href="#第三章-列表简介" class="headerlink" title="第三章 列表简介"></a>第三章 列表简介</h2><a id="more"></a>
-<h3 id="3-1-列表"><a href="#3-1-列表" class="headerlink" title="3.1 列表"></a>3.1 列表</h3><p><strong>Python用方括号（[ ]）表示列表，并用逗号分隔其中的元素</strong></p>
-<h4 id="3-1-1-访问列表元素"><a href="#3-1-1-访问列表元素" class="headerlink" title="3.1.1 访问列表元素"></a>3.1.1 访问列表元素</h4><blockquote>
-<p>提取元素从<strong>0</strong>开始<br>提取最后一个值可以让索引等于-1</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">bicycles = [<span class="string">'trek'</span>, <span class="string">'cannondale'</span>, <span class="string">'redline'</span>, <span class="string">'specialized'</span>]</span><br><span class="line">print(bicycles[<span class="number">0</span>])</span><br><span class="line">print(bicycles[<span class="number">0</span>].title())</span><br><span class="line">print(bicycles[<span class="number">1</span>]) <span class="comment">#索引1是第二个值</span></span><br><span class="line">print(bicycles[<span class="number">-1</span>])</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-2-修改、添加和删除元素"><a href="#3-2-修改、添加和删除元素" class="headerlink" title="3.2 修改、添加和删除元素"></a>3.2 修改、添加和删除元素</h3><blockquote>
-<p>append()在列表末尾添加元素<br>insert(1,’<em>‘) 在列表[1]处添加</em>元素<br>del 列表名[索引] 该语句实现删除列表中的元素的作用<br>pop()方法用于即删除元素的同时又使用这个元素<br>remove()方法用于删除已知的值而不知道索引的情况下</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">motorcycles = [<span class="string">'honda'</span>, <span class="string">'yamaha'</span>, <span class="string">'suzuki'</span>]</span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles[<span class="number">0</span>] = <span class="string">'ducati'</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles[<span class="number">0</span>] = <span class="string">'honda'</span></span><br><span class="line">motorcycles.append(<span class="string">'ducati'</span>) <span class="comment">#添加在末尾</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles.insert(<span class="number">0</span>,<span class="string">'ducati2'</span>) <span class="comment">#指定位置添加</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line"><span class="keyword">del</span> motorcycles[<span class="number">0</span>]</span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">popped_motorcycles = motorcycles.pop() <span class="comment">#括号中可以指定索引，不指定则随机</span></span><br><span class="line">print(motorcycles)</span><br><span class="line">print(popped_motorcycles)</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-3-组织列表"><a href="#3-3-组织列表" class="headerlink" title="3.3 组织列表"></a>3.3 组织列表</h3><h4 id="3-3-1-永久性排序"><a href="#3-3-1-永久性排序" class="headerlink" title="3.3.1 永久性排序"></a>3.3.1 永久性排序</h4><blockquote>
-<p>sort()方法实现列表的永久性排序,传递reverse=True则表示与字母顺序相反<br>sorted(列表名)方法实现暂时对列表的排序<br>reverse()方法实现对列表中元素的顺序的反转（不按字母表顺序）<br>len(列表名)确定列表长度</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cars = [<span class="string">'bmw'</span>, <span class="string">'audi'</span>, <span class="string">'toyota'</span>, <span class="string">'subaru'</span>]</span><br><span class="line">cars.sort()</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">cars.sort(reverse=<span class="literal">True</span>)</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">cars.reverse()</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">print(len(cars))</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python list</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python编程：从入门到实践2</title>
     <url>/2020/02/03/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B52/</url>
     <content><![CDATA[<h1 id="Python编程：从入门到实践2"><a href="#Python编程：从入门到实践2" class="headerlink" title="Python编程：从入门到实践2"></a>Python编程：从入门到实践2</h1><a id="more"></a>
@@ -92,6 +65,33 @@
       </categories>
       <tags>
         <tag>PYTHON LIST</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python编程：从入门到实践3</title>
+    <url>/2020/02/04/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B53/</url>
+    <content><![CDATA[<h2 id="第三章-列表简介"><a href="#第三章-列表简介" class="headerlink" title="第三章 列表简介"></a>第三章 列表简介</h2><a id="more"></a>
+<h3 id="3-1-列表"><a href="#3-1-列表" class="headerlink" title="3.1 列表"></a>3.1 列表</h3><p><strong>Python用方括号（[ ]）表示列表，并用逗号分隔其中的元素</strong></p>
+<h4 id="3-1-1-访问列表元素"><a href="#3-1-1-访问列表元素" class="headerlink" title="3.1.1 访问列表元素"></a>3.1.1 访问列表元素</h4><blockquote>
+<p>提取元素从<strong>0</strong>开始<br>提取最后一个值可以让索引等于-1</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">bicycles = [<span class="string">'trek'</span>, <span class="string">'cannondale'</span>, <span class="string">'redline'</span>, <span class="string">'specialized'</span>]</span><br><span class="line">print(bicycles[<span class="number">0</span>])</span><br><span class="line">print(bicycles[<span class="number">0</span>].title())</span><br><span class="line">print(bicycles[<span class="number">1</span>]) <span class="comment">#索引1是第二个值</span></span><br><span class="line">print(bicycles[<span class="number">-1</span>])</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-2-修改、添加和删除元素"><a href="#3-2-修改、添加和删除元素" class="headerlink" title="3.2 修改、添加和删除元素"></a>3.2 修改、添加和删除元素</h3><blockquote>
+<p>append()在列表末尾添加元素<br>insert(1,’<em>‘) 在列表[1]处添加</em>元素<br>del 列表名[索引] 该语句实现删除列表中的元素的作用<br>pop()方法用于即删除元素的同时又使用这个元素<br>remove()方法用于删除已知的值而不知道索引的情况下</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">motorcycles = [<span class="string">'honda'</span>, <span class="string">'yamaha'</span>, <span class="string">'suzuki'</span>]</span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles[<span class="number">0</span>] = <span class="string">'ducati'</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles[<span class="number">0</span>] = <span class="string">'honda'</span></span><br><span class="line">motorcycles.append(<span class="string">'ducati'</span>) <span class="comment">#添加在末尾</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles.insert(<span class="number">0</span>,<span class="string">'ducati2'</span>) <span class="comment">#指定位置添加</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line"><span class="keyword">del</span> motorcycles[<span class="number">0</span>]</span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">popped_motorcycles = motorcycles.pop() <span class="comment">#括号中可以指定索引，不指定则随机</span></span><br><span class="line">print(motorcycles)</span><br><span class="line">print(popped_motorcycles)</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-3-组织列表"><a href="#3-3-组织列表" class="headerlink" title="3.3 组织列表"></a>3.3 组织列表</h3><h4 id="3-3-1-永久性排序"><a href="#3-3-1-永久性排序" class="headerlink" title="3.3.1 永久性排序"></a>3.3.1 永久性排序</h4><blockquote>
+<p>sort()方法实现列表的永久性排序,传递reverse=True则表示与字母顺序相反<br>sorted(列表名)方法实现暂时对列表的排序<br>reverse()方法实现对列表中元素的顺序的反转（不按字母表顺序）<br>len(列表名)确定列表长度</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cars = [<span class="string">'bmw'</span>, <span class="string">'audi'</span>, <span class="string">'toyota'</span>, <span class="string">'subaru'</span>]</span><br><span class="line">cars.sort()</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">cars.sort(reverse=<span class="literal">True</span>)</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">cars.reverse()</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">print(len(cars))</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python list</tag>
       </tags>
   </entry>
   <entry>
@@ -210,6 +210,62 @@
       </tags>
   </entry>
   <entry>
+    <title>《人类简史》[以] 尤瓦尔·赫拉利 读书笔记</title>
+    <url>/2020/04/14/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E4%BB%A5-%E5%B0%A4%E7%93%A6%E5%B0%94%C2%B7%E8%B5%AB%E6%8B%89%E5%88%A9-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1 id="《人类简史》-以-尤瓦尔·赫拉利-读书笔记"><a href="#《人类简史》-以-尤瓦尔·赫拉利-读书笔记" class="headerlink" title="《人类简史》[以] 尤瓦尔·赫拉利 读书笔记"></a>《人类简史》[以] 尤瓦尔·赫拉利 读书笔记</h1><a id="more"></a>
+<img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200415090622.jpg" height="1610" width="1080"/>
+
+<h2 id="第五章-史上最大骗局"><a href="#第五章-史上最大骗局" class="headerlink" title="第五章 史上最大骗局"></a>第五章 史上最大骗局</h2><blockquote>
+<p>奢侈品上常有这样的情况，就是原本的奢侈品往往最后会成为必需品，而且带来新的义务。等到习惯某种奢侈品，就开始认为这是天经地义。接着就是一种依赖。最后生活中就再也不能没有这种奢侈品了。</p>
+</blockquote>
+<blockquote>
+<p>随着时间过去，种麦子这个原本看来划算的选择，变成越来越沉重的负担。儿童大批死亡，而成人也得忙得满头大汗，才能换得面包。公元前8500年杰里科人过的生活，平均来说要比公元前9500年或公元前13000年更为辛苦。但没有人发现究竟发生了什么事。每一代人都只是继续着上一代生活的方式，在这里修一点，那里改一些。但矛盾的是，一连串为了让生活更轻松的“进步”，最后却像是在这些农民的身上加了一道又一道沉重的枷锁。[…..]我可以随手就寄一封电子邮件，传送到地球的另一边，而且如果收件人在线，可能只要一分钟就能收到回信了。我确实省下了所有麻烦和时间，但生活真的更轻松了吗？”</p>
+</blockquote>
+<hr>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;摘录来自: Yuval Noah Harari. “人类简史：从动物到上帝（图文精编版） (开放历史系列)。” Apple Books.</p>
+<p>&nbsp;&nbsp;&nbsp;生活真的变轻松了吗？更重要的是作者在后文提到的，“<strong>农业革命要成功，并不需要某个地区的所有部落都无异议通过</strong>”。我们可以设想我们就处在历史这样的洪流中，这种洪流如蝗虫蚁群一样，他们一窝蜂地进行覆盖式的进攻，而且这种进攻往往不需要击倒一大片城墙，他们只需要如激光一样集中于一点，击破他，然后蔓延开来。这种对生活的陷阱的力量在于他不是一种远而美的东西，他是可以迅速地带来利好的，正如文中，“<strong>农业可以促成人口迅速增长，农业部落光靠人数就可以完胜采集部落，这时候采集部落只剩下两种选择：一是逃跑，第二就是拿起锄头加入农业行业。</strong>”这正是其诱惑力，迅速给予你力量的诱惑力完全打破了原本的天平，推动着整个蝗虫蚁群向四周蔓延。</p>
+<h2 id="第十九章-认识你自己"><a href="#第十九章-认识你自己" class="headerlink" title="第十九章 认识你自己"></a>第十九章 认识你自己</h2><blockquote>
+<p>“自由主义政治的基本想法，是认为选民个人最知道好坏，我们没有必要由政府老大哥来告诉人民何者为善、何者为恶。自由主义经济学的基本想法，是客户永远是对的。自由主义艺术的基本想法，是各花入各眼，看的人觉得美就是美。自由主义的学校和大学，叫学生要为自己多想想。广告叫我们：“做就对了！”就连动作片、舞台剧、八点档、小说和流行歌，都不断在洗脑着：“忠于自我”、“倾听你自己”、“顺从你的渴望”。对于这种观点，卢梭的说法称得上是经典：“我觉得好的，就是好的。我觉得坏的，就是坏的。”<br>如果我们从小到大不断被灌输这些口号，就很可能相信快乐是种主观的感受，而是否快乐当然就是每个人自己最清楚。然而，这不过是自由主义独有的一个观点而已。历史上大多数的宗教和意识形态认为，关于善、关于美、关于何事应为，都有客观的标准。在这些宗教和意识形态看来，一般人自己的自己的感觉和偏好可能并不可信。从老子到苏格拉底，哲学家不断告诫人们：“认识你自己！”但言下之意也就是一般人并不知道自己真实的自我，也因此很可能忽略了真正的快乐。弗洛伊德很可能也会这么想。”</p>
+</blockquote>
+<blockquote>
+<p>“心理学要研究主观幸福感，靠的是受试者要能够正确判断自己的快乐程度；但矛盾的是，之所以会出现心理学，正是因为人类并不正真了解自己，有时候需要靠着专业人士的帮助，以避免自我毁灭的行为。”</p>
+</blockquote>
+<hr>
+<p>摘录来自: Yuval Noah Harari. “人类简史：从动物到上帝（图文精编版） (开放历史系列)。” Apple Books.</p>
+<h2 id="观后"><a href="#观后" class="headerlink" title="观后"></a>观后</h2><blockquote>
+<p>“主体间”事物的存在，靠的是许多个人主观意识之间的连接网络。就算有某个人改变了想法，甚至过世，对这项事物的影响并不大。”</p>
+</blockquote>
+<p>毫无疑问这是一本很有趣的书，这算是我接触的第一本全球史的书，但是作者讲的就像我们在看一本描述了很长时间的一个故事的小说一样，虽然我只是每天花一个小时读但是没有那种读着读着有枯燥的感觉。<br>然后书里其实智人之前的历史，例如尼安德特人这类的其实没有给我太多的触动。更多的到第三部分人类的融合统一——现代史的部分。第一个让我大呼精彩的是作者对货币、帝国和宗教这三者的一在全球传播的解读。帝国、宗教这些都是属于“主体间”的一种事物，他们没有实质，就像自由、法律、政治结构但是却对我们人类社会的形成强而有力。<br>而更让我有与生活相关的感触的是第四部分科学革命中，对于科学发展中政治力量，经济力量的影响。但开头这话确实没错，“现代科学与之前的知识体系有三大不同：承认自己的无知，以观察和数学为中心，取得新能力”。探索新知确实是我们现在的目的，但处在象牙塔一头往前撞去确实过于一意孤行了。最早科技的主要战场就是在战争中，为了研发武器，坦克、原子弹等等，这其中的政治目的显而易见，也可以是政治目的推动了科技的发展（<strong>科学与帝国的联姻这个标题太棒了</strong>），而后“信贷”的方式筹集资金推动探索，能源需求下工业机械化发展。这给我以前的想法有了很大的冲击，这种谈历史的方式和我在历史教科书上看的完全不一样，没有什么有利影响，不利影响和评价，更多呈现的是整个全球下各种事件发展中的相互的影响，科技如何影响了政治、经济、资本主义怎么让科学得以快速发展，这些发展背后的原因是很么？是战争征服殖民的需要？金融市场和信贷如何发展而来？</p>
+]]></content>
+      <categories>
+        <category>Read</category>
+      </categories>
+      <tags>
+        <tag>科学与经济政治</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《沉默的巡游》-东野圭吾 读书笔记</title>
+    <url>/2020/04/26/%E3%80%8A%E6%B2%89%E9%BB%98%E7%9A%84%E5%B7%A1%E6%B8%B8%E3%80%8B-%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426142808.png" height="1610" width="1080"/>
+
+<p>太太太太太太棒了！<a id="more"></a>真“不到最后，绝不落幕”。让我找到了最开始看解忧杂货铺看恶意的感受，不是说情节之类的相似，而是让我激动，熟悉，又不自觉说他来了他开始了的那种兴奋。</p>
+<img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426143459.jpg" height="800" width="856"/>
+
+
+<blockquote>
+<p>“然而，佐织的话令留美倍感意外。她说：“对我而言，和高垣智也在一起的时光与成为歌手的梦想同样重要。人为什么要实现梦想，不就是因为那样会获得幸福吗？对于现在的我来说，陪在智也的身边就已经很幸福了。为了另一种幸福而放弃眼前的幸福，您不觉得这样做很奇怪吗？”</p>
+</blockquote>
+<p>&nbsp;&nbsp;&nbsp;为了另一种幸福而放弃眼前的幸福。这句话给我很大的触动。从留美（一心想把佐织培养成歌手）的角度来说，“<strong>成为歌手明星</strong>”和“<strong>与一个毛头小子谈恋爱</strong>”这两者之间简直是天差地别，所以她以一种教化的角度，以一种为她未来着想的角度去说，要自律，要专心练歌，要等待，等到实现梦想之后这些都很容易得到了。这种观念其实很常见，这种观念把幸福仿佛分了不同的阶层，明星很明显是上层而与毛头小子谈恋爱是可以暂时搁置的事情，这就导致了两个人看待现状的方式完全不同。在留美看来，这是在<strong>为了以后的幸福而忍受现在的磨难</strong>；而在佐织看来，<strong>是为了另一种幸福而放弃眼前的幸福</strong><br>&nbsp;&nbsp;&nbsp;这并不是在观念上的批判，现在辛苦点以后会很幸福这种观念看法并不是错误的，反而是存在延迟满足的优越性的。我想把关注点聚焦在两个人的角度位置上，留美认为现状是一个应该暂时<strong>克制</strong>的状态，而佐织认为现状是<strong>眼前的幸福</strong>。毫无疑问这是角度的不同导致看法的不同，而不是观念性质上的错误。这就涉及到<strong>共情</strong>的问题，留美出发点是想培养一个歌手，塑造给她一个美好的未来（可能更深的出发点是满足自己未能成功的遗憾），但是她并没有站在佐织的角度，眼前的恋情是什么样的？她第一次遇见心仪的人，第一次挽起自己喜欢的男孩子的手臂，他与她聊天时的欢乐等等，这是幸福，而且相比于未来，<strong>现在的幸福更加地触手可及</strong>，对她的感受冲击更加强烈。相比于有希望但有些遥远的成名，做大明星，唱歌，这种恋人之间的情感联系毫无疑问更加地让她的情感得到满足。<br>&nbsp;&nbsp;&nbsp;除了两人看法的不同，佐织对现在的感受给了我更多思考。<em>现在忍受辛苦以后会更美好，现在的事只是小事，要为了更加伟大更加宏大的目标去奋斗，而且这种奋斗必须头悬梁锥刺股历经九九八十一难。</em> 社会价值观的塑造很容易让我们把欲望投射到未来或者说未知无限的可能性上，我们相信以后会更好，哪怕现在已经一般般好了。我有时也会比较，就像留美那样，仿佛不同的幸福之间也存在阶级之争，A总比B差，C也比B差。但实际上佐织简单的一句话实在再透彻不过了。并不是说“成为歌手”这个梦想就应该得到否定，而是要更加地去体验现在的生活带来的情感感受，更深刻地体验现在。未来仍然值得追求，但是要做好拼尽全力的准备，而且自己做好准备。</p>
+]]></content>
+      <categories>
+        <category>Read</category>
+      </categories>
+      <tags>
+        <tag>东野圭吾回来了</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>《存在主义咖啡馆》读书笔记</title>
     <url>/2020/02/20/%E3%80%8A%E5%AD%98%E5%9C%A8%E4%B8%BB%E4%B9%89%E5%92%96%E5%95%A1%E9%A6%86%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200220164914.jpg" height="1610" width="1080"/>
@@ -288,62 +344,6 @@
       </categories>
       <tags>
         <tag>读书 信口雌黄</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《沉默的巡游》-东野圭吾 读书笔记</title>
-    <url>/2020/04/26/%E3%80%8A%E6%B2%89%E9%BB%98%E7%9A%84%E5%B7%A1%E6%B8%B8%E3%80%8B-%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426142808.png" height="1610" width="1080"/>
-
-<p>太太太太太太棒了！<a id="more"></a>真“不到最后，绝不落幕”。让我找到了最开始看解忧杂货铺看恶意的感受，不是说情节之类的相似，而是让我激动，熟悉，又不自觉说他来了他开始了的那种兴奋。</p>
-<img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426143459.jpg" height="800" width="856"/>
-
-
-<blockquote>
-<p>“然而，佐织的话令留美倍感意外。她说：“对我而言，和高垣智也在一起的时光与成为歌手的梦想同样重要。人为什么要实现梦想，不就是因为那样会获得幸福吗？对于现在的我来说，陪在智也的身边就已经很幸福了。为了另一种幸福而放弃眼前的幸福，您不觉得这样做很奇怪吗？”</p>
-</blockquote>
-<p>&nbsp;&nbsp;&nbsp;为了另一种幸福而放弃眼前的幸福。这句话给我很大的触动。从留美（一心想把佐织培养成歌手）的角度来说，“<strong>成为歌手明星</strong>”和“<strong>与一个毛头小子谈恋爱</strong>”这两者之间简直是天差地别，所以她以一种教化的角度，以一种为她未来着想的角度去说，要自律，要专心练歌，要等待，等到实现梦想之后这些都很容易得到了。这种观念其实很常见，这种观念把幸福仿佛分了不同的阶层，明星很明显是上层而与毛头小子谈恋爱是可以暂时搁置的事情，这就导致了两个人看待现状的方式完全不同。在留美看来，这是在<strong>为了以后的幸福而忍受现在的磨难</strong>；而在佐织看来，<strong>是为了另一种幸福而放弃眼前的幸福</strong><br>&nbsp;&nbsp;&nbsp;这并不是在观念上的批判，现在辛苦点以后会很幸福这种观念看法并不是错误的，反而是存在延迟满足的优越性的。我想把关注点聚焦在两个人的角度位置上，留美认为现状是一个应该暂时<strong>克制</strong>的状态，而佐织认为现状是<strong>眼前的幸福</strong>。毫无疑问这是角度的不同导致看法的不同，而不是观念性质上的错误。这就涉及到<strong>共情</strong>的问题，留美出发点是想培养一个歌手，塑造给她一个美好的未来（可能更深的出发点是满足自己未能成功的遗憾），但是她并没有站在佐织的角度，眼前的恋情是什么样的？她第一次遇见心仪的人，第一次挽起自己喜欢的男孩子的手臂，他与她聊天时的欢乐等等，这是幸福，而且相比于未来，<strong>现在的幸福更加地触手可及</strong>，对她的感受冲击更加强烈。相比于有希望但有些遥远的成名，做大明星，唱歌，这种恋人之间的情感联系毫无疑问更加地让她的情感得到满足。<br>&nbsp;&nbsp;&nbsp;除了两人看法的不同，佐织对现在的感受给了我更多思考。<em>现在忍受辛苦以后会更美好，现在的事只是小事，要为了更加伟大更加宏大的目标去奋斗，而且这种奋斗必须头悬梁锥刺股历经九九八十一难。</em> 社会价值观的塑造很容易让我们把欲望投射到未来或者说未知无限的可能性上，我们相信以后会更好，哪怕现在已经一般般好了。我有时也会比较，就像留美那样，仿佛不同的幸福之间也存在阶级之争，A总比B差，C也比B差。但实际上佐织简单的一句话实在再透彻不过了。并不是说“成为歌手”这个梦想就应该得到否定，而是要更加地去体验现在的生活带来的情感感受，更深刻地体验现在。未来仍然值得追求，但是要做好拼尽全力的准备，而且自己做好准备。</p>
-]]></content>
-      <categories>
-        <category>Read</category>
-      </categories>
-      <tags>
-        <tag>东野圭吾回来了</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《人类简史》[以] 尤瓦尔·赫拉利 读书笔记</title>
-    <url>/2020/04/14/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-%E4%BB%A5-%E5%B0%A4%E7%93%A6%E5%B0%94%C2%B7%E8%B5%AB%E6%8B%89%E5%88%A9-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1 id="《人类简史》-以-尤瓦尔·赫拉利-读书笔记"><a href="#《人类简史》-以-尤瓦尔·赫拉利-读书笔记" class="headerlink" title="《人类简史》[以] 尤瓦尔·赫拉利 读书笔记"></a>《人类简史》[以] 尤瓦尔·赫拉利 读书笔记</h1><a id="more"></a>
-<img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200415090622.jpg" height="1610" width="1080"/>
-
-<h2 id="第五章-史上最大骗局"><a href="#第五章-史上最大骗局" class="headerlink" title="第五章 史上最大骗局"></a>第五章 史上最大骗局</h2><blockquote>
-<p>奢侈品上常有这样的情况，就是原本的奢侈品往往最后会成为必需品，而且带来新的义务。等到习惯某种奢侈品，就开始认为这是天经地义。接着就是一种依赖。最后生活中就再也不能没有这种奢侈品了。</p>
-</blockquote>
-<blockquote>
-<p>随着时间过去，种麦子这个原本看来划算的选择，变成越来越沉重的负担。儿童大批死亡，而成人也得忙得满头大汗，才能换得面包。公元前8500年杰里科人过的生活，平均来说要比公元前9500年或公元前13000年更为辛苦。但没有人发现究竟发生了什么事。每一代人都只是继续着上一代生活的方式，在这里修一点，那里改一些。但矛盾的是，一连串为了让生活更轻松的“进步”，最后却像是在这些农民的身上加了一道又一道沉重的枷锁。[…..]我可以随手就寄一封电子邮件，传送到地球的另一边，而且如果收件人在线，可能只要一分钟就能收到回信了。我确实省下了所有麻烦和时间，但生活真的更轻松了吗？”</p>
-</blockquote>
-<hr>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;摘录来自: Yuval Noah Harari. “人类简史：从动物到上帝（图文精编版） (开放历史系列)。” Apple Books.</p>
-<p>&nbsp;&nbsp;&nbsp;生活真的变轻松了吗？更重要的是作者在后文提到的，“<strong>农业革命要成功，并不需要某个地区的所有部落都无异议通过</strong>”。我们可以设想我们就处在历史这样的洪流中，这种洪流如蝗虫蚁群一样，他们一窝蜂地进行覆盖式的进攻，而且这种进攻往往不需要击倒一大片城墙，他们只需要如激光一样集中于一点，击破他，然后蔓延开来。这种对生活的陷阱的力量在于他不是一种远而美的东西，他是可以迅速地带来利好的，正如文中，“<strong>农业可以促成人口迅速增长，农业部落光靠人数就可以完胜采集部落，这时候采集部落只剩下两种选择：一是逃跑，第二就是拿起锄头加入农业行业。</strong>”这正是其诱惑力，迅速给予你力量的诱惑力完全打破了原本的天平，推动着整个蝗虫蚁群向四周蔓延。</p>
-<h2 id="第十九章-认识你自己"><a href="#第十九章-认识你自己" class="headerlink" title="第十九章 认识你自己"></a>第十九章 认识你自己</h2><blockquote>
-<p>“自由主义政治的基本想法，是认为选民个人最知道好坏，我们没有必要由政府老大哥来告诉人民何者为善、何者为恶。自由主义经济学的基本想法，是客户永远是对的。自由主义艺术的基本想法，是各花入各眼，看的人觉得美就是美。自由主义的学校和大学，叫学生要为自己多想想。广告叫我们：“做就对了！”就连动作片、舞台剧、八点档、小说和流行歌，都不断在洗脑着：“忠于自我”、“倾听你自己”、“顺从你的渴望”。对于这种观点，卢梭的说法称得上是经典：“我觉得好的，就是好的。我觉得坏的，就是坏的。”<br>如果我们从小到大不断被灌输这些口号，就很可能相信快乐是种主观的感受，而是否快乐当然就是每个人自己最清楚。然而，这不过是自由主义独有的一个观点而已。历史上大多数的宗教和意识形态认为，关于善、关于美、关于何事应为，都有客观的标准。在这些宗教和意识形态看来，一般人自己的自己的感觉和偏好可能并不可信。从老子到苏格拉底，哲学家不断告诫人们：“认识你自己！”但言下之意也就是一般人并不知道自己真实的自我，也因此很可能忽略了真正的快乐。弗洛伊德很可能也会这么想。”</p>
-</blockquote>
-<blockquote>
-<p>“心理学要研究主观幸福感，靠的是受试者要能够正确判断自己的快乐程度；但矛盾的是，之所以会出现心理学，正是因为人类并不正真了解自己，有时候需要靠着专业人士的帮助，以避免自我毁灭的行为。”</p>
-</blockquote>
-<hr>
-<p>摘录来自: Yuval Noah Harari. “人类简史：从动物到上帝（图文精编版） (开放历史系列)。” Apple Books.</p>
-<h2 id="观后"><a href="#观后" class="headerlink" title="观后"></a>观后</h2><blockquote>
-<p>“主体间”事物的存在，靠的是许多个人主观意识之间的连接网络。就算有某个人改变了想法，甚至过世，对这项事物的影响并不大。”</p>
-</blockquote>
-<p>毫无疑问这是一本很有趣的书，这算是我接触的第一本全球史的书，但是作者讲的就像我们在看一本描述了很长时间的一个故事的小说一样，虽然我只是每天花一个小时读但是没有那种读着读着有枯燥的感觉。<br>然后书里其实智人之前的历史，例如尼安德特人这类的其实没有给我太多的触动。更多的到第三部分人类的融合统一——现代史的部分。第一个让我大呼精彩的是作者对货币、帝国和宗教这三者的一在全球传播的解读。帝国、宗教这些都是属于“主体间”的一种事物，他们没有实质，就像自由、法律、政治结构但是却对我们人类社会的形成强而有力。<br>而更让我有与生活相关的感触的是第四部分科学革命中，对于科学发展中政治力量，经济力量的影响。但开头这话确实没错，“现代科学与之前的知识体系有三大不同：承认自己的无知，以观察和数学为中心，取得新能力”。探索新知确实是我们现在的目的，但处在象牙塔一头往前撞去确实过于一意孤行了。最早科技的主要战场就是在战争中，为了研发武器，坦克、原子弹等等，这其中的政治目的显而易见，也可以是政治目的推动了科技的发展（<strong>科学与帝国的联姻这个标题太棒了</strong>），而后“信贷”的方式筹集资金推动探索，能源需求下工业机械化发展。这给我以前的想法有了很大的冲击，这种谈历史的方式和我在历史教科书上看的完全不一样，没有什么有利影响，不利影响和评价，更多呈现的是整个全球下各种事件发展中的相互的影响，科技如何影响了政治、经济、资本主义怎么让科学得以快速发展，这些发展背后的原因是很么？是战争征服殖民的需要？金融市场和信贷如何发展而来？</p>
-]]></content>
-      <categories>
-        <category>Read</category>
-      </categories>
-      <tags>
-        <tag>科学与经济政治</tag>
       </tags>
   </entry>
   <entry>
@@ -434,6 +434,14 @@ categories: Read
       <tags>
         <tag>心理统计</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>有感而发</title>
+    <url>/2020/05/20/%E6%9C%89%E6%84%9F%E8%80%8C%E5%8F%91/</url>
+    <content><![CDATA[<p>有两件事。</p>
+<a id="more"></a>
+<p>&nbsp;&nbsp;&nbsp;第一是昨天晚上大家一起开会讨论毕业论文时，老师给我提了建议，把工作记忆容量这个变量去掉，减少工作量。然后下个星期要继续开会，当然只有包括我在内的6个人需要继续，其他的同学没有太大问题了。<br>&nbsp;&nbsp;&nbsp;第二是我在B站正好刷到了复旦的博士郭威在网上发视频纠正李永乐老师的科普视频中的错误，但是他的语气其实很差，会有一些诸如“这个人可能有什么问题”这样的语言。这给我的冲击挺大的，毕竟是博士，硕士之类的与知识息息相关的人，我突然就觉得我的想象太过于美好，我以为考了研究生，面对的是进入一座象牙塔，我也一直很抵触深入的根据心理学关于行为的知识来揣测某个人的内心，或者轻易的用弗洛伊德的防御机制就说某个人的行为是在投射，我很不喜欢去探讨这些人性中的比较灰暗的东西。<br>&nbsp;&nbsp;&nbsp;但我的整个心情还是很差。第一件事就让我感觉心里很压抑。好像是对自己不够好，对自己做的不够完善不够完美的一种自卑，害怕的感受。如果就事论事，开会不代表“做的差”，而是代表还有需要讨论的地方，内容有需要修改的地方，其实老师也有说了我的选题不错。 但是我归入了还需要进行下个星期还需要讨论的成员之一好像在那一瞬间给了我很大的冲击，我突然反省我是否太害怕失败了，从第一次开会开始老师认为我的选题不错好像给了我很高的起点，这让我害怕失败，我害怕表现出自己缺乏能力的情况，我不禁联想到我很多时候课堂上不想发言，我觉得好像也有一些害怕表现出自己缺乏能力的情况，所以我选择回避，避而不言。回到昨晚的这次开会，我想在开会一结束我产生了很强的抑郁感受，我突然就对科研有了一些害怕，我不知道这是不是因为一时的害怕自己失败（因为和其他题目都没搞懂的同学要一起在下个星期开会，而一些单纯的参照其他论文做实验的同学反而不用开会了），害怕承认自己其实并非高人一等，同时联系有许多论文再说研究生的抑郁程度是较高的，所以有些将情感蔓延到了整个科研的环境中，将害怕恐惧的对象转移到了科研上。而且同时在网络上的这件事让我感觉更难受，我发现博士并不是像许多富有盛名的稍微老一些的形象，科学家中也存在恶语相向，也存在人身攻击，也不是每个人都特别理性的能够就事论事。我发现我一直为我考研的目标画的象牙塔好像崩塌了。我突然对我的目标有了很多怀疑<br>&nbsp;&nbsp;&nbsp;但我想好好分析，从理性的角度来看第一件事，首先我的选题很好，这是老师两次开会都强调的，那么其次，开会不代表着你整个论文的失败，开会意味着老师期待着你的持续反馈，需要你继续的钻研并且要即时投入精力，所以有一个时间限制来了解具体进度，这是需要开会的一点，哪怕是和其他选题都没完善的同学一起开，这不代表你的选题就失败，其他同学整个选题都在改，不代表我已经是失败的了。而看不用开会的同学，为什么不用开会，是做好确实做得好，但是做得好不代表已经完成了，不代表毕业论文就结束了。况且部分做得好只是参考了老师分享的论文然后照着做。所以不要将情绪过度蔓延，这并不会和以后有可能的科研生活有什么太大的关系。而且重点需要放在你确实在阅读类型上的理论基础还没有选择完善，那么你需要加紧进度。<br>&nbsp;&nbsp;&nbsp;这也是从另一个角度来看，我下星期需要开会的话其实给了我压力，我有想法去先详细的构思实验过程， 先前我都只是机械地看文章一直处于一种自满的状态，我想这次开会给我敲响了警钟。同样一时的选题好不代表你的论文已经完成，不代表你已经成功。而且正因为选题好，你没有老师分享的文献直接给你，所以你需要时刻加紧脚步，平衡自己考研的准备和论文的写作，要一直行动，不要停歇下来，可以走得慢，可以走得快，但别摊着不动。可以心里焦急，但是要记得给时间一点时间</p>
+]]></content>
   </entry>
   <entry>
     <title>用Python处理E-prime导出的数据文件</title>
@@ -578,13 +586,5 @@ categories: Read
       <tags>
         <tag>注意、认知</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>有感而发</title>
-    <url>/2020/05/20/%E6%9C%89%E6%84%9F%E8%80%8C%E5%8F%91/</url>
-    <content><![CDATA[<p>有两件事。</p>
-<a id="more"></a>
-<p>&nbsp;&nbsp;&nbsp;第一是昨天晚上大家一起开会讨论毕业论文时，老师给我提了建议，把工作记忆容量这个变量去掉，减少工作量。然后下个星期要继续开会，当然只有包括我在内的6个人需要继续，其他的同学没有太大问题了。<br>&nbsp;&nbsp;&nbsp;第二是我在B站正好刷到了复旦的博士郭威在网上发视频纠正李永乐老师的科普视频中的错误，但是他的语气其实很差，会有一些诸如“这个人可能有什么问题”这样的语言。这给我的冲击挺大的，毕竟是博士，硕士之类的与知识息息相关的人，我突然就觉得我的想象太过于美好，我以为考了研究生，面对的是进入一座象牙塔，我也一直很抵触深入的根据心理学关于行为的知识来揣测某个人的内心，或者轻易的用弗洛伊德的防御机制就说某个人的行为是在投射，我很不喜欢去探讨这些人性中的比较灰暗的东西。<br>&nbsp;&nbsp;&nbsp;但我的整个心情还是很差。第一件事就让我感觉心里很压抑。好像是对自己不够好，对自己做的不够完善不够完美的一种自卑，害怕的感受。如果就事论事，开会不代表“做的差”，而是代表还有需要讨论的地方，内容有需要修改的地方，其实老师也有说了我的选题不错。 但是我归入了还需要进行下个星期还需要讨论的成员之一好像在那一瞬间给了我很大的冲击，我突然反省我是否太害怕失败了，从第一次开会开始老师认为我的选题不错好像给了我很高的起点，这让我害怕失败，我害怕表现出自己缺乏能力的情况，我不禁联想到我很多时候课堂上不想发言，我觉得好像也有一些害怕表现出自己缺乏能力的情况，所以我选择回避，避而不言。回到昨晚的这次开会，我想在开会一结束我产生了很强的抑郁感受，我突然就对科研有了一些害怕，我不知道这是不是因为一时的害怕自己失败（因为和其他题目都没搞懂的同学要一起在下个星期开会，而一些单纯的参照其他论文做实验的同学反而不用开会了），害怕承认自己其实并非高人一等，同时联系有许多论文再说研究生的抑郁程度是较高的，所以有些将情感蔓延到了整个科研的环境中，将害怕恐惧的对象转移到了科研上。而且同时在网络上的这件事让我感觉更难受，我发现博士并不是像许多富有盛名的稍微老一些的形象，科学家中也存在恶语相向，也存在人身攻击，也不是每个人都特别理性的能够就事论事。我发现我一直为我考研的目标画的象牙塔好像崩塌了。我突然对我的目标有了很多怀疑<br>&nbsp;&nbsp;&nbsp;但我想好好分析，从理性的角度来看第一件事，首先我的选题很好，这是老师两次开会都强调的，那么其次，开会不代表着你整个论文的失败，开会意味着老师期待着你的持续反馈，需要你继续的钻研并且要即时投入精力，所以有一个时间限制来了解具体进度，这是需要开会的一点，哪怕是和其他选题都没完善的同学一起开，这不代表你的选题就失败，其他同学整个选题都在改，不代表我已经是失败的了。而看不用开会的同学，为什么不用开会，是做好确实做得好，但是做得好不代表已经完成了，不代表毕业论文就结束了。况且部分做得好只是参考了老师分享的论文然后照着做。所以不要将情绪过度蔓延，这并不会和以后有可能的科研生活有什么太大的关系。而且重点需要放在你确实在阅读类型上的理论基础还没有选择完善，那么你需要加紧进度。<br>&nbsp;&nbsp;&nbsp;这也是从另一个角度来看，我下星期需要开会的话其实给了我压力，我有想法去先详细的构思实验过程， 先前我都只是机械地看文章一直处于一种自满的状态，我想这次开会给我敲响了警钟。同样一时的选题好不代表你的论文已经完成，不代表你已经成功。而且正因为选题好，你没有老师分享的文献直接给你，所以你需要时刻加紧脚步，平衡自己考研的准备和论文的写作，要一直行动，不要停歇下来，可以走得慢，可以走得快，但别摊着不动。可以心里焦急，但是要记得给时间一点时间</p>
-]]></content>
   </entry>
 </search>
