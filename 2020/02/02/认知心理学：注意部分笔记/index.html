@@ -1,153 +1,233 @@
 <!DOCTYPE html>
 <html lang="default">
-  <head>
+    <head>
+    <meta charset="utf-8">
+
     
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+    <!--icon-->
+    
+        <link rel="shortcut icon" type='image/x-icon' href="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200720115632.png">
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- meta -->
+    
+    <title>认知心理学：注意部分笔记 | 别低头，皇冠会掉</title>
+    
+        <meta name="keywords" content="注意、认知">
+    
+
+    <!-- OpenGraph -->
+    
+
+    <!-- feed -->
+    
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+    
+    
+        
+<link rel="stylesheet" href="/css/style/dark.css">
+
+        
+<script src="/js/darkmode.js"></script>
+
+    
+
+    
+        
+            <link rel="stylesheet" id="hljs-default-theme" href="/css/highlight/default.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')===-1)this.media='all'">
+            
+                <link rel="stylesheet" id="hljs-dark-theme" href="/css/highlight/dark.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')!==-1)this.media='all'">
+            
+        
+    
+
+    
+        <link rel="stylesheet" href="/css/style/note.css" media="none" onload="this.media='all'">
+    
+
+     
+
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">
+                别低头，皇冠会掉 
+            </span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="cover__menus">
+                
+                    <a href="/" class="cover-menu button">
+                        首页
+                    </a>
+                
+                    <a href="/categories/" class="cover-menu button">
+                        分类
+                    </a>
+                
+                    <a href="/archives/" class="cover-menu button">
+                        归档
+                    </a>
+                
+            </div>
+        
+        
+            <a href="javaScript:void(0);" id="btn-toggle-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </a>
+        
+         
+            <a href="javaScript:void(0);" id="b2t" style="" aria-label="回到頂部" title="回到頂部">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='32' height='32' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"></path>
+                </svg>
+            </a>
+        
+        
+            <a class="dropdown-icon button" id="btn-dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+                </svg>
+            </a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                <a class="dropback-icon button" id="btn-dropback">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                        <path fill="currentColor" d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
+                    </svg>
+                </a>
+                
+                    <a href="/" class="dropdown-menu button">
+                        首页
+                    </a>
+                
+                    <a href="/categories/" class="dropdown-menu button">
+                        分类
+                    </a>
+                
+                    <a href="/archives/" class="dropdown-menu button">
+                        归档
+                    </a>
+                
+            </div>
+            <script>
+                document.getElementById('btn-dropdown').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    requestAnimationFrame(() => {
+                        dd.style.display = 'flex';
+                        requestAnimationFrame(() => {
+                            dd.style.transform = 'translateY(0)';
+                            dd.style.opacity = '1';
+                        });
+                    });
+                });
+                document.getElementById('btn-dropback').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    dd.style.transform = 'translateY(2.25rem)';                    
+                    dd.style.opacity = '0';
+                    setTimeout(() => {dd.style.display = 'none';}, 350);
+                });
+            </script>
+        
+    </div>
+</header>
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+            <main class="main">
+    <div class="post-title">
+    <h1 class="post-title__text">
+        认知心理学：注意部分笔记
+    </h1>
+    <div class="post-title__meta">
+        
+            <a href="/archives/2020/02/" class="button" style="color: #808080;">
+    2020-02-02
+</a>
+        
+        
+            
+    <span class="separate-dot"></span><a href="/categories/Psychology/" class="button">Psychology</a>
 
-
-
-  <meta name="description" content="认知心理学：注意部分笔记"/>
-
-
-
-
-  <meta name="keywords" content="注意、认知," />
-
-
-
-
-
-  <link rel="alternate" href="/default" title="别低头，皇冠会掉">
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1" />
-
-
-
-<link rel="canonical" href="http://yoursite.com/2020/02/02/认知心理学：注意部分笔记/"/>
-
-
-<meta name="description" content="认知心理学：注意部分笔记 注意：一种聚焦于特定刺激或特定位置的能力选择性注意：将聚焦于某一客体、特定的位置或信息上的过程分配性注意：指同一时间内注意两件或多件事情，可能是内隐，也可能是外显，或者是两者的结合外显性注意：通过眼动将注意从一个位置转移到另一个位置的过程内隐性注意：没有眼动参与的注意转移过程，即通过眼角来看刺激  选择性注意的过滤器模型（瓶颈、衰减等都属于过滤器模型）选择性注意不仅凸显了">
-<meta property="og:type" content="article">
-<meta property="og:title" content="认知心理学：注意部分笔记">
-<meta property="og:url" content="http://yoursite.com/2020/02/02/%E8%AE%A4%E7%9F%A5%E5%BF%83%E7%90%86%E5%AD%A6%EF%BC%9A%E6%B3%A8%E6%84%8F%E9%83%A8%E5%88%86%E7%AC%94%E8%AE%B0/index.html">
-<meta property="og:site_name" content="别低头，皇冠会掉">
-<meta property="og:description" content="认知心理学：注意部分笔记 注意：一种聚焦于特定刺激或特定位置的能力选择性注意：将聚焦于某一客体、特定的位置或信息上的过程分配性注意：指同一时间内注意两件或多件事情，可能是内隐，也可能是外显，或者是两者的结合外显性注意：通过眼动将注意从一个位置转移到另一个位置的过程内隐性注意：没有眼动参与的注意转移过程，即通过眼角来看刺激  选择性注意的过滤器模型（瓶颈、衰减等都属于过滤器模型）选择性注意不仅凸显了">
-<meta property="og:image" content="https://raw.githubusercontent.com/paul18755/ppppp-/master/%E6%88%AA%E5%B1%8F2020-01-27%E4%B8%8B%E5%8D%883.39.36.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/paul18755/ppppp/master/11.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/paul18755/ppppp/master/20200131210549.jpeg">
-<meta property="og:image" content="https://raw.githubusercontent.com/paul18755/ppppp/master/20200131212806.png">
-<meta property="article:published_time" content="2020-02-02T04:22:37.000Z">
-<meta property="article:modified_time" content="2020-02-02T08:55:21.116Z">
-<meta property="article:author" content="Yang">
-<meta property="article:tag" content="注意、认知">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/paul18755/ppppp-/master/%E6%88%AA%E5%B1%8F2020-01-27%E4%B8%8B%E5%8D%883.39.36.png">
-
-
-<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1" />
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
-
-
-
-
-
-<script type="text/javascript">
-  var themeConfig = {
-    fancybox: {
-      enable: false
-    },
-  };
-</script>
-
-
-
+ 
+        
+        
+     
+ 
 
   
-
-
-
-    <title> 认知心理学：注意部分笔记 - 别低头，皇冠会掉 </title>
-  <meta name="generator" content="Hexo 4.2.0"></head>
-
-  <body>
-    <div id="page">
-      <header id="masthead"><div class="site-header-inner">
-    <h1 class="site-title">
-        <a href="/." class="logo">别低头，皇冠会掉</a>
-    </h1>
-
-    <nav id="nav-top">
-        
-            <ul id="menu-top" class="nav-top-items">
-                
-                    <li class="menu-item">
-                        <a href="/archives">
-                            
-                            
-                                Archives
-                            
-                        </a>
-                    </li>
-                
-                    <li class="menu-item">
-                        <a href="/about">
-                            
-                            
-                                About
-                            
-                        </a>
-                    </li>
-                
-            </ul>
-        
-  </nav>
+    </div>
 </div>
 
-      </header>
-      <div id="content">
-        
-    <div id="primary">
-        
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          认知心理学：注意部分笔记
-        
-      </h1>
 
-      <time class="post-time">
-          Feb 02 2020
-      </time>
-    </header>
+    <div class="post__with-side">
+        <aside class="post-side">
+            <div class="post-side__toc">
+                <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#选择性注意的过滤器模型（瓶颈、衰减等都属于过滤器模型）"><span class="toc-text">选择性注意的过滤器模型（瓶颈、衰减等都属于过滤器模型）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#瓶颈模型-Broadbent"><span class="toc-text">瓶颈模型 - Broadbent</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#针对此类假设的挑战"><span class="toc-text">针对此类假设的挑战</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#衰减模型-—Treisman"><span class="toc-text">衰减模型 —Treisman</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#认知资源、认知负载以及与任务无关的刺激"><span class="toc-text">认知资源、认知负载以及与任务无关的刺激</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#侧干扰相容任务"><span class="toc-text">侧干扰相容任务</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注意分配-分配性注意（主动将注意分配到多任务）"><span class="toc-text">注意分配-分配性注意（主动将注意分配到多任务）</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#练习与自动化加工实验（Schneider-amp-Shiffrin）"><span class="toc-text">练习与自动化加工实验（Schneider &amp; Shiffrin）</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注意和视知觉"><span class="toc-text">注意和视知觉</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#非注意盲视"><span class="toc-text">非注意盲视</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#变化盲视"><span class="toc-text">变化盲视</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#外显性注意—眼动"><span class="toc-text">外显性注意—眼动</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#自下而上的加工影响"><span class="toc-text">自下而上的加工影响</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#自上而下的加工影响"><span class="toc-text">自上而下的加工影响</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内隐性注意：无眼动参与的注意定向。"><span class="toc-text">内隐性注意：无眼动参与的注意定向。</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#基于位置的注意"><span class="toc-text">基于位置的注意</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#基于客体的注意"><span class="toc-text">基于客体的注意</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征整合理论（论注意在特征整合理论中的作用）—Anne-Treisman"><span class="toc-text">特征整合理论（论注意在特征整合理论中的作用）—Anne Treisman</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#注意的生理学基础"><span class="toc-text">注意的生理学基础</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#孤独症社交异常的注意机制方面的解释"><span class="toc-text">孤独症社交异常的注意机制方面的解释</span></a></li></ol></li></ol></li></ol></li></ol>
+            </div>
+        </aside>
+        <article class="post content-card">
+            <div class="post__header">
+                
+                     
+                
+                
+                    
+    <div class="post__expire" id="post-expired-notify">
+        <p>
+            本文最後更新於 <span id="expire-date"></span> 天前，文中部分描述可能已經過時。
+        </p>
+    </div>
+    <script>
+        (() => {
+            var update = Date.parse("2020-02-02"),
+                date = new Date(),
+                now = date.getTime(),
+                expire = now - update,
+                expire_days = Math.floor(expire/(24*3600*1000));
+            if (expire_days >= 120) {
+                document.querySelectorAll('#expire-date')[0].innerHTML = expire_days;
+                document.querySelectorAll('#post-expired-notify')[0].style.display = 'block';
+            }
+        })();
+    </script>
 
-
-
-    
-            <div class="post-content">
-            <h1 id="认知心理学：注意部分笔记"><a href="#认知心理学：注意部分笔记" class="headerlink" title="认知心理学：注意部分笔记"></a>认知心理学：注意部分笔记</h1><blockquote>
+                
+            </div>
+            <div class="post__content">
+                <div class="md-content">
+                    <h1 id="认知心理学：注意部分笔记"><a href="#认知心理学：注意部分笔记" class="headerlink" title="认知心理学：注意部分笔记"></a>认知心理学：注意部分笔记</h1><blockquote>
 <p><strong>注意</strong>：一种聚焦于特定刺激或特定位置的能力<br><strong>选择性注意</strong>：将聚焦于某一客体、特定的位置或信息上的过程<br><strong>分配性注意</strong>：指同一时间内注意两件或多件事情，可能是内隐，也可能是外显，或者是两者的结合<br><strong>外显性注意</strong>：通过<strong>眼动</strong>将注意从一个位置转移到另一个位置的过程<br><strong>内隐性注意</strong>：没有眼动参与的注意转移过程，即通过眼角来看刺激</p>
 </blockquote>
 <h3 id="选择性注意的过滤器模型（瓶颈、衰减等都属于过滤器模型）"><a href="#选择性注意的过滤器模型（瓶颈、衰减等都属于过滤器模型）" class="headerlink" title="选择性注意的过滤器模型（瓶颈、衰减等都属于过滤器模型）"></a>选择性注意的过滤器模型（瓶颈、衰减等都属于过滤器模型）</h3><p>选择性注意不仅凸显了我们所注意到的事物，而且使我们远离自己未注意到的事物。下面这些模型之所以为“早期”不是因为时间，而是<strong>因为其认为信息的过滤是在早期阶段对信息留进行操作的。</strong>早期过滤器模型多认为通过过滤器，我们可以在信息过滤的前提下，允许另一些信息进入高层次的加工，实验多采用<strong>听觉刺激</strong>。</p>
 <h5 id="瓶颈模型-Broadbent"><a href="#瓶颈模型-Broadbent" class="headerlink" title="瓶颈模型 - Broadbent"></a>瓶颈模型 - Broadbent</h5><blockquote>
 <p><strong>Cherry（1953）双耳分听实验</strong>：该实验主要是在被试两耳分别呈现不同的信息下，要求注意其中一只耳朵传入的信息并对该通道进行追随<br><strong>双耳分听实验中的追随</strong>：不断重复一个信息并大声说出来的程序，用以确保被试只关注注意通道内的信息。</p>
 </blockquote>
-<p>可以证明上述观点的是<strong>双耳分听实验</strong>的结论，即被试对于非追随耳通道内的信息，仅仅只能判断通道内存在信息但是无法对信息进行深层次加工。针对此Broadbent提出了瓶颈模型：<img src="https://raw.githubusercontent.com/paul18755/ppppp-/master/%E6%88%AA%E5%B1%8F2020-01-27%E4%B8%8B%E5%8D%883.39.36.png" alt="瓶颈模型"><br>信息进入感觉记忆后，过滤器会开始发挥作用，根据信息的物理特性过滤其他信息 —》 被注意到的信息到达探测器阶段，探测器对其加工决定其是否可以得到进一步的加工 —》可以进一步加工的信息进入短时记忆。要注意的是过滤器并不是完全决定什么信息加工什么信息不加工，在其之后还有进一步的由探测器主导的筛选。这其中信息能否通过取决的其物理特性。Broadbent的瓶颈模型为选择性注意提供了可验证的假设。</p>
+<p>可以证明上述观点的是<strong>双耳分听实验</strong>的结论，即被试对于非追随耳通道内的信息，仅仅只能判断通道内存在信息但是无法对信息进行深层次加工。针对此Broadbent提出了瓶颈模型：<img src="https://raw.githubusercontent.com/paul18755/ppppp-/master/%E6%88%AA%E5%B1%8F2020-01-27%E4%B8%8B%E5%8D%883.39.36.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/paul18755/ppppp-/master/%E6%88%AA%E5%B1%8F2020-01-27%E4%B8%8B%E5%8D%883.39.36.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt="瓶颈模型"><br>信息进入感觉记忆后，过滤器会开始发挥作用，根据信息的物理特性过滤其他信息 —》 被注意到的信息到达探测器阶段，探测器对其加工决定其是否可以得到进一步的加工 —》可以进一步加工的信息进入短时记忆。要注意的是过滤器并不是完全决定什么信息加工什么信息不加工，在其之后还有进一步的由探测器主导的筛选。这其中信息能否通过取决的其物理特性。Broadbent的瓶颈模型为选择性注意提供了可验证的假设。</p>
 <h6 id="针对此类假设的挑战"><a href="#针对此类假设的挑战" class="headerlink" title="针对此类假设的挑战"></a>针对此类假设的挑战</h6><p><strong>鸡尾酒会效应</strong> Moray（1959）同样做了双耳分听实验，但是当其在非追随耳中呈现被试的姓名时，有1/3的被试能过听到。但这并不意味着这些信息被注意到了。——针对瓶颈模型提出的“在非注意通道内的信息将不能进入注意”的假设</p>
 <hr>
 <h5 id="衰减模型-—Treisman"><a href="#衰减模型-—Treisman" class="headerlink" title="衰减模型 —Treisman"></a>衰减模型 —Treisman</h5><blockquote>
 <p><strong>字典单元</strong>：包含存储单词，每个单词都有一个激活阈限</p>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/paul18755/ppppp/master/11.png" alt=""><br>衰减模型来自受到挑战的瓶颈模型的改善。除了分析信息的物理特性外，Treisman增加了对信息的语义上的分析（其认为这只在有必要的时候才会进行）。所以信息都进入衰减器，但非追随耳的信息会被衰减器减弱。信息通过衰减器后经由字典单元，根据阈限和衰减后的信息强度决定信息是否能过被探测到。</p>
+<p><img src="https://raw.githubusercontent.com/paul18755/ppppp/master/11.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/paul18755/ppppp/master/11.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt=""><br>衰减模型来自受到挑战的瓶颈模型的改善。除了分析信息的物理特性外，Treisman增加了对信息的语义上的分析（其认为这只在有必要的时候才会进行）。所以信息都进入衰减器，但非追随耳的信息会被衰减器减弱。信息通过衰减器后经由字典单元，根据阈限和衰减后的信息强度决定信息是否能过被探测到。</p>
 <p>注意分析上述内容的实验是如何将一个认知现象概念化为一个信息加工问题</p>
 <hr>
 <blockquote>
@@ -208,12 +288,12 @@
 <h3 id="特征整合理论（论注意在特征整合理论中的作用）—Anne-Treisman"><a href="#特征整合理论（论注意在特征整合理论中的作用）—Anne-Treisman" class="headerlink" title="特征整合理论（论注意在特征整合理论中的作用）—Anne Treisman"></a>特征整合理论（论注意在特征整合理论中的作用）—Anne Treisman</h3><blockquote>
 <p><strong>前注意阶段</strong>：指客体被分解为独立的特征的阶段，这一阶段各个特征的加工是彼此独立的。（我们之所以意识不到是因为其发生于知觉的早期阶段）</p>
 </blockquote>
-<p><img src="https://raw.githubusercontent.com/paul18755/ppppp/master/20200131210549.jpeg" alt=""><br><strong>特征整合</strong>指尽管大脑加工客体的不同属性特征（颜色、形状等）是在不同的大脑区域，但是我们的知觉一个物体时能够将其不同的特征整合于一个客体而非不同的特征。依据Treisman的特征整合模型，客体加工有<strong>前注意阶段</strong>和<strong>集中注意阶段</strong>。证明特征知觉过程中存在前注意阶段使用的是<strong>关联整合实验</strong>。</p>
+<p><img src="https://raw.githubusercontent.com/paul18755/ppppp/master/20200131210549.jpeg" class="lazyload" data-srcset="https://raw.githubusercontent.com/paul18755/ppppp/master/20200131210549.jpeg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt=""><br><strong>特征整合</strong>指尽管大脑加工客体的不同属性特征（颜色、形状等）是在不同的大脑区域，但是我们的知觉一个物体时能够将其不同的特征整合于一个客体而非不同的特征。依据Treisman的特征整合模型，客体加工有<strong>前注意阶段</strong>和<strong>集中注意阶段</strong>。证明特征知觉过程中存在前注意阶段使用的是<strong>关联整合实验</strong>。</p>
 <hr>
 <blockquote>
 <p><strong>关联整合实验</strong>： 给被试在快速呈现不同特征的客体以及侧抑制项目，之后通过掩蔽屏消除知觉后像，最后要求被试报告呈现的客体的形状<br><strong>关联整合</strong>：不同刺激的特征之间的结合，例如红色方形和绿色圆形，结合后认知为红色圆形。<br><strong>巴林特综合症</strong>：关键特征是不能将注意集中在单独的客体上的一类病症</p>
 </blockquote>
-<p>通过关联整合实验来证明前注意阶段的逻辑在于，如果知觉过程不存在分解客体特征的过程，那么被试可能报告不出来客体是什么，或者能够成功报告出来客体，但是不可能在报告时出现不同客体的特征之间结合的情况。但是从实验结果出现的情况，被试有18%的可能会出现两个刺激的不同特征混搭的<strong>关联整合</strong>的情况，即使刺激在形状上和大小上存在很大的差异。“18%”的解释可能是因为前注意阶段的时间非常短。同时通过掩蔽屏消除知觉后像的实验操作也值得重视。<img src="https://raw.githubusercontent.com/paul18755/ppppp/master/20200131212806.png" alt=""></p>
+<p>通过关联整合实验来证明前注意阶段的逻辑在于，如果知觉过程不存在分解客体特征的过程，那么被试可能报告不出来客体是什么，或者能够成功报告出来客体，但是不可能在报告时出现不同客体的特征之间结合的情况。但是从实验结果出现的情况，被试有18%的可能会出现两个刺激的不同特征混搭的<strong>关联整合</strong>的情况，即使刺激在形状上和大小上存在很大的差异。“18%”的解释可能是因为前注意阶段的时间非常短。同时通过掩蔽屏消除知觉后像的实验操作也值得重视。<img src="https://raw.githubusercontent.com/paul18755/ppppp/master/20200131212806.png" class="lazyload" data-srcset="https://raw.githubusercontent.com/paul18755/ppppp/master/20200131212806.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" alt=""></p>
 <p>从特征整合模型的角度来看，特征整合模型中注意起作用的点就在于集中注意阶段。特征整合可以看作一个<strong>多种选择</strong>的情况，不同的特征之间可以相互整合成整体，如果依据一个客体两个特征，组合的可能结果便根据客体的数量N而有$2N$个可能性。在这些可能性中如何找到正确的一个？就是注意的作用：<strong>增加特征整合的成功几率</strong>。集中注意阶段的证明可以根据Treisman基于关联整合实验的改动实验来证明，她要求被试忽视侧抑制项，<strong>同时将所有的注意力聚焦在客体上</strong>。在这种情况下，关联整合的情况减少了。另一个证明是<strong>巴林特综合症</strong>。</p>
 <p>从关联整合的角度来看，在集中注意阶段减少关联整合<strong>一是可以施加注意</strong>，<strong>二是可以从自上而下的加工方面来促进减少</strong>，但是自上而下的加工帮助只有在要识别的客体特征确实符合个体的背景知识的情况下才发挥促进作用，否则可能起到一种“定势”的反作用。</p>
 <h3 id="注意的生理学基础"><a href="#注意的生理学基础" class="headerlink" title="注意的生理学基础"></a>注意的生理学基础</h3><p>由注意的生理机制而来的重要结果：</p>
@@ -229,97 +309,99 @@
 </ol>
 <p>当然，不能否认他们体验到的消极情感可能对于他们的症状起更大的影响。-</p>
 
+                </div>
             </div>
-          
-
-    
-      <footer class="post-footer">
-		
-		<div class="post-tags">
-		  
-			<a href="/tags/%E6%B3%A8%E6%84%8F%E3%80%81%E8%AE%A4%E7%9F%A5/">注意、认知</a>
-		  
-		</div>
-		
-
+            
+                
+    <div class="post__license">
+        <p>
+            <strong>本文作者：</strong>Weibin Yang
+        </p>
+        <p>
+            <strong>
+                本文鏈接：
+            </strong>
+            <a href="http://yoursite.com/2020/02/02/%E8%AE%A4%E7%9F%A5%E5%BF%83%E7%90%86%E5%AD%A6%EF%BC%9A%E6%B3%A8%E6%84%8F%E9%83%A8%E5%88%86%E7%AC%94%E8%AE%B0/">http://yoursite.com/2020/02/02/%E8%AE%A4%E7%9F%A5%E5%BF%83%E7%90%86%E5%AD%A6%EF%BC%9A%E6%B3%A8%E6%84%8F%E9%83%A8%E5%88%86%E7%AC%94%E8%AE%B0/</a>
+        </p>
         
+            <strong>
+                <p>文章默认使用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 协议进行许可，使用时请注意遵守协议。</p>
+
+            </strong>
         
-  <nav class="post-nav">
+    </div>
+ 
+            
+            
+                <div class="post-meta post-footer__meta">
+    <p>
+        最后更新于：2020-02-02
+    </p>
+</div> 
+            
+            
+                <div class="post-cats post-card__cats">
     
-      <a class="prev" href="/2020/02/03/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B52/">
-        <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">Python编程：从入门到实践2</span>
-        <span class="prev-text nav-mobile">上一篇</span>
-      </a>
+        <a href="/categories/Psychology/" class="post-cats__link button">Psychology</a>
     
     
-      <a class="next" href="/2020/02/01/Test/">
-        <span class="next-text nav-default">Test</span>
-        <span class="prev-text nav-mobile">下一篇</span>
-        <i class="iconfont icon-right"></i>
-      </a>
+        <a href="/tags/%E6%B3%A8%E6%84%8F%E3%80%81%E8%AE%A4%E7%9F%A5/" class="post-tags__link button"># 注意、认知</a>
     
-  </nav>
-
+</div> 
+             
+        </article>
         
-  <div class="comments" id="comments">
-    
-  </div>
-
-
-      </footer>
-    
-		
-		    
-		        <div class="toc-container">
-		            <div class="toc-article">
-		                <ol class="post-poc"><li class="post-poc-item post-poc-level-1"><a class="post-poc-link" href="#认知心理学：注意部分笔记"><span class="post-poc-text">认知心理学：注意部分笔记</span></a><ol class="post-poc-child"><li class="post-poc-item post-poc-level-3"><a class="post-poc-link" href="#选择性注意的过滤器模型（瓶颈、衰减等都属于过滤器模型）"><span class="post-poc-text">选择性注意的过滤器模型（瓶颈、衰减等都属于过滤器模型）</span></a><ol class="post-poc-child"><li class="post-poc-item post-poc-level-5"><a class="post-poc-link" href="#瓶颈模型-Broadbent"><span class="post-poc-text">瓶颈模型 - Broadbent</span></a><ol class="post-poc-child"><li class="post-poc-item post-poc-level-6"><a class="post-poc-link" href="#针对此类假设的挑战"><span class="post-poc-text">针对此类假设的挑战</span></a></li></ol></li><li class="post-poc-item post-poc-level-5"><a class="post-poc-link" href="#衰减模型-—Treisman"><span class="post-poc-text">衰减模型 —Treisman</span></a></li></ol></li></ol></li><li class="post-poc-item post-poc-level-3"><a class="post-poc-link" href="#认知资源、认知负载以及与任务无关的刺激"><span class="post-poc-text">认知资源、认知负载以及与任务无关的刺激</span></a><ol class="post-poc-child"><li class="post-poc-item post-poc-level-5"><a class="post-poc-link" href="#侧干扰相容任务"><span class="post-poc-text">侧干扰相容任务</span></a></li></ol></li></ol></li><li class="post-poc-item post-poc-level-3"><a class="post-poc-link" href="#注意分配-分配性注意（主动将注意分配到多任务）"><span class="post-poc-text">注意分配-分配性注意（主动将注意分配到多任务）</span></a><ol class="post-poc-child"><li class="post-poc-item post-poc-level-5"><a class="post-poc-link" href="#练习与自动化加工实验（Schneider-amp-Shiffrin）"><span class="post-poc-text">练习与自动化加工实验（Schneider &amp; Shiffrin）</span></a></li></ol></li></ol></li><li class="post-poc-item post-poc-level-3"><a class="post-poc-link" href="#注意和视知觉"><span class="post-poc-text">注意和视知觉</span></a><ol class="post-poc-child"><li class="post-poc-item post-poc-level-5"><a class="post-poc-link" href="#非注意盲视"><span class="post-poc-text">非注意盲视</span></a></li><li class="post-poc-item post-poc-level-5"><a class="post-poc-link" href="#变化盲视"><span class="post-poc-text">变化盲视</span></a></li></ol></li></ol></li><li class="post-poc-item post-poc-level-3"><a class="post-poc-link" href="#外显性注意—眼动"><span class="post-poc-text">外显性注意—眼动</span></a><ol class="post-poc-child"><li class="post-poc-item post-poc-level-5"><a class="post-poc-link" href="#自下而上的加工影响"><span class="post-poc-text">自下而上的加工影响</span></a></li><li class="post-poc-item post-poc-level-5"><a class="post-poc-link" href="#自上而下的加工影响"><span class="post-poc-text">自上而下的加工影响</span></a></li></ol></li></ol></li><li class="post-poc-item post-poc-level-3"><a class="post-poc-link" href="#内隐性注意：无眼动参与的注意定向。"><span class="post-poc-text">内隐性注意：无眼动参与的注意定向。</span></a><ol class="post-poc-child"><li class="post-poc-item post-poc-level-5"><a class="post-poc-link" href="#基于位置的注意"><span class="post-poc-text">基于位置的注意</span></a></li><li class="post-poc-item post-poc-level-5"><a class="post-poc-link" href="#基于客体的注意"><span class="post-poc-text">基于客体的注意</span></a></li></ol></li></ol></li><li class="post-poc-item post-poc-level-3"><a class="post-poc-link" href="#特征整合理论（论注意在特征整合理论中的作用）—Anne-Treisman"><span class="post-poc-text">特征整合理论（论注意在特征整合理论中的作用）—Anne Treisman</span></a></li><li class="post-poc-item post-poc-level-3"><a class="post-poc-link" href="#注意的生理学基础"><span class="post-poc-text">注意的生理学基础</span></a><ol class="post-poc-child"><li class="post-poc-item post-poc-level-6"><a class="post-poc-link" href="#孤独症社交异常的注意机制方面的解释"><span class="post-poc-text">孤独症社交异常的注意机制方面的解释</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li></ol>
-		            </div>
-		        </div>
-		    
-		
-
-  </article>
-
     </div>
 
-      </div>
 
-      <footer id="colophon"><span class="copyright-year">
+</main>
+<footer class="footer">
+     
+
+
+     
+  
     
-        &copy;
+        
+            <p>Copyright © 2020</p>
+
+        
     
-        2019 -
-    
-    2020
-    <span class="footer-author">Yang.</span>
-    <span class="power-by">
-        由 <a class="hexo-link" href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear" target="_blank" rel="noopener">Polar Bear</a> 强力驱动
-    </span>
-</span>
-
-      </footer>
-
-      <div class="back-to-top" id="back-to-top">
-        <i class="iconfont icon-up"></i>
-      </div>
-    </div>
-    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
 
 
-    
+        </div>
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazyload",
+            threshold: 0
+        };
+    </script>
 
 
+ 
 
+ 
+
+ 
 
   
-    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
-  
 
-  
+ 
 
-    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
-<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+ 
+    
+<script src="/js/b2t.js"></script>
 
-  </body>
+
+
+
+
+
+
+
+    </body>
 </html>

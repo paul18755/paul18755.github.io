@@ -1,141 +1,223 @@
 <!DOCTYPE html>
 <html lang="default">
-  <head>
+    <head>
+    <meta charset="utf-8">
+
     
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+    <!--icon-->
+    
+        <link rel="shortcut icon" type='image/x-icon' href="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200720115632.png">
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- meta -->
+    
+    <title>《沉默的巡游》-东野圭吾 读书笔记 | 别低头，皇冠会掉</title>
+    
+        <meta name="keywords" content="东野圭吾回来了">
+    
+
+    <!-- OpenGraph -->
+    
+
+    <!-- feed -->
+    
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+    
+    
+        
+<link rel="stylesheet" href="/css/style/dark.css">
+
+        
+<script src="/js/darkmode.js"></script>
+
+    
+
+    
+        
+            <link rel="stylesheet" id="hljs-default-theme" href="/css/highlight/default.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')===-1)this.media='all'">
+            
+                <link rel="stylesheet" id="hljs-dark-theme" href="/css/highlight/dark.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')!==-1)this.media='all'">
+            
+        
+    
+
+    
+        <link rel="stylesheet" href="/css/style/note.css" media="none" onload="this.media='all'">
+    
+
+     
+
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">
+                别低头，皇冠会掉 
+            </span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="cover__menus">
+                
+                    <a href="/" class="cover-menu button">
+                        首页
+                    </a>
+                
+                    <a href="/categories/" class="cover-menu button">
+                        分类
+                    </a>
+                
+                    <a href="/archives/" class="cover-menu button">
+                        归档
+                    </a>
+                
+            </div>
+        
+        
+            <a href="javaScript:void(0);" id="btn-toggle-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </a>
+        
+         
+            <a href="javaScript:void(0);" id="b2t" style="" aria-label="回到頂部" title="回到頂部">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='32' height='32' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"></path>
+                </svg>
+            </a>
+        
+        
+            <a class="dropdown-icon button" id="btn-dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+                </svg>
+            </a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                <a class="dropback-icon button" id="btn-dropback">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                        <path fill="currentColor" d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
+                    </svg>
+                </a>
+                
+                    <a href="/" class="dropdown-menu button">
+                        首页
+                    </a>
+                
+                    <a href="/categories/" class="dropdown-menu button">
+                        分类
+                    </a>
+                
+                    <a href="/archives/" class="dropdown-menu button">
+                        归档
+                    </a>
+                
+            </div>
+            <script>
+                document.getElementById('btn-dropdown').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    requestAnimationFrame(() => {
+                        dd.style.display = 'flex';
+                        requestAnimationFrame(() => {
+                            dd.style.transform = 'translateY(0)';
+                            dd.style.opacity = '1';
+                        });
+                    });
+                });
+                document.getElementById('btn-dropback').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    dd.style.transform = 'translateY(2.25rem)';                    
+                    dd.style.opacity = '0';
+                    setTimeout(() => {dd.style.display = 'none';}, 350);
+                });
+            </script>
+        
+    </div>
+</header>
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+            <main class="main">
+    <div class="post-title">
+    <h1 class="post-title__text">
+        《沉默的巡游》-东野圭吾 读书笔记
+    </h1>
+    <div class="post-title__meta">
+        
+            <a href="/archives/2020/04/" class="button" style="color: #808080;">
+    2020-04-26
+</a>
+        
+        
+            
+    <span class="separate-dot"></span><a href="/categories/Read/" class="button">Read</a>
 
-
-
-  <meta name="description" content="《沉默的巡游》-东野圭吾 读书笔记"/>
-
-
-
-
-  <meta name="keywords" content="东野圭吾回来了," />
-
-
-
-
-
-  <link rel="alternate" href="/default" title="别低头，皇冠会掉">
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1" />
-
-
-
-<link rel="canonical" href="http://yoursite.com/2020/04/26/《沉默的巡游》-东野圭吾-读书笔记/"/>
-
-
-<meta name="description" content="太太太太太太棒了！真“不到最后，绝不落幕”。让我找到了最开始看解忧杂货铺看恶意的感受，不是说情节之类的相似，而是让我激动，熟悉，又不自觉说他来了他开始了的那种兴奋。     “然而，佐织的话令留美倍感意外。她说：“对我而言，和高垣智也在一起的时光与成为歌手的梦想同样重要。人为什么要实现梦想，不就是因为那样会获得幸福吗？对于现在的我来说，陪在智也的身边就已经很幸福了。为了另一种幸福而放弃眼前的幸">
-<meta property="og:type" content="article">
-<meta property="og:title" content="《沉默的巡游》-东野圭吾 读书笔记">
-<meta property="og:url" content="http://yoursite.com/2020/04/26/%E3%80%8A%E6%B2%89%E9%BB%98%E7%9A%84%E5%B7%A1%E6%B8%B8%E3%80%8B-%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.html">
-<meta property="og:site_name" content="别低头，皇冠会掉">
-<meta property="og:description" content="太太太太太太棒了！真“不到最后，绝不落幕”。让我找到了最开始看解忧杂货铺看恶意的感受，不是说情节之类的相似，而是让我激动，熟悉，又不自觉说他来了他开始了的那种兴奋。     “然而，佐织的话令留美倍感意外。她说：“对我而言，和高垣智也在一起的时光与成为歌手的梦想同样重要。人为什么要实现梦想，不就是因为那样会获得幸福吗？对于现在的我来说，陪在智也的身边就已经很幸福了。为了另一种幸福而放弃眼前的幸">
-<meta property="og:image" content="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426142808.png">
-<meta property="og:image" content="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426143459.jpg">
-<meta property="article:published_time" content="2020-04-26T06:46:25.000Z">
-<meta property="article:modified_time" content="2020-04-26T06:49:15.788Z">
-<meta property="article:author" content="Yang">
-<meta property="article:tag" content="东野圭吾回来了">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426142808.png">
-
-
-<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1" />
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
-
-
-
-
-
-<script type="text/javascript">
-  var themeConfig = {
-    fancybox: {
-      enable: false
-    },
-  };
-</script>
-
-
-
+ 
+        
+        
+     
+ 
 
   
-
-
-
-    <title> 《沉默的巡游》-东野圭吾 读书笔记 - 别低头，皇冠会掉 </title>
-  <meta name="generator" content="Hexo 4.2.0"></head>
-
-  <body>
-    <div id="page">
-      <header id="masthead"><div class="site-header-inner">
-    <h1 class="site-title">
-        <a href="/." class="logo">别低头，皇冠会掉</a>
-    </h1>
-
-    <nav id="nav-top">
-        
-            <ul id="menu-top" class="nav-top-items">
-                
-                    <li class="menu-item">
-                        <a href="/archives">
-                            
-                            
-                                Archives
-                            
-                        </a>
-                    </li>
-                
-                    <li class="menu-item">
-                        <a href="/about">
-                            
-                            
-                                About
-                            
-                        </a>
-                    </li>
-                
-            </ul>
-        
-  </nav>
+    </div>
 </div>
 
-      </header>
-      <div id="content">
-        
-    <div id="primary">
-        
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          《沉默的巡游》-东野圭吾 读书笔记
-        
-      </h1>
 
-      <time class="post-time">
-          Apr 26 2020
-      </time>
-    </header>
+    <div class="post__with-side">
+        <aside class="post-side">
+            <div class="post-side__toc">
+                
+            </div>
+        </aside>
+        <article class="post content-card">
+            <div class="post__header">
+                
+                     
+                
+                
+                    
+    <div class="post__expire" id="post-expired-notify">
+        <p>
+            本文最後更新於 <span id="expire-date"></span> 天前，文中部分描述可能已經過時。
+        </p>
+    </div>
+    <script>
+        (() => {
+            var update = Date.parse("2020-04-26"),
+                date = new Date(),
+                now = date.getTime(),
+                expire = now - update,
+                expire_days = Math.floor(expire/(24*3600*1000));
+            if (expire_days >= 120) {
+                document.querySelectorAll('#expire-date')[0].innerHTML = expire_days;
+                document.querySelectorAll('#post-expired-notify')[0].style.display = 'block';
+            }
+        })();
+    </script>
 
-
-
-    
-            <div class="post-content">
-            <img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426142808.png" height="1610" width="1080"/>
+                
+            </div>
+            <div class="post__content">
+                <div class="md-content">
+                    <img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426142808.png" class="lazyload" data-srcset="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426142808.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" height="1610" width="1080"/>
 
 <p>太太太太太太棒了！真“不到最后，绝不落幕”。让我找到了最开始看解忧杂货铺看恶意的感受，不是说情节之类的相似，而是让我激动，熟悉，又不自觉说他来了他开始了的那种兴奋。</p>
-<img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426143459.jpg" height="800" width="856"/>
+<img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426143459.jpg" class="lazyload" data-srcset="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426143459.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" height="800" width="856"/>
 
 
 <blockquote>
@@ -143,89 +225,99 @@
 </blockquote>
 <p>&nbsp;&nbsp;&nbsp;为了另一种幸福而放弃眼前的幸福。这句话给我很大的触动。从留美（一心想把佐织培养成歌手）的角度来说，“<strong>成为歌手明星</strong>”和“<strong>与一个毛头小子谈恋爱</strong>”这两者之间简直是天差地别，所以她以一种教化的角度，以一种为她未来着想的角度去说，要自律，要专心练歌，要等待，等到实现梦想之后这些都很容易得到了。这种观念其实很常见，这种观念把幸福仿佛分了不同的阶层，明星很明显是上层而与毛头小子谈恋爱是可以暂时搁置的事情，这就导致了两个人看待现状的方式完全不同。在留美看来，这是在<strong>为了以后的幸福而忍受现在的磨难</strong>；而在佐织看来，<strong>是为了另一种幸福而放弃眼前的幸福</strong><br>&nbsp;&nbsp;&nbsp;这并不是在观念上的批判，现在辛苦点以后会很幸福这种观念看法并不是错误的，反而是存在延迟满足的优越性的。我想把关注点聚焦在两个人的角度位置上，留美认为现状是一个应该暂时<strong>克制</strong>的状态，而佐织认为现状是<strong>眼前的幸福</strong>。毫无疑问这是角度的不同导致看法的不同，而不是观念性质上的错误。这就涉及到<strong>共情</strong>的问题，留美出发点是想培养一个歌手，塑造给她一个美好的未来（可能更深的出发点是满足自己未能成功的遗憾），但是她并没有站在佐织的角度，眼前的恋情是什么样的？她第一次遇见心仪的人，第一次挽起自己喜欢的男孩子的手臂，他与她聊天时的欢乐等等，这是幸福，而且相比于未来，<strong>现在的幸福更加地触手可及</strong>，对她的感受冲击更加强烈。相比于有希望但有些遥远的成名，做大明星，唱歌，这种恋人之间的情感联系毫无疑问更加地让她的情感得到满足。<br>&nbsp;&nbsp;&nbsp;除了两人看法的不同，佐织对现在的感受给了我更多思考。<em>现在忍受辛苦以后会更美好，现在的事只是小事，要为了更加伟大更加宏大的目标去奋斗，而且这种奋斗必须头悬梁锥刺股历经九九八十一难。</em> 社会价值观的塑造很容易让我们把欲望投射到未来或者说未知无限的可能性上，我们相信以后会更好，哪怕现在已经一般般好了。我有时也会比较，就像留美那样，仿佛不同的幸福之间也存在阶级之争，A总比B差，C也比B差。但实际上佐织简单的一句话实在再透彻不过了。并不是说“成为歌手”这个梦想就应该得到否定，而是要更加地去体验现在的生活带来的情感感受，更深刻地体验现在。未来仍然值得追求，但是要做好拼尽全力的准备，而且自己做好准备。</p>
 
+                </div>
             </div>
-          
-
-    
-      <footer class="post-footer">
-		
-		<div class="post-tags">
-		  
-			<a href="/tags/%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE%E5%9B%9E%E6%9D%A5%E4%BA%86/">东野圭吾回来了</a>
-		  
-		</div>
-		
-
+            
+                
+    <div class="post__license">
+        <p>
+            <strong>本文作者：</strong>Weibin Yang
+        </p>
+        <p>
+            <strong>
+                本文鏈接：
+            </strong>
+            <a href="http://yoursite.com/2020/04/26/%E3%80%8A%E6%B2%89%E9%BB%98%E7%9A%84%E5%B7%A1%E6%B8%B8%E3%80%8B-%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">http://yoursite.com/2020/04/26/%E3%80%8A%E6%B2%89%E9%BB%98%E7%9A%84%E5%B7%A1%E6%B8%B8%E3%80%8B-%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</a>
+        </p>
         
+            <strong>
+                <p>文章默认使用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 协议进行许可，使用时请注意遵守协议。</p>
+
+            </strong>
         
-  <nav class="post-nav">
+    </div>
+ 
+            
+            
+                <div class="post-meta post-footer__meta">
+    <p>
+        最后更新于：2020-04-26
+    </p>
+</div> 
+            
+            
+                <div class="post-cats post-card__cats">
     
-      <a class="prev" href="/2020/05/17/%E5%88%AB%E5%BF%98%E8%AE%B0%E2%80%98%E5%93%88%E7%BD%97%E6%81%92%E6%B2%B3%E7%8C%B4%E2%80%99-%E4%BB%A5%E5%8F%8A%E3%80%8A%E6%88%91%E7%9A%84%E5%A4%A7%E5%8F%94%E3%80%8B/">
-        <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">别忘记‘哈罗恒河猴’,以及《我的大叔》</span>
-        <span class="prev-text nav-mobile">上一篇</span>
-      </a>
+        <a href="/categories/Read/" class="post-cats__link button">Read</a>
     
     
-      <a class="next" href="/2020/04/24/%E3%80%8A%E9%B1%BC%E7%BF%85%E4%B8%8E%E8%8A%B1%E6%A4%92%E3%80%8B%E8%AE%B0/">
-        <span class="next-text nav-default">《鱼翅与花椒》记</span>
-        <span class="prev-text nav-mobile">下一篇</span>
-        <i class="iconfont icon-right"></i>
-      </a>
+        <a href="/tags/%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE%E5%9B%9E%E6%9D%A5%E4%BA%86/" class="post-tags__link button"># 东野圭吾回来了</a>
     
-  </nav>
-
+</div> 
+             
+        </article>
         
-  <div class="comments" id="comments">
-    
-  </div>
-
-
-      </footer>
-    
-		
-
-  </article>
-
     </div>
 
-      </div>
 
-      <footer id="colophon"><span class="copyright-year">
+</main>
+<footer class="footer">
+     
+
+
+     
+  
     
-        &copy;
+        
+            <p>Copyright © 2020</p>
+
+        
     
-        2019 -
-    
-    2020
-    <span class="footer-author">Yang.</span>
-    <span class="power-by">
-        由 <a class="hexo-link" href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear" target="_blank" rel="noopener">Polar Bear</a> 强力驱动
-    </span>
-</span>
-
-      </footer>
-
-      <div class="back-to-top" id="back-to-top">
-        <i class="iconfont icon-up"></i>
-      </div>
-    </div>
-    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
 
 
-    
+        </div>
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazyload",
+            threshold: 0
+        };
+    </script>
 
 
+ 
 
+ 
+
+ 
 
   
-    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
-  
 
-  
+ 
 
-    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
-<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+ 
+    
+<script src="/js/b2t.js"></script>
 
-  </body>
+
+
+
+
+
+
+
+    </body>
 </html>

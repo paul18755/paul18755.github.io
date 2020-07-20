@@ -1,137 +1,220 @@
 <!DOCTYPE html>
 <html lang="default">
-  <head>
+    <head>
+    <meta charset="utf-8">
+
     
-<meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+    <!--icon-->
+    
+        <link rel="shortcut icon" type='image/x-icon' href="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200720115632.png">
+    
+
+    <!-- 渲染优化 -->
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="HandheldFriendly" content="True" >
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- meta -->
+    
+    <title>《存在主义咖啡馆》读书笔记 | 别低头，皇冠会掉</title>
+    
+        <meta name="keywords" content="存在主义">
+    
+
+    <!-- OpenGraph -->
+    
+
+    <!-- feed -->
+    
+
+    
+<link rel="stylesheet" href="/css/style/main.css">
+ 
+    
+    
+        
+<link rel="stylesheet" href="/css/style/dark.css">
+
+        
+<script src="/js/darkmode.js"></script>
+
+    
+
+    
+        
+            <link rel="stylesheet" id="hljs-default-theme" href="/css/highlight/default.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')===-1)this.media='all'">
+            
+                <link rel="stylesheet" id="hljs-dark-theme" href="/css/highlight/dark.css" media="none" onload="if(getComputedStyle(document.documentElement).getPropertyValue('--color-mode').indexOf('dark')!==-1)this.media='all'">
+            
+        
+    
+
+    
+        <link rel="stylesheet" href="/css/style/note.css" media="none" onload="this.media='all'">
+    
+
+     
+
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+    <body>
+        <div id="app">
+            <header class="header">
+    <div class="header__left">
+        <a href="/" class="button">
+            <span class="logo__text">
+                别低头，皇冠会掉 
+            </span>
+        </a>
+    </div>
+    <div class="header__right">
+        
+            <div class="cover__menus">
+                
+                    <a href="/" class="cover-menu button">
+                        首页
+                    </a>
+                
+                    <a href="/categories/" class="cover-menu button">
+                        分类
+                    </a>
+                
+                    <a href="/archives/" class="cover-menu button">
+                        归档
+                    </a>
+                
+            </div>
+        
+        
+            <a href="javaScript:void(0);" id="btn-toggle-dark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </a>
+        
+         
+            <a href="javaScript:void(0);" id="b2t" style="" aria-label="回到頂部" title="回到頂部">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='32' height='32' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13.889,11.611c-0.17,0.17-0.443,0.17-0.612,0l-3.189-3.187l-3.363,3.36c-0.171,0.171-0.441,0.171-0.612,0c-0.172-0.169-0.172-0.443,0-0.611l3.667-3.669c0.17-0.17,0.445-0.172,0.614,0l3.496,3.493C14.058,11.167,14.061,11.443,13.889,11.611 M18.25,10c0,4.558-3.693,8.25-8.25,8.25c-4.557,0-8.25-3.692-8.25-8.25c0-4.557,3.693-8.25,8.25-8.25C14.557,1.75,18.25,5.443,18.25,10 M17.383,10c0-4.07-3.312-7.382-7.383-7.382S2.618,5.93,2.618,10S5.93,17.381,10,17.381S17.383,14.07,17.383,10"></path>
+                </svg>
+            </a>
+        
+        
+            <a class="dropdown-icon button" id="btn-dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                    <path fill="currentColor" d="M3.314,4.8h13.372c0.41,0,0.743-0.333,0.743-0.743c0-0.41-0.333-0.743-0.743-0.743H3.314c-0.41,0-0.743,0.333-0.743,0.743C2.571,4.467,2.904,4.8,3.314,4.8z M16.686,15.2H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,15.2,16.686,15.2z M16.686,9.257H3.314c-0.41,0-0.743,0.333-0.743,0.743s0.333,0.743,0.743,0.743h13.372c0.41,0,0.743-0.333,0.743-0.743S17.096,9.257,16.686,9.257z"></path>
+                </svg>
+            </a>
+            <div class="dropdown-menus" id="dropdown-menus">
+                <a class="dropback-icon button" id="btn-dropback">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width='24' height='24' fill="none" stroke="currentColor" stroke-width="0.7" stroke-linecap="round" stroke-linejoin="round">
+                        <path fill="currentColor" d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path>
+                    </svg>
+                </a>
+                
+                    <a href="/" class="dropdown-menu button">
+                        首页
+                    </a>
+                
+                    <a href="/categories/" class="dropdown-menu button">
+                        分类
+                    </a>
+                
+                    <a href="/archives/" class="dropdown-menu button">
+                        归档
+                    </a>
+                
+            </div>
+            <script>
+                document.getElementById('btn-dropdown').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    requestAnimationFrame(() => {
+                        dd.style.display = 'flex';
+                        requestAnimationFrame(() => {
+                            dd.style.transform = 'translateY(0)';
+                            dd.style.opacity = '1';
+                        });
+                    });
+                });
+                document.getElementById('btn-dropback').addEventListener('click', () => {
+                    const dd = document.getElementById('dropdown-menus');
+                    dd.style.transform = 'translateY(2.25rem)';                    
+                    dd.style.opacity = '0';
+                    setTimeout(() => {dd.style.display = 'none';}, 350);
+                });
+            </script>
+        
+    </div>
+</header>
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+            <main class="main">
+    <div class="post-title">
+    <h1 class="post-title__text">
+        《存在主义咖啡馆》读书笔记
+    </h1>
+    <div class="post-title__meta">
+        
+            <a href="/archives/2020/02/" class="button" style="color: #808080;">
+    2020-02-20
+</a>
+        
+        
+            
+    <span class="separate-dot"></span><a href="/categories/Read/" class="button">Read</a>
 
-
-
-  <meta name="description" content="《存在主义咖啡馆》读书笔记"/>
-
-
-
-
-  <meta name="keywords" content="存在主义," />
-
-
-
-
-
-  <link rel="alternate" href="/default" title="别低头，皇冠会掉">
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=1.1" />
-
-
-
-<link rel="canonical" href="http://yoursite.com/2020/02/20/《存在主义咖啡馆》读书笔记/"/>
-
-
-<meta name="description" content="第一章-第三章（“先生，太可怕了，存在主义！”、“回到事物本身”、“来自梅斯基尔斯的魔法师”）既然存在者如此突兀，为什么会有存在者而非一无所有？  人类存在不同于其他事物的存在（being）类型。其他实体是什么就是什么，但作为人，我在每一刻，都可以选择我想让自己成为的样子。我是自由的，因此，我对我所做的每件事，都负有责任，这一令人眩晕的事实会导致一种焦虑，而这种焦虑与人类存在本身密不可分。“当">
-<meta property="og:type" content="article">
-<meta property="og:title" content="《存在主义咖啡馆》读书笔记">
-<meta property="og:url" content="http://yoursite.com/2020/02/20/%E3%80%8A%E5%AD%98%E5%9C%A8%E4%B8%BB%E4%B9%89%E5%92%96%E5%95%A1%E9%A6%86%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.html">
-<meta property="og:site_name" content="别低头，皇冠会掉">
-<meta property="og:description" content="第一章-第三章（“先生，太可怕了，存在主义！”、“回到事物本身”、“来自梅斯基尔斯的魔法师”）既然存在者如此突兀，为什么会有存在者而非一无所有？  人类存在不同于其他事物的存在（being）类型。其他实体是什么就是什么，但作为人，我在每一刻，都可以选择我想让自己成为的样子。我是自由的，因此，我对我所做的每件事，都负有责任，这一令人眩晕的事实会导致一种焦虑，而这种焦虑与人类存在本身密不可分。“当">
-<meta property="og:image" content="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200220164914.jpg">
-<meta property="article:published_time" content="2020-02-20T08:26:17.000Z">
-<meta property="article:modified_time" content="2020-02-20T08:50:01.761Z">
-<meta property="article:author" content="Yang">
-<meta property="article:tag" content="存在主义">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200220164914.jpg">
-
-
-<link rel="stylesheet" type="text/css" href="/css/style.css?v=1.1" />
-<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
-
-
-
-
-
-<script type="text/javascript">
-  var themeConfig = {
-    fancybox: {
-      enable: false
-    },
-  };
-</script>
-
-
-
+ 
+        
+        
+     
+ 
 
   
-
-
-
-    <title> 《存在主义咖啡馆》读书笔记 - 别低头，皇冠会掉 </title>
-  <meta name="generator" content="Hexo 4.2.0"></head>
-
-  <body>
-    <div id="page">
-      <header id="masthead"><div class="site-header-inner">
-    <h1 class="site-title">
-        <a href="/." class="logo">别低头，皇冠会掉</a>
-    </h1>
-
-    <nav id="nav-top">
-        
-            <ul id="menu-top" class="nav-top-items">
-                
-                    <li class="menu-item">
-                        <a href="/archives">
-                            
-                            
-                                Archives
-                            
-                        </a>
-                    </li>
-                
-                    <li class="menu-item">
-                        <a href="/about">
-                            
-                            
-                                About
-                            
-                        </a>
-                    </li>
-                
-            </ul>
-        
-  </nav>
+    </div>
 </div>
 
-      </header>
-      <div id="content">
-        
-    <div id="primary">
-        
-  <article class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        
-          《存在主义咖啡馆》读书笔记
-        
-      </h1>
 
-      <time class="post-time">
-          Feb 20 2020
-      </time>
-    </header>
+    <div class="post__with-side">
+        <aside class="post-side">
+            <div class="post-side__toc">
+                <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#第一章-第三章（“先生，太可怕了，存在主义！”、“回到事物本身”、“来自梅斯基尔斯的魔法师”）"><span class="toc-text">第一章-第三章（“先生，太可怕了，存在主义！”、“回到事物本身”、“来自梅斯基尔斯的魔法师”）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第四章-常人、呼唤"><span class="toc-text">第四章 常人、呼唤</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第六章-我可不想吃了我的手稿"><span class="toc-text">第六章 我可不想吃了我的手稿</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第七章-占领-解放"><span class="toc-text">第七章 占领 解放</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#第九章-生平考诉"><span class="toc-text">第九章 生平考诉</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#感想"><span class="toc-text">感想</span></a></li></ol>
+            </div>
+        </aside>
+        <article class="post content-card">
+            <div class="post__header">
+                
+                     
+                
+                
+                    
+    <div class="post__expire" id="post-expired-notify">
+        <p>
+            本文最後更新於 <span id="expire-date"></span> 天前，文中部分描述可能已經過時。
+        </p>
+    </div>
+    <script>
+        (() => {
+            var update = Date.parse("2020-02-20"),
+                date = new Date(),
+                now = date.getTime(),
+                expire = now - update,
+                expire_days = Math.floor(expire/(24*3600*1000));
+            if (expire_days >= 120) {
+                document.querySelectorAll('#expire-date')[0].innerHTML = expire_days;
+                document.querySelectorAll('#post-expired-notify')[0].style.display = 'block';
+            }
+        })();
+    </script>
 
-
-
-    
-            <div class="post-content">
-            <img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200220164914.jpg" height="1610" width="1080"/>
+                
+            </div>
+            <div class="post__content">
+                <div class="md-content">
+                    <img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200220164914.jpg" class="lazyload" data-srcset="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200220164914.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQMAAAAl21bKAAAABlBMVEXMzMyWlpYU2uzLAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAACklEQVQImWNgAAAAAgAB9HFkpgAAAABJRU5ErkJggg==" height="1610" width="1080"/>
 
 <h4 id="第一章-第三章（“先生，太可怕了，存在主义！”、“回到事物本身”、“来自梅斯基尔斯的魔法师”）"><a href="#第一章-第三章（“先生，太可怕了，存在主义！”、“回到事物本身”、“来自梅斯基尔斯的魔法师”）" class="headerlink" title="第一章-第三章（“先生，太可怕了，存在主义！”、“回到事物本身”、“来自梅斯基尔斯的魔法师”）"></a>第一章-第三章（“先生，太可怕了，存在主义！”、“回到事物本身”、“来自梅斯基尔斯的魔法师”）</h4><p><strong>既然存在者如此突兀，为什么会有存在者而非一无所有？</strong></p>
 <blockquote>
@@ -178,97 +261,99 @@
 <p>除此之外，书中谈的最多的就是萨特了，背景是时代名词包含‘法西斯、苏联、美苏、黑人’等等的那个时代，作者写了很多存在主义者参与运动的事，但以现在来看更多表现出来的是“跌宕”，例如对许多‘大家’手稿的保存，海德格尔时的纳粹主义，萨特面临的犹太主义，党派争端，萨特，加缪，雷蒙阿隆等人之间的观点争端等等，他们的生活从来不是无问世事的西方贵族和早晨的阳光与咖啡和独立思考。但无一例外的是他们都在‘<strong>生活</strong>’，在外界与自身之间寻找一个立足的点，然后让其运行起来，不断的运作。萨特知道暮年甚至需要与他人合作时还在坚持输出。我想这里的重点应该不是谈论在那个时代他们做了什么，而是他们在那个时代下，<strong>一直</strong>在做着什么。</p>
 <p>最后，作者就存在、科技和自由上进行了讨论，有提到‘对自由的许多不确定感’，特别是在信息充斥的时候，作者当时是科学数据和杂志的信息轰炸，<strong>“所谓有意识、有掌控能力的头脑，不过是一个假象，下面掩盖的是一对不合理但在统计上可预测的反应，而我们就是这些反应的总和。”</strong>我们所做的选择，不过是对倾向和联想作出反应，但这两者都不是理性和意志可以控制的。联想到现在的互联网时代，各种算法可谓一个又一个的黑魔法。比如昨天晚上，我在微信的‘孔夫子二手书’小程序上搜索了加缪的书，很神奇的事，我打开另一个微信小程序‘多抓鱼’的时候，他就推送了有关于加缪的书单。当然，在没看到确凿的算法和数据使用，不能确凿说小程序之间存在信息的共享。有可能的解释是，推送加缪的书单确实是巧合，而之所以有这样的想法是因为自己先查了加缪的书，在大脑中形成了类似先入之见，无论是加缪的书，还是Maurice Merleau-Ponty的书，他就在那里，是我们之前的经验为这个书单赋予了意义。但是这到底是不是我们真的有自由呢？即我们能以我们之前的经验为这个‘加缪的书单’赋予意义是否真的是我们的选择，还是说在算法下给我们呈现的‘我们的选择’？再远一点，互联网以及以互联网为基础所延伸的产品，是在帮助我们思考？还是在代替我们去思考呢？代替我们思考可以帮助我们避免因其而来的责任和存在的焦虑，但是我们是不是也因此忘记了何为责任，何为自由和存在呢？上面的认识都很浅显，所以我不敢坚定说我读懂了这本书，但是在当下重读存在主义上，我有了充实的动力，完全脱离互联网甚至极端的追求完全的自由说起来都感觉荒谬，或者说是一种倒退，那么如何在当下立足于自由的支点就有了必要性了。</p>
 
+                </div>
             </div>
-          
-
-    
-      <footer class="post-footer">
-		
-		<div class="post-tags">
-		  
-			<a href="/tags/%E5%AD%98%E5%9C%A8%E4%B8%BB%E4%B9%89/">存在主义</a>
-		  
-		</div>
-		
-
+            
+                
+    <div class="post__license">
+        <p>
+            <strong>本文作者：</strong>Weibin Yang
+        </p>
+        <p>
+            <strong>
+                本文鏈接：
+            </strong>
+            <a href="http://yoursite.com/2020/02/20/%E3%80%8A%E5%AD%98%E5%9C%A8%E4%B8%BB%E4%B9%89%E5%92%96%E5%95%A1%E9%A6%86%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/">http://yoursite.com/2020/02/20/%E3%80%8A%E5%AD%98%E5%9C%A8%E4%B8%BB%E4%B9%89%E5%92%96%E5%95%A1%E9%A6%86%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</a>
+        </p>
         
+            <strong>
+                <p>文章默认使用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 协议进行许可，使用时请注意遵守协议。</p>
+
+            </strong>
         
-  <nav class="post-nav">
+    </div>
+ 
+            
+            
+                <div class="post-meta post-footer__meta">
+    <p>
+        最后更新于：2020-02-20
+    </p>
+</div> 
+            
+            
+                <div class="post-cats post-card__cats">
     
-      <a class="prev" href="/2020/03/09/%E2%80%9CHigh-intelligence-A-risk-factor-for-psychological-and-physiological-overexcitabilities-%E2%80%9D%E7%B2%BE%E8%AF%BB/">
-        <i class="iconfont icon-left"></i>
-        <span class="prev-text nav-default">“High intelligence: A risk factor for psychological and physiological overexcitabilities ”精读 </span>
-        <span class="prev-text nav-mobile">上一篇</span>
-      </a>
+        <a href="/categories/Read/" class="post-cats__link button">Read</a>
     
     
-      <a class="next" href="/2020/02/19/%E7%94%A8Python%E5%A4%84%E7%90%86E-prime%E5%AF%BC%E5%87%BA%E7%9A%84%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6/">
-        <span class="next-text nav-default">用Python处理E-prime导出的数据文件</span>
-        <span class="prev-text nav-mobile">下一篇</span>
-        <i class="iconfont icon-right"></i>
-      </a>
+        <a href="/tags/%E5%AD%98%E5%9C%A8%E4%B8%BB%E4%B9%89/" class="post-tags__link button"># 存在主义</a>
     
-  </nav>
-
+</div> 
+             
+        </article>
         
-  <div class="comments" id="comments">
-    
-  </div>
-
-
-      </footer>
-    
-		
-		    
-		        <div class="toc-container">
-		            <div class="toc-article">
-		                <ol class="post-poc"><li class="post-poc-item post-poc-level-4"><a class="post-poc-link" href="#第一章-第三章（“先生，太可怕了，存在主义！”、“回到事物本身”、“来自梅斯基尔斯的魔法师”）"><span class="post-poc-text">第一章-第三章（“先生，太可怕了，存在主义！”、“回到事物本身”、“来自梅斯基尔斯的魔法师”）</span></a></li><li class="post-poc-item post-poc-level-4"><a class="post-poc-link" href="#第四章-常人、呼唤"><span class="post-poc-text">第四章 常人、呼唤</span></a></li><li class="post-poc-item post-poc-level-4"><a class="post-poc-link" href="#第六章-我可不想吃了我的手稿"><span class="post-poc-text">第六章 我可不想吃了我的手稿</span></a></li><li class="post-poc-item post-poc-level-4"><a class="post-poc-link" href="#第七章-占领-解放"><span class="post-poc-text">第七章 占领 解放</span></a></li><li class="post-poc-item post-poc-level-4"><a class="post-poc-link" href="#第九章-生平考诉"><span class="post-poc-text">第九章 生平考诉</span></a></li><li class="post-poc-item post-poc-level-4"><a class="post-poc-link" href="#感想"><span class="post-poc-text">感想</span></a></li></ol>
-		            </div>
-		        </div>
-		    
-		
-
-  </article>
-
     </div>
 
-      </div>
 
-      <footer id="colophon"><span class="copyright-year">
+</main>
+<footer class="footer">
+     
+
+
+     
+  
     
-        &copy;
+        
+            <p>Copyright © 2020</p>
+
+        
     
-        2019 -
-    
-    2020
-    <span class="footer-author">Yang.</span>
-    <span class="power-by">
-        由 <a class="hexo-link" href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> and <a class="theme-link" href="https://github.com/frostfan/hexo-theme-polarbear" target="_blank" rel="noopener">Polar Bear</a> 强力驱动
-    </span>
-</span>
-
-      </footer>
-
-      <div class="back-to-top" id="back-to-top">
-        <i class="iconfont icon-up"></i>
-      </div>
-    </div>
-    
+    <p>Powered by <a href="https://hexo.io" target="_blank">Hexo</a> | Theme - <a href="https://github.com/ChrAlpha/hexo-theme-cards" target="_blank">Cards</a></p>
+</footer>
 
 
-    
+        </div>
+        
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <script>
+        window.lazyLoadOptions = {
+            elements_selector: ".lazyload",
+            threshold: 0
+        };
+    </script>
 
 
+ 
 
+ 
+
+ 
 
   
-    <script type="text/javascript" src="/lib/jquery/jquery-3.1.1.min.js"></script>
-  
 
-  
+ 
 
-    <script type="text/javascript" src="/js/src/theme.js?v=1.1"></script>
-<script type="text/javascript" src="/js/src/bootstrap.js?v=1.1"></script>
+ 
+    
+<script src="/js/b2t.js"></script>
 
-  </body>
+
+
+
+
+
+
+
+    </body>
 </html>
