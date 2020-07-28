@@ -277,9 +277,9 @@
 <p>“要不要吃这只菜虫，问题绝不在于我敢不敢吃，而是在于我敢不敢这么鲜明旗帜地表示”</p>
 </blockquote>
 <a id="more"></a>
-
 <p>&nbsp;&nbsp;&nbsp;最后的这句话实在是触动我，有很多评论认为作为一本纪实文学对于许多现象的看法和观点不够深入，可能这是一个确实存在的问题。但其实我一开始并没有将其当作纪实文学的概念，而是看着一个人的生活历程，作者的生活经历。从这个角度来看，一开始对于四川美食文化的惊艳和着迷，然后到中后段对于一些珍稀的食材，上层与下层的生活饮食的区别时内心的矛盾，因为自己情境的原因，可能必须得伪装着自己去吃下去，但是内心又是对自己罪恶的煎熬。这种内心的感受作者有很明确地表达出来。这也是读到最后作者一句“而在于我敢不敢这么旗帜鲜明地表示”让我产生巨大感触的原因。<br>&nbsp;&nbsp;&nbsp;书中的刘伟——素食主义者——很让人敬佩，其生活方式也是很让我羡慕，但是这不太现实呀，我们身处社会中并不是简单的选择就能改变生活方式挽救自己的心灵的。面对现实的“不得不”和心理上的“不想要”的冲突感我觉得是更加“接地气”的一种描写。书中一些关于美食的描述关于文化的描述有时候会让我有很多惊喜，比如香港人倒茶时手指点桌子。虽然平时我们很常见但缺少有感觉，但是在书上看到反而给了我一种全新的视角去体会生活中常见的事物。这种惊喜在于将平时对于生活小事的感受阀限降低了，让我们对生活更加敏感了，这是我觉得惊喜的地方。但惊喜并不足够且非长久之计，还要有共鸣，作者描写的心理与现实的冲突就是我所共鸣的地方。而让我高兴的是，最后能看到这一句：“要不要吃这只菜虫，问题绝不在于我敢不敢吃，而是在于我敢不敢这么鲜明旗帜地表示”。<strong>菜虫虽小，但旗帜很鲜艳</strong>。</p>
-<img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200424110947.jpg" height="1610" width="1080"/>
+<p><img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200424110947.jpg" height="1610" width="1080"/></p>
+
     </div>
 
     
@@ -413,18 +413,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -470,12 +470,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">41k</span>
+    <span title="站点总字数">42k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">37 分钟</span>
+    <span title="站点阅读时长">38 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
@@ -565,6 +565,63 @@ show_date_time();
 
 
   
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 

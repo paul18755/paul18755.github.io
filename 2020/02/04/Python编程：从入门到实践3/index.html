@@ -277,12 +277,10 @@
 <p>提取元素从<strong>0</strong>开始<br>提取最后一个值可以让索引等于-1</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">bicycles = [<span class="string">'trek'</span>, <span class="string">'cannondale'</span>, <span class="string">'redline'</span>, <span class="string">'specialized'</span>]</span><br><span class="line">print(bicycles[<span class="number">0</span>])</span><br><span class="line">print(bicycles[<span class="number">0</span>].title())</span><br><span class="line">print(bicycles[<span class="number">1</span>]) <span class="comment">#索引1是第二个值</span></span><br><span class="line">print(bicycles[<span class="number">-1</span>])</span><br></pre></td></tr></table></figure>
-
 <h3 id="3-2-修改、添加和删除元素"><a href="#3-2-修改、添加和删除元素" class="headerlink" title="3.2 修改、添加和删除元素"></a>3.2 修改、添加和删除元素</h3><blockquote>
 <p>append()在列表末尾添加元素<br>insert(1,’<em>‘) 在列表[1]处添加</em>元素<br>del 列表名[索引] 该语句实现删除列表中的元素的作用<br>pop()方法用于即删除元素的同时又使用这个元素<br>remove()方法用于删除已知的值而不知道索引的情况下</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">motorcycles = [<span class="string">'honda'</span>, <span class="string">'yamaha'</span>, <span class="string">'suzuki'</span>]</span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles[<span class="number">0</span>] = <span class="string">'ducati'</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles[<span class="number">0</span>] = <span class="string">'honda'</span></span><br><span class="line">motorcycles.append(<span class="string">'ducati'</span>) <span class="comment">#添加在末尾</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles.insert(<span class="number">0</span>,<span class="string">'ducati2'</span>) <span class="comment">#指定位置添加</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line"><span class="keyword">del</span> motorcycles[<span class="number">0</span>]</span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">popped_motorcycles = motorcycles.pop() <span class="comment">#括号中可以指定索引，不指定则随机</span></span><br><span class="line">print(motorcycles)</span><br><span class="line">print(popped_motorcycles)</span><br></pre></td></tr></table></figure>
-
 <h3 id="3-3-组织列表"><a href="#3-3-组织列表" class="headerlink" title="3.3 组织列表"></a>3.3 组织列表</h3><h4 id="3-3-1-永久性排序"><a href="#3-3-1-永久性排序" class="headerlink" title="3.3.1 永久性排序"></a>3.3.1 永久性排序</h4><blockquote>
 <p>sort()方法实现列表的永久性排序,传递reverse=True则表示与字母顺序相反<br>sorted(列表名)方法实现暂时对列表的排序<br>reverse()方法实现对列表中元素的顺序的反转（不按字母表顺序）<br>len(列表名)确定列表长度</p>
 </blockquote>
@@ -422,18 +420,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -479,12 +477,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">41k</span>
+    <span title="站点总字数">42k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">37 分钟</span>
+    <span title="站点阅读时长">38 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
@@ -574,6 +572,63 @@ show_date_time();
 
 
   
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 

@@ -255,7 +255,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>890</span>
+              <span>888</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -281,7 +281,7 @@
 <h4 id="推论统计"><a href="#推论统计" class="headerlink" title="推论统计"></a>推论统计</h4><p>推论统计主要是关于如何从局部样本数据中推论出总体的一般性特征和规律。其主要内容有<strong>概率论基础、假设检验、参数估计、方差分析</strong>、卡方检验、非参数检验、一元线性回归和初步多元分析。</p>
 <h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><ol>
 <li>按<strong>数据来源</strong>分可分为<strong>计数数据和测量数据</strong>，两者的主要区别在于测量数据主要依靠测量工具或者特定的测量标准，而计数数据指计算个数的数据，有独立的分类单位。</li>
-<li>按<strong>测量反映水平</strong>可分为<strong>称名数据、顺序数据、等距数据和比率数据</strong>。称名数据只说明事物之间在属性上或类别上的差异，有独立的分类单位；顺序数据在称名数据的基础上按事物属性的大小次序排列，无相等单位和绝对零；等距数据有相等单位，代表数据之间的差数关系（可+-）；比率数据则两者兼有，代表数据的倍数关系（可+-$<em>$/）。 *</em>在这类数据的判断上，应该先回归数据本身，例如工资应回归于1元、10元、100元在进行差数倍数关系的判断。**</li>
+<li>按<strong>测量反映水平</strong>可分为<strong>称名数据、顺序数据、等距数据和比率数据</strong>。称名数据只说明事物之间在属性上或类别上的差异，有独立的分类单位；顺序数据在称名数据的基础上按事物属性的大小次序排列，无相等单位和绝对零；等距数据有相等单位，代表数据之间的差数关系（可+-）；比率数据则两者兼有，代表数据的倍数关系（可+-$<em>$/）。 <em>*在这类数据的判断上，应该先回归数据本身，例如工资应回归于1元、10元、100元在进行差数倍数关系的判断。</em></em></li>
 <li>按<strong>数据的连续性</strong>可分为<strong>离散数据和连续数据</strong>。两者的区别在于是否可以无限细分。例如<img src="https://raw.githubusercontent.com/paul18755/ppppp/master/20200219120815.png" alt="图片名称" align=center /></li>
 </ol>
 <h4 id="常见概念"><a href="#常见概念" class="headerlink" title="常见概念"></a>常见概念</h4><ul>
@@ -426,18 +426,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -483,12 +483,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">41k</span>
+    <span title="站点总字数">42k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">37 分钟</span>
+    <span title="站点阅读时长">38 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
@@ -578,6 +578,63 @@ show_date_time();
 
 
   
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 

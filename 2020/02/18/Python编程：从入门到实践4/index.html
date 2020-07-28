@@ -277,26 +277,20 @@
 <p>用for循环 </p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">magicians = [<span class="string">'alice'</span>, <span class="string">'david'</span>, <span class="string">'carolina'</span>]</span><br><span class="line"><span class="keyword">for</span> magician <span class="keyword">in</span> magicians:</span><br><span class="line">	print(i)</span><br><span class="line">	</span><br><span class="line"><span class="comment"># 忘记缩进的警告：</span></span><br><span class="line"><span class="comment">#  File "/Users/ywb/Desktop/magicians.py", line 8</span></span><br><span class="line"><span class="comment">#   print(magician)</span></span><br><span class="line"><span class="comment">#       ^</span></span><br><span class="line"><span class="comment">#IndentationError: expected an indented block</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 不必要的缩进警告：</span></span><br><span class="line"><span class="comment">#   File "/Users/ywb/Desktop/magicians.py", line 11</span></span><br><span class="line"><span class="comment">#     print(a)</span></span><br><span class="line"><span class="comment">#     ^</span></span><br><span class="line"><span class="comment"># IndentationError: unexpected indent</span></span><br></pre></td></tr></table></figure>
-
 <h3 id="4-3创建数值列表"><a href="#4-3创建数值列表" class="headerlink" title="4.3创建数值列表"></a>4.3创建数值列表</h3><blockquote>
 <p>range(1,5)方法实现生成1到4的数值列表<br>range(2,11,2)方法指定步长，最大值到11，从2开始每次增加2生成数值列表</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> value <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">5</span>):</span><br><span class="line">	print(value)</span><br><span class="line">	</span><br><span class="line">numbers = list(range(<span class="number">1</span>,<span class="number">6</span>))</span><br><span class="line">print(numbers)</span><br><span class="line"></span><br><span class="line">even_numbers = list(range(<span class="number">2</span>,<span class="number">11</span>,<span class="number">2</span>)) <span class="comment">#指定步长</span></span><br><span class="line">print(even_numbers)</span><br><span class="line"></span><br><span class="line">squares = []</span><br><span class="line"><span class="keyword">for</span> value <span class="keyword">in</span> range(<span class="number">1</span>,<span class="number">11</span>):</span><br><span class="line">	squares.append(value**<span class="number">2</span>) <span class="comment">#**代表乘方运算</span></span><br><span class="line">print(squares)</span><br><span class="line"><span class="comment">#上述等价于</span></span><br><span class="line">squares = [value**<span class="number">2</span> <span class="keyword">for</span> value <span class="keyword">in</span> range(<span class="number">1.11</span>)]</span><br></pre></td></tr></table></figure>
-
 <h4 id="4-3-3统计计算"><a href="#4-3-3统计计算" class="headerlink" title="4.3.3统计计算"></a>4.3.3统计计算</h4><blockquote>
 <p>min(), max(),sum()分布计算数字列表的最小值，最大值和总和</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">digits = range(<span class="number">1</span>,<span class="number">11</span>)</span><br><span class="line">print(min(digits))</span><br><span class="line">print(<span class="string">'\n'</span>)</span><br><span class="line">print(max(digits))</span><br><span class="line">print(<span class="string">'\n'</span>)</span><br><span class="line">print(sum(digits))</span><br></pre></td></tr></table></figure>
-
 <h3 id="4-4-切片"><a href="#4-4-切片" class="headerlink" title="4.4 切片"></a>4.4 切片</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 提取列表的2到4个元素，将起始索引指定为1，终止索引指定为4</span></span><br><span class="line">players = [<span class="string">'charles'</span>, <span class="string">'martina'</span>, <span class="string">'michael'</span>, <span class="string">'florence'</span>, <span class="string">'eli'</span>]</span><br><span class="line">print(players[<span class="number">1</span>:<span class="number">4</span>])</span><br><span class="line"><span class="comment"># 负数索引返回离列表末尾相应距离的元素，输出名单最后三位：</span></span><br><span class="line">print(players[<span class="number">-3</span>:])</span><br></pre></td></tr></table></figure>
-
 <h3 id="4-5-元组"><a href="#4-5-元组" class="headerlink" title="4.5 元组"></a>4.5 元组</h3><blockquote>
 <p>元组用圆括号来标示，类似列表但是其中的值不能修改。同样可以用for循环</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dimensions=(<span class="number">200</span>,<span class="number">50</span>)</span><br><span class="line">print(dimensions[<span class="number">1</span>])</span><br><span class="line"><span class="keyword">for</span> dimension <span class="keyword">in</span> dimensions:</span><br><span class="line">	print(dimension)</span><br></pre></td></tr></table></figure>
-<p>count方法，用于计算某个数值在元祖中出现的次数</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>)</span><br><span class="line">print(a.count(<span class="number">2</span>))</span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure>
-
+<p>count方法，用于计算某个数值在元祖中出现的次数<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = (<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>)</span><br><span class="line">print(a.count(<span class="number">2</span>))</span><br><span class="line"><span class="number">4</span></span><br></pre></td></tr></table></figure></p>
 
     </div>
 
@@ -432,18 +426,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
-        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -489,12 +483,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">41k</span>
+    <span title="站点总字数">42k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">37 分钟</span>
+    <span title="站点阅读时长">38 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div>
@@ -584,6 +578,63 @@ show_date_time();
 
 
   
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
