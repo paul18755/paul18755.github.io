@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/shuyuanmen.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/shuyuanmen.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/shuyuanmen.png">
+  <link rel="mask-icon" href="/images/shuyuanmen.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.wztzuibang.cn","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":300,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="第三章 集中量数算术平均数 未分组情况下公式：$\overline{X} &#x3D; \frac{\sum{X_i}}{N}$ ；或者引入假设的AM使用估计平均数公式：$\overline{X}&#x3D;AM+\frac{\sum{x^{‘}}}{N}$ 分组次数分布表下缺少原始数据时：$\overline{X}&#x3D;\frac{\sum{f·x_{c}}}{N}$，其中f为频数，$x_{c}$为每组的组中值 算术平">
+<meta property="og:type" content="article">
+<meta property="og:title" content="心理统计公式备忘">
+<meta property="og:url" content="http://www.wztzuibang.cn/2020/07/28/%E5%BF%83%E7%90%86%E7%BB%9F%E8%AE%A1%E5%85%AC%E5%BC%8F%E5%A4%87%E5%BF%98/index.html">
+<meta property="og:site_name" content="别低头，皇冠会掉">
+<meta property="og:description" content="第三章 集中量数算术平均数 未分组情况下公式：$\overline{X} &#x3D; \frac{\sum{X_i}}{N}$ ；或者引入假设的AM使用估计平均数公式：$\overline{X}&#x3D;AM+\frac{\sum{x^{‘}}}{N}$ 分组次数分布表下缺少原始数据时：$\overline{X}&#x3D;\frac{\sum{f·x_{c}}}{N}$，其中f为频数，$x_{c}$为每组的组中值 算术平">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-07-28T09:17:43.000Z">
+<meta property="article:modified_time" content="2020-07-28T09:34:01.929Z">
+<meta property="article:author" content="Weibin Yang">
+<meta property="article:tag" content="心理统计">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://www.wztzuibang.cn/2020/07/28/%E5%BF%83%E7%90%86%E7%BB%9F%E8%AE%A1%E5%85%AC%E5%BC%8F%E5%A4%87%E5%BF%98/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>心理统计公式备忘 | 别低头，皇冠会掉</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">别低头，皇冠会掉</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">There is long way to down!</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-首页">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-标签">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-分类">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-归档">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-book">
+
+    <a href="/books/" rel="section"><i class="fa fa-book fa-fw"></i>阅读</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.wztzuibang.cn/2020/07/28/%E5%BF%83%E7%90%86%E7%BB%9F%E8%AE%A1%E5%85%AC%E5%BC%8F%E5%A4%87%E5%BF%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200720115632.png">
+      <meta itemprop="name" content="Weibin Yang">
+      <meta itemprop="description" content="自谈拙见，不足挂齿！">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="别低头，皇冠会掉">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          心理统计公式备忘
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-07-28 17:17:43 / 修改时间：17:34:01" itemprop="dateCreated datePublished" datetime="2020-07-28T17:17:43+08:00">2020-07-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Learning/" itemprop="url" rel="index"><span itemprop="name">Learning</span></a>
+                </span>
+            </span>
+
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>6.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="第三章-集中量数"><a href="#第三章-集中量数" class="headerlink" title="第三章 集中量数"></a>第三章 集中量数</h2><h3 id="算术平均数"><a href="#算术平均数" class="headerlink" title="算术平均数"></a>算术平均数</h3><ol>
+<li>未分组情况下公式：$\overline{X} = \frac{\sum{X_i}}{N}$ ；或者引入假设的AM使用估计平均数公式：$\overline{X}=AM+\frac{\sum{x^{‘}}}{N}$</li>
+<li>分组次数分布表下缺少原始数据时：$\overline{X}=\frac{\sum{f·x_{c}}}{N}$，其中f为频数，$x_{c}$为每组的组中值</li>
+<li>算术平均数特点：$\frac{\sum{x_{i}+c}}{N}=\overline{X}+c$、$\frac{\sum{x_{i}·c}}{N}=\overline{X}·c$</li>
+</ol>
+<a id="more"></a>
+<h3 id="众数"><a href="#众数" class="headerlink" title="众数"></a>众数</h3><p>$M_{o}=3M_{d}-2M$</p>
+<h2 id="第四章-差异量数"><a href="#第四章-差异量数" class="headerlink" title="第四章 差异量数"></a>第四章 差异量数</h2><h3 id="全距"><a href="#全距" class="headerlink" title="全距"></a>全距</h3><ol>
+<li>$R=X_{max}-X_{min}$</li>
+</ol>
+<h3 id="百分位差"><a href="#百分位差" class="headerlink" title="百分位差"></a>百分位差</h3><ol>
+<li>百分位差：$P_{90}-P_{10}$、$P_{93}-P_{7}$</li>
+<li>四分卫差：$Q=\frac{Q_{3}-Q_{1}}{2}$</li>
+</ol>
+<h3 id="离差和平均差"><a href="#离差和平均差" class="headerlink" title="离差和平均差"></a>离差和平均差</h3><ol>
+<li>离差：$x=X-\mu$</li>
+<li>平均差等于离差绝对值的均值：$A.D.=\frac{\sum{[X_{i}-\overline{X}]}}{N}$</li>
+</ol>
+<h3 id="方差与标准差"><a href="#方差与标准差" class="headerlink" title="方差与标准差"></a>方差与标准差</h3><ol>
+<li>未分组，有原始数据的情况：可以用基本公式：$S^2=\frac{\sum{(x_i-\overline{X})^2}}{N}, x=$。或者采用原始公式：$S^2=\frac{\sum{X^2}}{N}-(\frac{\sum{X}}{N})^2$</li>
+<li>已经分组，原始数据未知情况：采用基本公式$S^2=\frac{\sum{f·x^2}}{N},x=x_c-\overline{X}$</li>
+<li>标准差等于方差开根号：$s=\sqrt{S^2}$</li>
+<li>标准差的特点：$Y_i=X_i+c,S_y=S_x$，$Y_i=X_i·c,S_y=[C]·S_X$</li>
+</ol>
+<h3 id="相对量数"><a href="#相对量数" class="headerlink" title="相对量数"></a>相对量数</h3><ol>
+<li>差异系数为标准差对平均数的百分比：$CV=\frac{S}{\overline{X}}·100%$</li>
+<li>标准分数：$Z=\frac{x_i-\overline{X}}{S}$、$sum(Z)=0,\overline{X_z}=0,S_z=1$</li>
+<li>百分等级已分组情况下：$P_R=100-\frac{(100·R-50)}{N}$，其中R为排序序号</li>
+</ol>
+<h2 id="第五章-相关量数"><a href="#第五章-相关量数" class="headerlink" title="第五章 相关量数"></a>第五章 相关量数</h2><h3 id="积差相关"><a href="#积差相关" class="headerlink" title="积差相关"></a>积差相关</h3><ol>
+<li>基本式：$r=\frac{\sum{xy}}{NS_XS_Y}=\frac{\sum{xy}}{\sqrt{\sum{x^2}\sum{y^2}}},x=X-\overline{X},y=Y-\overline{Y}$</li>
+<li>标准分数下的积差相关：$r=\frac{\sum{Z_xZ_y}}{N}$</li>
+</ol>
+<h3 id="等级相关"><a href="#等级相关" class="headerlink" title="等级相关"></a>等级相关</h3><ol>
+<li>肯德尔W系数：$W=\frac{s}{\frac{k^2}{12}(N^3-N)},s=\sum{R^2_i}-\frac{(\sum{R_i})^2}{N}$，其中$R_i$为等级之和，N为事物数量，K为人数或者次数</li>
+<li>肯德尔U系数：$U=\frac{8(\sum{r^2_{ij}-K\sum{r_ij}})}{N(N-1)K(K-1)}$</li>
+</ol>
+<h3 id="质与量相关"><a href="#质与量相关" class="headerlink" title="质与量相关"></a>质与量相关</h3><ol>
+<li>点二列相关：$r_{pb}=\frac{\overline{X_p}-\overline{X_q}}{S_t}·\sqrt{pq}$，其中p为对占总体的比值</li>
+<li>二列相关：$r_b=\frac{\sum{X_p}-\sum{X_q}}{S_t}·\frac{pq}{y}$，其中y要查表</li>
+</ol>
+<h3 id="品质相关"><a href="#品质相关" class="headerlink" title="品质相关"></a>品质相关</h3><p>真正二分$\varphi系数$：$r_\varphi=\frac{ad-bc}{\sqrt{(a+b)(a+c)(b+d)(c+D)}}$。对角相乘，相邻相加</p>
+<h2 id="第六章-概率基础"><a href="#第六章-概率基础" class="headerlink" title="第六章 概率基础"></a>第六章 概率基础</h2><h3 id="二项分布"><a href="#二项分布" class="headerlink" title="二项分布"></a>二项分布</h3><p>均值：$\mu=np$，标准差：$\sigma=\sqrt{npq}$ </p>
+<h3 id="样本分布"><a href="#样本分布" class="headerlink" title="样本分布"></a>样本分布</h3><h4 id="正态分布"><a href="#正态分布" class="headerlink" title="正态分布"></a>正态分布</h4><ol>
+<li>样本均值的均值：$\mu_{\overline{X}=\mu} $，样本均值的标准差即<strong>标准误</strong>：$\sigma=SE=\frac{\sigma}{\sqrt{n}}$</li>
+<li>样本标准差的均值：$\overline{X}_{s}=\sigma$，样本标准差的标准差：$\frac{\sigma}{\sqrt{2n}}$</li>
+</ol>
+<h4 id="t分布"><a href="#t分布" class="headerlink" title="t分布"></a>t分布</h4><p>方差未知时，样本均值的均值：$\mu_{\overline{X}}=\mu$，样本均值的标准差即<strong>标准误</strong>：$\sigma_{\overline{X}}=SE=\frac{S}{\sqrt{n-1}}=\frac{S_{n-1}}{\sqrt{n}}, df=n-1$</p>
+<h3 id="最大允许抽样误差"><a href="#最大允许抽样误差" class="headerlink" title="最大允许抽样误差"></a>最大允许抽样误差</h3><p>$d=Z·SE_{\overline{X}}, 其中SE_{\overline{X}}=\frac{\sigma}{\sqrt{n}}$</p>
+<h2 id="第七章-参数估计"><a href="#第七章-参数估计" class="headerlink" title="第七章 参数估计"></a>第七章 参数估计</h2><h3 id="均值估计"><a href="#均值估计" class="headerlink" title="均值估计"></a>均值估计</h3><ol>
+<li>总体正态，方差已知：$SE_{\overline{X}}=\frac{\sigma}{\sqrt{n}}， \overline{X}\pm Z\cdot SE_{\overline{X}}$</li>
+<li>总体正态，方差未知：$SE_{\overline{X}}=\frac{S}{\sqrt{n-1}}=\frac{S_{n-1}}{\sqrt{n}}， \overline{X}\pm t\cdot SE_{\overline{X}}$</li>
+<li>总体非正态，方差已知且n&gt;30：$SE_{\overline{X}}=\frac{\sigma}{\sqrt{n}}， \overline{X}\pm Z \cdot SE_{\overline{X}}$</li>
+<li>总体非正态，方差未知且n&gt;30：$SE_{\overline{X}}=\frac{S}{\sqrt{n-1}}=\frac{S_{n-1}}{\sqrt{n}}， \overline{X}\pm t\cdot SE_{\overline{X}}$</li>
+</ol>
+<h2 id="第八章-假设检验"><a href="#第八章-假设检验" class="headerlink" title="第八章 假设检验"></a>第八章 假设检验</h2><h3 id="假设"><a href="#假设" class="headerlink" title="假设"></a>假设</h3><ol>
+<li>单侧：$H_0:\mu_1 \leq \mu_0，H_1: \mu_1&gt;\mu_0$</li>
+<li>双侧：$H_0:\mu_1 = \mu_0，H_1: \mu_1 \neq \mu_0$</li>
+</ol>
+<h3 id="样本与总体均值做比较"><a href="#样本与总体均值做比较" class="headerlink" title="样本与总体均值做比较"></a>样本与总体均值做比较</h3><ol>
+<li>总体正态，方差已知：$Z=\frac{\overline{X}-\mu_o}{SE_{\overline{X}}}, SE_{\overline{X}}=\frac{\sigma}{\sqrt{n}}$ </li>
+<li>总体正态，方差未知：$t=\frac{\overline{X}-\mu_o}{SE_{\overline{X}}}，df=n-1，SE_{\overline{X}}=\frac{S}{\sqrt{n-1}}=\frac{S_{n-1}}{\sqrt{n}}$</li>
+<li>总体非正态，但n$\geq$30：$Z=\frac{\overline{X}-\mu_o}{SE_{\overline{X}}}, SE_{\overline{X}}=\frac{\sigma}{\sqrt{n}}=\frac{s}{\sqrt{n-1}}$</li>
+</ol>
+<h3 id="样本与样本均值做比较"><a href="#样本与样本均值做比较" class="headerlink" title="样本与样本均值做比较"></a>样本与样本均值做比较</h3><ol>
+<li>两总体正态，方差已知：<ul>
+<li>独立样本：$SE_{D\overline{X}}=\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}$</li>
+<li>相关样本：$SE_{D\overline{X}}=\sqrt{\frac{\sigma_1^2}{n}+\frac{\sigma_2^2}{n}-2r \cdot  \frac{\sigma_1}{\sqrt{n}}+\frac{\sigma_2}{\sqrt{n}}}$ </li>
+</ul>
+</li>
+<li>两总体正态，方差未知：<ul>
+<li>独立样本且方差齐性：$SE_{D\overline{X}}=\sqrt{\frac{n_1 S_1^2+n_2 S_2^2}{n_1-n_2 -2} \cdot \frac{n_1+n_2}{n_1n_2} }, df=n_1+n_2 -2$</li>
+<li>独立样本但方差不齐性：采用柯克兰-柯克斯t检验：$SE_{D\overline{X}}=\sqrt{\frac{S_{n_1-1}^2}{n_1}+\frac{S_{n_2 -1}^2}{n_2}}$</li>
+<li>相关样本且相关系数r已知：$SE_{D\overline{X}}=\sqrt{\frac{S_1^2+S_x^2-2rS_1 S_2}{n-1}}, df=n-1$</li>
+<li>相关样本但相关系数r未知：$SE_{D\overline{X}}=\sqrt{\frac{S_d^2}{n-1}}=\sqrt{\frac{\sum d^2-\frac{(\sum d)^2}{n}}{n-1}}, d=X_{1i}-X_{2i}$</li>
+</ul>
+</li>
+<li>两总体非正态，但$n\geq30$：<ul>
+<li>独立样本：$SE_{D\overline{X}}=\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}$</li>
+<li>相关样本：$SE_{D\overline{X}}=\sqrt{\frac{\sigma_1^2+\sigma_x^2-2r\sigma_1 \sigma_2}{n-1}}$</li>
+</ul>
+</li>
+</ol>
+<h3 id="样本与总体的方差做检验"><a href="#样本与总体的方差做检验" class="headerlink" title="样本与总体的方差做检验"></a>样本与总体的方差做检验</h3><p>总体为正态分布时，采用卡方检验：$X^2 = \frac{ns^2}{\sigma^2}, 若X^2&gt;X_{a/2}^2 或者 X^2&lt;X_{(1-a/2)}^2 则差异显著$</p>
+<h3 id="样本与样本的方差做检验"><a href="#样本与样本的方差做检验" class="headerlink" title="样本与样本的方差做检验"></a>样本与样本的方差做检验</h3><ol>
+<li>独立样本采用F检验：$F=\frac{S_大^2}{S_小^2},df=n_1-1，若F&gt;F_{a/2}或F&lt;F_{1-a/2}则差异显著，方差不齐$</li>
+<li>相关样本采用t检验：$SE=\sqrt{\frac{4S_1^2 S_2^2 (1-r^2)}{n-2}}, df=n-2$</li>
+</ol>
+<h3 id="积差相关显著性检验"><a href="#积差相关显著性检验" class="headerlink" title="积差相关显著性检验"></a>积差相关显著性检验</h3><ol>
+<li>$\rho=0$的情况下，用t检验：$SE=\sqrt{\frac{1-r^2}{n-2}},t=\frac{r-0}{SE},df=n-2$</li>
+<li>$\rho\neq0$的情况下需要先转换为费舍Z再进行Z检验：$SE=\frac{1}{\sqrt{n-3}}, Z=\frac{Z_r-Z_\rho}{SE}$</li>
+</ol>
+<h3 id="效果量"><a href="#效果量" class="headerlink" title="效果量"></a>效果量</h3><ol>
+<li>科恩d值<ul>
+<li>总体值已知时，=$\frac{平均数差}{标准差}=\frac{M=\mu}{\sigma}$</li>
+<li>总体值未知时，=$\frac{平均数差}{样本标准差}=\frac{M-\mu}{S}, S=\sqrt{\frac{SS}{df}}$</li>
+</ul>
+</li>
+<li>空</li>
+<li>$r_{pb}^2 = \frac{t^2}{t^2+df}$</li>
+<li>$\eta^2$方差效果量=$\frac{SS_b}{SS_t}$</li>
+<li>$r^2$决定系数=$\frac{SS_R}{SS_T}$</li>
+</ol>
+<h2 id="第九章-方差分析"><a href="#第九章-方差分析" class="headerlink" title="第九章 方差分析"></a>第九章 方差分析</h2><h3 id="假设-1"><a href="#假设-1" class="headerlink" title="假设"></a>假设</h3><p>$H_0:\mu_1=\mu_2=\mu_3$<br>$H_1:\mu_1 \neq \mu_2 \neq \mu_3$</p>
+<h3 id="单因素方差分析"><a href="#单因素方差分析" class="headerlink" title="单因素方差分析"></a>单因素方差分析</h3><p>$SS_T=\sum \sum X^2-\frac{(\sum \sum X)^2}{nk}$ </p>
+<ol>
+<li><p>完全随机（组间）：<br>$SS_B = \sum\frac{(\sum X)^2}{n}-\frac{(\sum \sum X)^2}{nk} , SS_W=\sum \sum X^2-\sum\frac{(\sum X)^2}{n}$   $ df_t=N-1, df_b=k-1, df_w=k(n-1)$</p>
+</li>
+<li><p>随机区组（组内）：<br>$SS_T=SS_B+SS_R+SS_E, SS_R=\sum \frac{(\sum R)^2}{k}-\frac{(\sum \sum R)^2}{nk},SS_E用减法$ $df_t=N-1, df_b=k-1, df_E=(n-1)(k-1),df_R=n-1$</p>
+</li>
+</ol>
+<h3 id="多因素方差分析"><a href="#多因素方差分析" class="headerlink" title="多因素方差分析"></a>多因素方差分析</h3><ol>
+<li>两因素完全随机（组间）：<ul>
+<li>主效应：$\overline{X}_{a1}=a_1 b_1+a_2b_2+a_3b_3$</li>
+<li>简单效应与交互作用：$d_1=a_1b_1+a_2b_1$</li>
+<li>$SS_t=SS_a+SS_b+SS_{ab}+SS_w, SS_{ab}=SS_B-SS_a-SS_b$</li>
+<li>$SS_A=\sum^{a} \frac{(\sum^n \sum^b X)^2}{nb}- \frac{(\sum \sum X)^2}{N}, SS_B=\sum^{b} \frac{(\sum^n \sum^a X)^2}{na}-\frac{(\sum \sum X)^2}{N}$</li>
+<li>$df_a=a-1,df_b=b-1,df_t=N-1, df_{ab}=(a-1)(b-1),df_w=ab(n-1)$</li>
+</ul>
+</li>
+<li>空</li>
+<li>两因素随机区组（组内）：<ul>
+<li>$SS_T=SS_A+SS_B+SS_{AB}+SS_R+SS_E$</li>
+<li>$df_R=n-1, df_E=(k-1)(n_{a/b/ab}-1)$</li>
+<li>$F_A=\frac{MS_A}{MS_{E_A}}, F_AB=\frac{MS_{AB}}{MS_{E_{AB}}}$</li>
+</ul>
+</li>
+<li>两因素混合设计（组间$\times$组内）:<ul>
+<li>$SS_T=SS_{被试间}+SS_{被试内}$</li>
+<li>$SS_{被试间}=SS_A+SS_{个体差异}$</li>
+<li>$SS_{被试内}=SS_B+SS_{AB}+SS_{B\times个体差异}$</li>
+<li>$df_t=n\cdot p \cdot q-1, df_A=p-1, df_{个体差异}=p(n-1)$</li>
+<li>$df_B=q-1, df_{AB}=(q-1)(p-1), df_{B\times个体差异}=(q-1)(n-1)p$</li>
+</ul>
+</li>
+</ol>
+<h3 id="事后检验"><a href="#事后检验" class="headerlink" title="事后检验"></a>事后检验</h3><p>先算标准误$SE=\sqrt{\frac{MS_E}{n}}$，在计算等级差和自由度 $r=r_j-r_i, df=df_w$，最后若两者差值符合$\overline{X_i}-\overline{X_j} &gt; q_{0,05}\cdot SE$，则差异显著</p>
+<h2 id="第十一章，回归分析"><a href="#第十一章，回归分析" class="headerlink" title="第十一章，回归分析"></a>第十一章，回归分析</h2><h3 id="一元线性回归"><a href="#一元线性回归" class="headerlink" title="一元线性回归"></a>一元线性回归</h3><ol>
+<li>回归公式：$\widehat{Y}=a+bX, b=回归系数$</li>
+<li>最小二乘法：$a=\overline{Y}-b\overline{X}, 若有相关系数：b_{yx}=r\cdot\frac{S_Y}{S_X}, 否则：b=\frac{\sum(X-\overline{X})(Y-\overline{Y})}{\sum{(X-\overline{X})^2}},$</li>
+</ol>
+<h3 id="回归分析有效性"><a href="#回归分析有效性" class="headerlink" title="回归分析有效性"></a>回归分析有效性</h3><ol>
+<li>方差分析检验：<br>$SS_T=\sum (Y-\overline{Y})^2=\sum Y^2-\frac{(\sum Y)^2}{N}, SS_R=\sum (\widehat{Y}-\overline{Y})^2=b^2(\sum X^2-\frac{(\sum X)^2}{N})$ $df_R=1, df_t=n-1 df_e=df_t-df_R=n-2$</li>
+<li>决定系数$r^2$:<br>$r^2=\frac{SS_R}{SS_t}=积差相关的平方$</li>
+</ol>
+<h2 id="第十二章-卡方检验"><a href="#第十二章-卡方检验" class="headerlink" title="第十二章 卡方检验"></a>第十二章 卡方检验</h2><p>$X^2=\sum \frac{(f_0-f_e)^2}{f_e}，f_0为观察值,f_e为理论次数$</p>
+<h3 id="配（拟）合度检验"><a href="#配（拟）合度检验" class="headerlink" title="配（拟）合度检验"></a>配（拟）合度检验</h3><p>$X^2=\sum \frac{(f_0-f_e)^2}{f_e}, f_e=NP=N \times \frac{1}{分类项}$<br>$df=k-1=分类项-1$</p>
+<h3 id="独立性检验"><a href="#独立性检验" class="headerlink" title="独立性检验"></a>独立性检验</h3><ol>
+<li>列联表：$f_e=\frac{第i行之和 \times 第j行之和}{样本容量}=\frac{f_{xi}f_{xj}}{N}$ $df=(R-1)(C-1)$</li>
+<li>四格表：<ul>
+<li>独立样本：$X^2=\frac{N(AD-BC)^2}{(A+B)(C+D)(A+C)(B+C)=r_\varphi^2 \cdot N}$</li>
+<li>相关样本：$X^2=\frac{(A-D)^2}{A+D}$</li>
+</ul>
+</li>
+</ol>
+<h2 id="第十三章-非参数检验"><a href="#第十三章-非参数检验" class="headerlink" title="第十三章 非参数检验"></a>第十三章 非参数检验</h2><p>秩和检验中当n&gt;10为大样本时，采取近似正态检验：$T=min(秩和)，\mu_T=\frac{n_1(n_1+n_2+1)}{2}，\vartheta_T=\sqrt{\frac{n_1n_2(n_1+n_2)+1}{12}}，Z=\frac{T-/mu_T}{\vartheta_T}$</p>
+
+    </div>
+
+    
+    
+    
+
+
+    
+      <div>
+        <div>
+  
+    <div style="text-align:center;color:#bfbfbf;font-size:16px;">
+      <span>-------- 本文结束 </span>
+      <i class="fa fa-paw"></i>
+      <span> 感谢阅读 --------</span>
+    </div>
+  
+</div>
+      </div>
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>Weibin Yang
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://www.wztzuibang.cn/2020/07/28/%E5%BF%83%E7%90%86%E7%BB%9F%E8%AE%A1%E5%85%AC%E5%BC%8F%E5%A4%87%E5%BF%98/" title="心理统计公式备忘">http://www.wztzuibang.cn/2020/07/28/心理统计公式备忘/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E5%BF%83%E7%90%86%E7%BB%9F%E8%AE%A1/" rel="tag"><i class="fa fa-tag"></i> 心理统计</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/07/28/2012%E5%B9%B4%E8%8B%B1%E8%AF%AD%E4%B8%80%E5%B0%8F%E4%BD%9C%E6%96%87/" rel="prev" title="2012年英语一小作文">
+      <i class="fa fa-chevron-left"></i> 2012年英语一小作文
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=27867449&auto=1&height=66"></iframe>
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第三章-集中量数"><span class="nav-number">1.</span> <span class="nav-text">第三章 集中量数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#算术平均数"><span class="nav-number">1.1.</span> <span class="nav-text">算术平均数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#众数"><span class="nav-number">1.2.</span> <span class="nav-text">众数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第四章-差异量数"><span class="nav-number">2.</span> <span class="nav-text">第四章 差异量数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#全距"><span class="nav-number">2.1.</span> <span class="nav-text">全距</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#百分位差"><span class="nav-number">2.2.</span> <span class="nav-text">百分位差</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#离差和平均差"><span class="nav-number">2.3.</span> <span class="nav-text">离差和平均差</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#方差与标准差"><span class="nav-number">2.4.</span> <span class="nav-text">方差与标准差</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相对量数"><span class="nav-number">2.5.</span> <span class="nav-text">相对量数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第五章-相关量数"><span class="nav-number">3.</span> <span class="nav-text">第五章 相关量数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#积差相关"><span class="nav-number">3.1.</span> <span class="nav-text">积差相关</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#等级相关"><span class="nav-number">3.2.</span> <span class="nav-text">等级相关</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#质与量相关"><span class="nav-number">3.3.</span> <span class="nav-text">质与量相关</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#品质相关"><span class="nav-number">3.4.</span> <span class="nav-text">品质相关</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第六章-概率基础"><span class="nav-number">4.</span> <span class="nav-text">第六章 概率基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#二项分布"><span class="nav-number">4.1.</span> <span class="nav-text">二项分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样本分布"><span class="nav-number">4.2.</span> <span class="nav-text">样本分布</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#正态分布"><span class="nav-number">4.2.1.</span> <span class="nav-text">正态分布</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#t分布"><span class="nav-number">4.2.2.</span> <span class="nav-text">t分布</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最大允许抽样误差"><span class="nav-number">4.3.</span> <span class="nav-text">最大允许抽样误差</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第七章-参数估计"><span class="nav-number">5.</span> <span class="nav-text">第七章 参数估计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#均值估计"><span class="nav-number">5.1.</span> <span class="nav-text">均值估计</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第八章-假设检验"><span class="nav-number">6.</span> <span class="nav-text">第八章 假设检验</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#假设"><span class="nav-number">6.1.</span> <span class="nav-text">假设</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样本与总体均值做比较"><span class="nav-number">6.2.</span> <span class="nav-text">样本与总体均值做比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样本与样本均值做比较"><span class="nav-number">6.3.</span> <span class="nav-text">样本与样本均值做比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样本与总体的方差做检验"><span class="nav-number">6.4.</span> <span class="nav-text">样本与总体的方差做检验</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样本与样本的方差做检验"><span class="nav-number">6.5.</span> <span class="nav-text">样本与样本的方差做检验</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#积差相关显著性检验"><span class="nav-number">6.6.</span> <span class="nav-text">积差相关显著性检验</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#效果量"><span class="nav-number">6.7.</span> <span class="nav-text">效果量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第九章-方差分析"><span class="nav-number">7.</span> <span class="nav-text">第九章 方差分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#假设-1"><span class="nav-number">7.1.</span> <span class="nav-text">假设</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单因素方差分析"><span class="nav-number">7.2.</span> <span class="nav-text">单因素方差分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多因素方差分析"><span class="nav-number">7.3.</span> <span class="nav-text">多因素方差分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事后检验"><span class="nav-number">7.4.</span> <span class="nav-text">事后检验</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第十一章，回归分析"><span class="nav-number">8.</span> <span class="nav-text">第十一章，回归分析</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一元线性回归"><span class="nav-number">8.1.</span> <span class="nav-text">一元线性回归</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#回归分析有效性"><span class="nav-number">8.2.</span> <span class="nav-text">回归分析有效性</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第十二章-卡方检验"><span class="nav-number">9.</span> <span class="nav-text">第十二章 卡方检验</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配（拟）合度检验"><span class="nav-number">9.1.</span> <span class="nav-text">配（拟）合度检验</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#独立性检验"><span class="nav-number">9.2.</span> <span class="nav-text">独立性检验</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第十三章-非参数检验"><span class="nav-number">10.</span> <span class="nav-text">第十三章 非参数检验</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Weibin Yang"
+      src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200720115632.png">
+  <p class="site-author-name" itemprop="name">Weibin Yang</p>
+  <div class="site-description" itemprop="description">自谈拙见，不足挂齿！</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">23</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/paul18755" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;paul18755" rel="noopener" target="_blank">GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/paulw0502@gmail.com" title="E-Mail → paulw0502@gmail.com">E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Weibin Yang</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">48k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">44 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+
+
+<div id="days"></div>
+<script>
+function show_date_time(){
+    window.setTimeout("show_date_time()", 1000);
+    BirthDay=new Date("06/07/2019 05:20:00");//修改为自己的blog建站时间
+    today=new Date();
+    timeold=(today.getTime()-BirthDay.getTime());
+    sectimeold=timeold/1000
+    secondsold=Math.floor(sectimeold);
+    msPerDay=24*60*60*1000
+    e_daysold=timeold/msPerDay
+    daysold=Math.floor(e_daysold);
+    e_hrsold=(e_daysold-daysold)*24;
+    hrsold=setzero(Math.floor(e_hrsold));
+    e_minsold=(e_hrsold-hrsold)*60;
+    minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+    seconds=setzero(Math.floor((e_minsold-minsold)*60));
+    document.getElementById('days').innerHTML="本站已安全运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+    if (i<10)
+    {i="0" + i};
+    return i;
+}
+show_date_time();
+</script>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script color='246, 67, 67' opacity='0.5' zIndex='-1' count='80' src="/lib/canvas-nest/canvas-nest-nomobile.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+  
+
+  <script async src="/js/cursor/fireworks.js"></script>
+
+
+ 
+<script>
+  var OriginTitile = document.title;
+  var titleTime;
+  document.addEventListener("visibilitychange", function() {
+    if (document.hidden) {
+      document.title = "帮我捡下皇冠 (*´∇｀*)";
+      clearTimeout(titleTime);
+    } else {
+      document.title = "" + OriginTitile;
+      titleTime = setTimeout(function() {
+        document.title = OriginTitile;
+      }, 2000);
+    }
+  });
+</script>
+
+
+
+</body>
+</html>
