@@ -61,6 +61,15 @@
       </tags>
   </entry>
   <entry>
+    <title>Test</title>
+    <url>/2020/02/01/Test/</url>
+    <content><![CDATA[<p>My new hexo </p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Python编程：从入门到实践4</title>
     <url>/2020/02/18/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B54/</url>
     <content><![CDATA[<p>操作列表</p>
@@ -117,13 +126,18 @@
       </tags>
   </entry>
   <entry>
-    <title>Test</title>
-    <url>/2020/02/01/Test/</url>
-    <content><![CDATA[<p>My new hexo </p>
+    <title>Hello World</title>
+    <url>/2020/02/01/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
   </entry>
   <entry>
     <title>Walking on our own zone(Other&#39;s)</title>
@@ -157,20 +171,6 @@
       <tags>
         <tag>zone</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2020/02/01/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
   </entry>
   <entry>
     <title>“High intelligence: A risk factor for psychological and physiological overexcitabilities ”精读 </title>
@@ -212,17 +212,21 @@
 ]]></content>
   </entry>
   <entry>
-    <title>《人类简史》-Yuval Noah Harari</title>
-    <url>/2020/04/13/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-Yuval-Noah-Harari/</url>
-    <content><![CDATA[<p>“自由主义政治的基本想法，是认为选民个人最知道好坏，我们没有必要由政府老大哥来告诉人民何者为善、何者为恶。<a id="more"></a>自由主义经济学的基本想法，是客户永远是对的。自由主义艺术的基本想法，是各花入各眼，看的人觉得美就是美。自由主义的学校和大学，叫学生要为自己多想想。广告叫我们：“做就对了！”就连动作片、舞台剧、八点档、小说和流行歌，都不断在洗脑着：“忠于自我”、“倾听你自己”、“顺从你的渴望”。对于这种观点，卢梭的说法称得上是经典：“我觉得好的，就是好的。我觉得坏的，就是坏的。”<br>如果我们从小到大不断被灌输这些口号，就很可能相信快乐是种主观的感受，而是否快乐当然就是每个人自己最清楚。然而，这不过是自由主义独有的一个观点而已。历史上大多数的宗教和意识形态认为，关于善、关于美、关于何事应为，都有客观的标准。在这些宗教和意识形态看来，一般人自己的自己的感觉和偏好可能并不可信。从老子到苏格拉底，哲学家不断告诫人们：“认识你自己！”但言下之意也就是一般人并不知道自己真实的自我，也因此很可能忽略了真正的快乐。弗洛伊德很可能也会这么想。”</p>
-<p>“心理学要研究主观幸福感，靠的是受试者要能够正确判断自己的快乐程度；但矛盾的是，之所以会出现心理学，正是因为人类并不正真了解自己，有时候需要靠着专业人士的帮助，以避免自我毁灭的行为。”</p>
-<p>摘录来自: Yuval Noah Harari. “人类简史：从动物到上帝（图文精编版） (开放历史系列)。” Apple Books.</p>
+    <title>《沉默的巡游》-东野圭吾 读书笔记</title>
+    <url>/2020/04/26/%E3%80%8A%E6%B2%89%E9%BB%98%E7%9A%84%E5%B7%A1%E6%B8%B8%E3%80%8B-%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>太太太太太太棒了！<a id="more"></a>真“不到最后，绝不落幕”。让我找到了最开始看解忧杂货铺看恶意的感受，不是说情节之类的相似，而是让我激动，熟悉，又不自觉说他来了他开始了的那种兴奋。</p>
+<blockquote>
+<p>“然而，佐织的话令留美倍感意外。她说：“对我而言，和高垣智也在一起的时光与成为歌手的梦想同样重要。人为什么要实现梦想，不就是因为那样会获得幸福吗？对于现在的我来说，陪在智也的身边就已经很幸福了。为了另一种幸福而放弃眼前的幸福，您不觉得这样做很奇怪吗？”</p>
+</blockquote>
+<p>&nbsp;&nbsp;&nbsp;为了另一种幸福而放弃眼前的幸福。这句话给我很大的触动。从留美（一心想把佐织培养成歌手）的角度来说，“<strong>成为歌手明星</strong>”和“<strong>与一个毛头小子谈恋爱</strong>”这两者之间简直是天差地别，所以她以一种教化的角度，以一种为她未来着想的角度去说，要自律，要专心练歌，要等待，等到实现梦想之后这些都很容易得到了。这种观念其实很常见，这种观念把幸福仿佛分了不同的阶层，明星很明显是上层而与毛头小子谈恋爱是可以暂时搁置的事情，这就导致了两个人看待现状的方式完全不同。在留美看来，这是在<strong>为了以后的幸福而忍受现在的磨难</strong>；而在佐织看来，<strong>是为了另一种幸福而放弃眼前的幸福</strong><br>&nbsp;&nbsp;&nbsp;这并不是在观念上的批判，现在辛苦点以后会很幸福这种观念看法并不是错误的，反而是存在延迟满足的优越性的。我想把关注点聚焦在两个人的角度位置上，留美认为现状是一个应该暂时<strong>克制</strong>的状态，而佐织认为现状是<strong>眼前的幸福</strong>。毫无疑问这是角度的不同导致看法的不同，而不是观念性质上的错误。这就涉及到<strong>共情</strong>的问题，留美出发点是想培养一个歌手，塑造给她一个美好的未来（可能更深的出发点是满足自己未能成功的遗憾），但是她并没有站在佐织的角度，眼前的恋情是什么样的？她第一次遇见心仪的人，第一次挽起自己喜欢的男孩子的手臂，他与她聊天时的欢乐等等，这是幸福，而且相比于未来，<strong>现在的幸福更加地触手可及</strong>，对她的感受冲击更加强烈。相比于有希望但有些遥远的成名，做大明星，唱歌，这种恋人之间的情感联系毫无疑问更加地让她的情感得到满足。<br>&nbsp;&nbsp;&nbsp;除了两人看法的不同，佐织对现在的感受给了我更多思考。<em>现在忍受辛苦以后会更美好，现在的事只是小事，要为了更加伟大更加宏大的目标去奋斗，而且这种奋斗必须头悬梁锥刺股历经九九八十一难。</em> 社会价值观的塑造很容易让我们把欲望投射到未来或者说未知无限的可能性上，我们相信以后会更好，哪怕现在已经一般般好了。我有时也会比较，就像留美那样，仿佛不同的幸福之间也存在阶级之争，A总比B差，C也比B差。但实际上佐织简单的一句话实在再透彻不过了。并不是说“成为歌手”这个梦想就应该得到否定，而是要更加地去体验现在的生活带来的情感感受，更深刻地体验现在。未来仍然值得追求，但是要做好拼尽全力的准备，而且自己做好准备。</p>
+<p><img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426142808.png"/></p>
+<p><img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426143459.jpg"/></p>
 ]]></content>
       <categories>
         <category>Read</category>
       </categories>
       <tags>
-        <tag>主观幸福感矛盾</tag>
+        <tag>东野圭吾回来了</tag>
       </tags>
   </entry>
   <entry>
@@ -253,6 +257,41 @@
       </categories>
       <tags>
         <tag>科学与经济政治</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《人类简史》-Yuval Noah Harari</title>
+    <url>/2020/04/13/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-Yuval-Noah-Harari/</url>
+    <content><![CDATA[<p>“自由主义政治的基本想法，是认为选民个人最知道好坏，我们没有必要由政府老大哥来告诉人民何者为善、何者为恶。<a id="more"></a>自由主义经济学的基本想法，是客户永远是对的。自由主义艺术的基本想法，是各花入各眼，看的人觉得美就是美。自由主义的学校和大学，叫学生要为自己多想想。广告叫我们：“做就对了！”就连动作片、舞台剧、八点档、小说和流行歌，都不断在洗脑着：“忠于自我”、“倾听你自己”、“顺从你的渴望”。对于这种观点，卢梭的说法称得上是经典：“我觉得好的，就是好的。我觉得坏的，就是坏的。”<br>如果我们从小到大不断被灌输这些口号，就很可能相信快乐是种主观的感受，而是否快乐当然就是每个人自己最清楚。然而，这不过是自由主义独有的一个观点而已。历史上大多数的宗教和意识形态认为，关于善、关于美、关于何事应为，都有客观的标准。在这些宗教和意识形态看来，一般人自己的自己的感觉和偏好可能并不可信。从老子到苏格拉底，哲学家不断告诫人们：“认识你自己！”但言下之意也就是一般人并不知道自己真实的自我，也因此很可能忽略了真正的快乐。弗洛伊德很可能也会这么想。”</p>
+<p>“心理学要研究主观幸福感，靠的是受试者要能够正确判断自己的快乐程度；但矛盾的是，之所以会出现心理学，正是因为人类并不正真了解自己，有时候需要靠着专业人士的帮助，以避免自我毁灭的行为。”</p>
+<p>摘录来自: Yuval Noah Harari. “人类简史：从动物到上帝（图文精编版） (开放历史系列)。” Apple Books.</p>
+]]></content>
+      <categories>
+        <category>Read</category>
+      </categories>
+      <tags>
+        <tag>主观幸福感矛盾</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《网内人》—寻求他人原谅，不过是一种利己主义的投影</title>
+    <url>/2020/02/03/%E3%80%8A%E7%BD%91%E5%86%85%E4%BA%BA%E3%80%8B%E2%80%94%E5%AF%BB%E6%B1%82%E4%BB%96%E4%BA%BA%E5%8E%9F%E8%B0%85%EF%BC%8C%E4%B8%8D%E8%BF%87%E6%98%AF%E4%B8%80%E7%A7%8D%E5%88%A9%E5%B7%B1%E4%B8%BB%E4%B9%89%E7%9A%84%E6%8A%95%E5%BD%B1/</url>
+    <content><![CDATA[<blockquote>
+<p>“愈方便的东西愈容易被钻漏洞，当所有事情彼此相连，你只要找出最弱的一环，便能轻易击碎整条锁链。</p>
+</blockquote>
+<a id="more"></a>
+<blockquote>
+<p>“天下间最容易击破的‘最弱一环’，就是‘人类’。电脑系统能随岁月发展得更完善，但人性弱点却永远无法改变。”<br>“先入为主是调查大忌，你可以作出假设，但要记得，‘假设’不一定是事实，你作出假设，便要更努力去证明这个假设是错误，而不是找出支持这个假设的证据。”阿怡点点头，明白阿涅的意思。她曾读过关于逻辑学的书，书里举出乌鸦作为例子：因为看过一万只黑色的乌鸦便认定“乌鸦都是黑色的”是不合理的，因为只要找到一只白色的乌鸦，便全盘推翻了“乌鸦都是黑色的”这命题。要证明“乌鸦都是黑色的”，便要反过来，假设“世上有不是黑色的乌鸦存在”，然后证明这假设不可能。”<br>“人啊，就是一种既善忘又自私的动物。”阿涅语气平静，表情跟之前没两样，但阿怡隐约觉得他暂时卸下了面具，“寻求他人原谅，不过是一种利己主义的投影，因为得到对方的谅解，自己就可以洒脱地大步向前走了，但说到底，那不过是伪善。你觉得小雯不会原谅你嘛，那你就背负着这份愧疚，无时无刻记住你曾经亏待了一位好朋友，而且你永远无法补偿。你余下的人生永远无法摆脱这罪恶感，你可能会不时反省当年为什么没多走一步、多说一句话，后悔得心里绞痛，但你同时要记着，你有责任好好活着，因为你只有通过倾听自己的内心、做正确的决定，来消减心里的苦、赎自己的罪。这份沉重的愧疚会成为你的血肉，也会成为你是一个好人的证明。”<br>“这个年纪的孩子，有多少个可以不在乎他人眼光、我行我素地过活？当所有人都同意‘二加二等于五’时，你敢力排众议，冒着被他人排挤孤立而大声反对吗？假如郡主的姐妹们觉得郡主是个弱者，她肯定不到一天便会被贬为‘庶民’咧。国泰也好、郡主也好，全都挂着不同厚度的假面具，为了成为他人眼中的理想形象，他们都在勉强自己。本来成年人该告诉他们要有自信、由衷地做自己就好，可是我们这个病态社会只在乎教育能否制造出一批批服从权威、配合主流、具备相同学识与能力的机器人，而这些机器人又将下一代塑造成另一批机器人。”<br>“人类能够想出邪恶的意念、说出歹毒的言语，但要正眼看待由它们衍生出来的残酷，大部分人却做不到。”<br>“为了妹妹’？你有问过她的意愿吗？为了她牺牲自己，她会高兴吗？她会不会因为你的‘伟大情操’，背负太多期望而喘不过气？今天有不少人犯这种毛病，老是一厢情愿地自把自为，说穿了不过是无穷的控制欲，强加自己的标准在他人身上。”<br>“我们总有选择，重点只是我们是否愿意承受那个选择带来的后果、付出那个选择的代价。这个社会之所以变得腐败，就是有不少这种‘平庸之恶’，凡事衡量利害先于真伪和对错，将谎言粉饰成事实。<br>“整件事出错的地方，不在传递讯息的网路，不在用来交流情报的网站，而在愚昧的人心；因为渴求真相，结果选择相信不实的线索，甚至本着‘分享’精神将谣言散播出去，做成难以收拾的灾难。”</p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/paul18755/ppppp/master/20200203173338.jpg" width = "500" height = "700" alt="图片名称" align=center /><br>  凡事衡量厉害先于真伪和对错，这句话给我很深的感触！我联想到的是一种权衡利弊的一种思维方式，我曾经很受那些天才类的描述所吸引，或者说不是天才类，而是那种所谓的科学怪人或者天赋异禀之人生来所有的情感缺陷所吸引，以为那是一种怎么说，天才的特权吗？就是面对一件事情可以理性地分析利弊，不受情感的摆布。当然并不是说这不好，只是这句话给我敲响了警钟！如文中所表述的，那个被诬陷的书店店长选择了承认罪责，这样有更小的惩罚，更小的损失。其实这很符合我前文所说的那种分析利弊的方式，与其争辩最后可能有更久的刑期，主动认罪悔过确实是更“利”。但是后面的事情发展证明了如果他当时去争辩，是有很大可能完全不会服刑的，虽然这么说有点马后炮。回到我们这句话，在衡量厉害先于真伪和对错，我的理解中有两个方面：一是我们认识的局限性，利弊的衡量前提必然是对利弊全面的理解，之后看到ABCD四个选项之后才能有答案之间的抉择，看到A就选A倒不如是为武断更加合适。但很难说我们可以有全面的理解，倒不是说不可能，只是代价过于巨大，不论是作者需要花费将近四分之一的篇幅（虽然有别的情节的发展）才能道清书店店长的“正当行为”；抑或是我们了解一件事背后运作的时间成本，都不能肯定地说值得去深入探究；而另一种情况是我们根本就无法全面地理解，这个全面是什么程度的全面？很难断定。书中表现出来的全面，是对两个家庭，两个女孩，三个人之间的蛛丝马迹。书中的侦探手段虽不能说都是假的，但是还是与现实有些许差距。当然这是我们从旁人的角度来看书店的店长。另一个方面我斗胆想从其自身做出此决定的可能性出发，选择认罪接受莫须有的罪名，可能是比花钱请律师，努力为自己辩白、寻找证据来说成本是低一些。这个“低”很多时候会成为极端的利弊分析的强劲理由，我想作者想谈的就是这么一种情况，书店店主自己是知道的，他没有猥亵。他知道真伪先于利弊，但他选择了利弊，因为真伪辨别的代价太大。所以将“谎言粉丝成了事实”。对错我不敢说，但“先于真伪”我是挺支持的，也是这四个字给我反思自己的机会，为我敲响了警钟是否我陷入了一种极端的状态？感谢</p>
+<p>之后书中谈的关于“相信不实的现实，本着分享精神将耀眼散播出去”，我觉得对于网络现状描写的很形象了，包括新闻形式的改革，我觉得在我们现实社会都可以找到映射，现在的微博的实时性毋庸置疑。不要误会的是这并不是说这就不好，或者说“本着分享精神将谣言散播出去”就是不好的。“本着‘分享’”这四个字足以。恶意散播谣言的才是谴责的对象，而我们，应该渴求真相，但切勿成为迷雾的推波助澜者！</p>
+<p>谈及寻求原谅的伪善，为了他人等等，倒是让我倍感亲切，人总是一个利己的动物，但如何才是利己，什么样的表现才是利己，这值得探讨。</p>
+]]></content>
+      <categories>
+        <category>Read</category>
+      </categories>
+      <tags>
+        <tag>读书 信口雌黄</tag>
       </tags>
   </entry>
   <entry>
@@ -306,45 +345,6 @@
       </categories>
       <tags>
         <tag>存在主义</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《沉默的巡游》-东野圭吾 读书笔记</title>
-    <url>/2020/04/26/%E3%80%8A%E6%B2%89%E9%BB%98%E7%9A%84%E5%B7%A1%E6%B8%B8%E3%80%8B-%E4%B8%9C%E9%87%8E%E5%9C%AD%E5%90%BE-%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<p>太太太太太太棒了！<a id="more"></a>真“不到最后，绝不落幕”。让我找到了最开始看解忧杂货铺看恶意的感受，不是说情节之类的相似，而是让我激动，熟悉，又不自觉说他来了他开始了的那种兴奋。</p>
-<blockquote>
-<p>“然而，佐织的话令留美倍感意外。她说：“对我而言，和高垣智也在一起的时光与成为歌手的梦想同样重要。人为什么要实现梦想，不就是因为那样会获得幸福吗？对于现在的我来说，陪在智也的身边就已经很幸福了。为了另一种幸福而放弃眼前的幸福，您不觉得这样做很奇怪吗？”</p>
-</blockquote>
-<p>&nbsp;&nbsp;&nbsp;为了另一种幸福而放弃眼前的幸福。这句话给我很大的触动。从留美（一心想把佐织培养成歌手）的角度来说，“<strong>成为歌手明星</strong>”和“<strong>与一个毛头小子谈恋爱</strong>”这两者之间简直是天差地别，所以她以一种教化的角度，以一种为她未来着想的角度去说，要自律，要专心练歌，要等待，等到实现梦想之后这些都很容易得到了。这种观念其实很常见，这种观念把幸福仿佛分了不同的阶层，明星很明显是上层而与毛头小子谈恋爱是可以暂时搁置的事情，这就导致了两个人看待现状的方式完全不同。在留美看来，这是在<strong>为了以后的幸福而忍受现在的磨难</strong>；而在佐织看来，<strong>是为了另一种幸福而放弃眼前的幸福</strong><br>&nbsp;&nbsp;&nbsp;这并不是在观念上的批判，现在辛苦点以后会很幸福这种观念看法并不是错误的，反而是存在延迟满足的优越性的。我想把关注点聚焦在两个人的角度位置上，留美认为现状是一个应该暂时<strong>克制</strong>的状态，而佐织认为现状是<strong>眼前的幸福</strong>。毫无疑问这是角度的不同导致看法的不同，而不是观念性质上的错误。这就涉及到<strong>共情</strong>的问题，留美出发点是想培养一个歌手，塑造给她一个美好的未来（可能更深的出发点是满足自己未能成功的遗憾），但是她并没有站在佐织的角度，眼前的恋情是什么样的？她第一次遇见心仪的人，第一次挽起自己喜欢的男孩子的手臂，他与她聊天时的欢乐等等，这是幸福，而且相比于未来，<strong>现在的幸福更加地触手可及</strong>，对她的感受冲击更加强烈。相比于有希望但有些遥远的成名，做大明星，唱歌，这种恋人之间的情感联系毫无疑问更加地让她的情感得到满足。<br>&nbsp;&nbsp;&nbsp;除了两人看法的不同，佐织对现在的感受给了我更多思考。<em>现在忍受辛苦以后会更美好，现在的事只是小事，要为了更加伟大更加宏大的目标去奋斗，而且这种奋斗必须头悬梁锥刺股历经九九八十一难。</em> 社会价值观的塑造很容易让我们把欲望投射到未来或者说未知无限的可能性上，我们相信以后会更好，哪怕现在已经一般般好了。我有时也会比较，就像留美那样，仿佛不同的幸福之间也存在阶级之争，A总比B差，C也比B差。但实际上佐织简单的一句话实在再透彻不过了。并不是说“成为歌手”这个梦想就应该得到否定，而是要更加地去体验现在的生活带来的情感感受，更深刻地体验现在。未来仍然值得追求，但是要做好拼尽全力的准备，而且自己做好准备。</p>
-<p><img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426142808.png"/></p>
-<p><img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200426143459.jpg"/></p>
-]]></content>
-      <categories>
-        <category>Read</category>
-      </categories>
-      <tags>
-        <tag>东野圭吾回来了</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>《网内人》—寻求他人原谅，不过是一种利己主义的投影</title>
-    <url>/2020/02/03/%E3%80%8A%E7%BD%91%E5%86%85%E4%BA%BA%E3%80%8B%E2%80%94%E5%AF%BB%E6%B1%82%E4%BB%96%E4%BA%BA%E5%8E%9F%E8%B0%85%EF%BC%8C%E4%B8%8D%E8%BF%87%E6%98%AF%E4%B8%80%E7%A7%8D%E5%88%A9%E5%B7%B1%E4%B8%BB%E4%B9%89%E7%9A%84%E6%8A%95%E5%BD%B1/</url>
-    <content><![CDATA[<blockquote>
-<p>“愈方便的东西愈容易被钻漏洞，当所有事情彼此相连，你只要找出最弱的一环，便能轻易击碎整条锁链。</p>
-</blockquote>
-<a id="more"></a>
-<blockquote>
-<p>“天下间最容易击破的‘最弱一环’，就是‘人类’。电脑系统能随岁月发展得更完善，但人性弱点却永远无法改变。”<br>“先入为主是调查大忌，你可以作出假设，但要记得，‘假设’不一定是事实，你作出假设，便要更努力去证明这个假设是错误，而不是找出支持这个假设的证据。”阿怡点点头，明白阿涅的意思。她曾读过关于逻辑学的书，书里举出乌鸦作为例子：因为看过一万只黑色的乌鸦便认定“乌鸦都是黑色的”是不合理的，因为只要找到一只白色的乌鸦，便全盘推翻了“乌鸦都是黑色的”这命题。要证明“乌鸦都是黑色的”，便要反过来，假设“世上有不是黑色的乌鸦存在”，然后证明这假设不可能。”<br>“人啊，就是一种既善忘又自私的动物。”阿涅语气平静，表情跟之前没两样，但阿怡隐约觉得他暂时卸下了面具，“寻求他人原谅，不过是一种利己主义的投影，因为得到对方的谅解，自己就可以洒脱地大步向前走了，但说到底，那不过是伪善。你觉得小雯不会原谅你嘛，那你就背负着这份愧疚，无时无刻记住你曾经亏待了一位好朋友，而且你永远无法补偿。你余下的人生永远无法摆脱这罪恶感，你可能会不时反省当年为什么没多走一步、多说一句话，后悔得心里绞痛，但你同时要记着，你有责任好好活着，因为你只有通过倾听自己的内心、做正确的决定，来消减心里的苦、赎自己的罪。这份沉重的愧疚会成为你的血肉，也会成为你是一个好人的证明。”<br>“这个年纪的孩子，有多少个可以不在乎他人眼光、我行我素地过活？当所有人都同意‘二加二等于五’时，你敢力排众议，冒着被他人排挤孤立而大声反对吗？假如郡主的姐妹们觉得郡主是个弱者，她肯定不到一天便会被贬为‘庶民’咧。国泰也好、郡主也好，全都挂着不同厚度的假面具，为了成为他人眼中的理想形象，他们都在勉强自己。本来成年人该告诉他们要有自信、由衷地做自己就好，可是我们这个病态社会只在乎教育能否制造出一批批服从权威、配合主流、具备相同学识与能力的机器人，而这些机器人又将下一代塑造成另一批机器人。”<br>“人类能够想出邪恶的意念、说出歹毒的言语，但要正眼看待由它们衍生出来的残酷，大部分人却做不到。”<br>“为了妹妹’？你有问过她的意愿吗？为了她牺牲自己，她会高兴吗？她会不会因为你的‘伟大情操’，背负太多期望而喘不过气？今天有不少人犯这种毛病，老是一厢情愿地自把自为，说穿了不过是无穷的控制欲，强加自己的标准在他人身上。”<br>“我们总有选择，重点只是我们是否愿意承受那个选择带来的后果、付出那个选择的代价。这个社会之所以变得腐败，就是有不少这种‘平庸之恶’，凡事衡量利害先于真伪和对错，将谎言粉饰成事实。<br>“整件事出错的地方，不在传递讯息的网路，不在用来交流情报的网站，而在愚昧的人心；因为渴求真相，结果选择相信不实的线索，甚至本着‘分享’精神将谣言散播出去，做成难以收拾的灾难。”</p>
-</blockquote>
-<p><img src="https://raw.githubusercontent.com/paul18755/ppppp/master/20200203173338.jpg" width = "500" height = "700" alt="图片名称" align=center /><br>  凡事衡量厉害先于真伪和对错，这句话给我很深的感触！我联想到的是一种权衡利弊的一种思维方式，我曾经很受那些天才类的描述所吸引，或者说不是天才类，而是那种所谓的科学怪人或者天赋异禀之人生来所有的情感缺陷所吸引，以为那是一种怎么说，天才的特权吗？就是面对一件事情可以理性地分析利弊，不受情感的摆布。当然并不是说这不好，只是这句话给我敲响了警钟！如文中所表述的，那个被诬陷的书店店长选择了承认罪责，这样有更小的惩罚，更小的损失。其实这很符合我前文所说的那种分析利弊的方式，与其争辩最后可能有更久的刑期，主动认罪悔过确实是更“利”。但是后面的事情发展证明了如果他当时去争辩，是有很大可能完全不会服刑的，虽然这么说有点马后炮。回到我们这句话，在衡量厉害先于真伪和对错，我的理解中有两个方面：一是我们认识的局限性，利弊的衡量前提必然是对利弊全面的理解，之后看到ABCD四个选项之后才能有答案之间的抉择，看到A就选A倒不如是为武断更加合适。但很难说我们可以有全面的理解，倒不是说不可能，只是代价过于巨大，不论是作者需要花费将近四分之一的篇幅（虽然有别的情节的发展）才能道清书店店长的“正当行为”；抑或是我们了解一件事背后运作的时间成本，都不能肯定地说值得去深入探究；而另一种情况是我们根本就无法全面地理解，这个全面是什么程度的全面？很难断定。书中表现出来的全面，是对两个家庭，两个女孩，三个人之间的蛛丝马迹。书中的侦探手段虽不能说都是假的，但是还是与现实有些许差距。当然这是我们从旁人的角度来看书店的店长。另一个方面我斗胆想从其自身做出此决定的可能性出发，选择认罪接受莫须有的罪名，可能是比花钱请律师，努力为自己辩白、寻找证据来说成本是低一些。这个“低”很多时候会成为极端的利弊分析的强劲理由，我想作者想谈的就是这么一种情况，书店店主自己是知道的，他没有猥亵。他知道真伪先于利弊，但他选择了利弊，因为真伪辨别的代价太大。所以将“谎言粉丝成了事实”。对错我不敢说，但“先于真伪”我是挺支持的，也是这四个字给我反思自己的机会，为我敲响了警钟是否我陷入了一种极端的状态？感谢</p>
-<p>之后书中谈的关于“相信不实的现实，本着分享精神将耀眼散播出去”，我觉得对于网络现状描写的很形象了，包括新闻形式的改革，我觉得在我们现实社会都可以找到映射，现在的微博的实时性毋庸置疑。不要误会的是这并不是说这就不好，或者说“本着分享精神将谣言散播出去”就是不好的。“本着‘分享’”这四个字足以。恶意散播谣言的才是谴责的对象，而我们，应该渴求真相，但切勿成为迷雾的推波助澜者！</p>
-<p>谈及寻求原谅的伪善，为了他人等等，倒是让我倍感亲切，人总是一个利己的动物，但如何才是利己，什么样的表现才是利己，这值得探讨。</p>
-]]></content>
-      <categories>
-        <category>Read</category>
-      </categories>
-      <tags>
-        <tag>读书 信口雌黄</tag>
       </tags>
   </entry>
   <entry>
@@ -423,13 +423,13 @@ categories: Read
 <li>平均差等于离差绝对值的均值：$A.D.=\frac{\sum{[X_{i}-\overline{X}]}}{N}$</li>
 </ol>
 <h3 id="方差与标准差"><a href="#方差与标准差" class="headerlink" title="方差与标准差"></a>方差与标准差</h3><ol>
-<li>未分组，有原始数据的情况：可以用基本公式：$S^2=\frac{\sum{(x_i-\overline{X})^2}}{N}, x=$。或者采用原始公式：$S^2=\frac{\sum{X^2}}{N}-(\frac{\sum{X}}{N})^2$</li>
+<li>未分组，有原始数据的情况：可以用基本公式：$S^2=\frac{\sum{(x_i-\overline{X})^2}}{N}$。或者采用原始公式：$S^2=\frac{\sum{X^2}}{N}-(\frac{\sum{X}}{N})^2$</li>
 <li>已经分组，原始数据未知情况：采用基本公式$S^2=\frac{\sum{f·x^2}}{N},x=x_c-\overline{X}$</li>
 <li>标准差等于方差开根号：$s=\sqrt{S^2}$</li>
 <li>标准差的特点：$Y_i=X_i+c,S_y=S_x$，$Y_i=X_i·c,S_y=[C]·S_X$</li>
 </ol>
 <h3 id="相对量数"><a href="#相对量数" class="headerlink" title="相对量数"></a>相对量数</h3><ol>
-<li>差异系数为标准差对平均数的百分比：$CV=\frac{S}{\overline{X}}·100%$</li>
+<li>差异系数为标准差对平均数的百分比：$CV=\frac{S}{\overline{X}}·100\% $</li>
 <li>标准分数：$Z=\frac{x_i-\overline{X}}{S}$、$sum(Z)=0,\overline{X_z}=0,S_z=1$</li>
 <li>百分等级已分组情况下：$P_R=100-\frac{(100·R-50)}{N}$，其中R为排序序号</li>
 </ol>
@@ -603,40 +603,6 @@ categories: Read
 ]]></content>
   </entry>
   <entry>
-    <title>用Python处理E-prime导出的数据文件</title>
-    <url>/2020/02/19/%E7%94%A8Python%E5%A4%84%E7%90%86E-prime%E5%AF%BC%E5%87%BA%E7%9A%84%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6/</url>
-    <content><![CDATA[<h4 id="把txt格式的数据文件转为csv文件方便后续处理"><a href="#把txt格式的数据文件转为csv文件方便后续处理" class="headerlink" title="把txt格式的数据文件转为csv文件方便后续处理"></a>把txt格式的数据文件转为csv文件方便后续处理</h4><a id="more"></a>
-<p>从E-prime中选择把数据导出为Excel时，实际转换出的是txt的文本格式文件，虽然可以直接用excel打开，但是在Python中是无法直接用xlrd库进行处理。尝试了采用更改后缀名的形式，但是<strong>直接更改为xlsx时会破坏文件的格式</strong>，还是无法进行处理，因此选择将后缀名更改为csv。在文件夹中尝试将一个文件转换为csv文件后可以成功打开。批量更换文件名主要采用os模块的listdir方法和rename方法。</p>
-<ul>
-<li><code>os.listdir(dir)</code>: 获取指定目录下的所有子目录和文件名</li>
-<li><code>os.rename(原文件名，新文件名）</code>: 对文件或目录改名</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os, sys</span><br><span class="line"><span class="comment">#改变当前工作目录到指定的路径</span></span><br><span class="line">os.chdir(<span class="string">r'/Users/ywb/Desktop/sample'</span>)</span><br><span class="line"><span class="comment">#列出当前目录下所有的文件。但是这里面一般会存在一些隐藏文件，要进行清理</span></span><br><span class="line">file = os.listdir(<span class="string">'./'</span>)</span><br><span class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> file:</span><br><span class="line">    <span class="comment">#这一步将文件的名称与后缀名进行分割，portion[0]是文件名，portion[1]是后缀名</span></span><br><span class="line">    portion = os.path.splitext(filename)</span><br><span class="line">    <span class="comment">#判断后缀名是否是自己需要的</span></span><br><span class="line">    <span class="keyword">if</span> portion[<span class="number">1</span>] == <span class="string">'.csv'</span>:</span><br><span class="line">        <span class="comment">#进行文件后缀名的修改</span></span><br><span class="line">        name_new = portion[<span class="number">0</span>] + <span class="string">'.txt'</span></span><br><span class="line">        os.rename(filename, name_new)</span><br></pre></td></tr></table></figure>
-<h4 id="处理csv文件"><a href="#处理csv文件" class="headerlink" title="处理csv文件"></a>处理csv文件</h4><p>主要是用pandas将csv文件中的数据导入到DataFrame中。使用read_csv方法导入。这里有两个坑，一是一般的csv文件都是以逗号作为分隔符，<strong>但是e-prime的导出使用一段空格作为分割符</strong>所以在导入的时候需要在sep参数特别设置。然后是编码的方式，不适用于一般的‘utf-8’，<strong>需要将encoding参数设置为‘utf-16’</strong></p>
-<p>数据导入后需要将不需要的数据剔除，先获得不需要的数据的行序号,然后使用dataframe类的del方法结合columns方法进行删除，注意del中需要注明要删除的行全名，不能使用索引，所以要借助column方法（可以索引切片）。同时以dataframe[‘name’]的方式进行数据的判断。然后根据判断结果计算正确率。</p>
-<ul>
-<li><code>pandas.read_csv(path, encoding=&#39;utf-16&#39;,sep=&#39;\t&#39;,skiprows=[0])</code>:读取csv文件数据并以dataframe保存，如果在jupyter中会呈现较可读。</li>
-<li><code>DataFrame.columns</code>:会以Series的形式呈现数据所有的行标题</li>
-<li><code>del DataFrame[&#39;行名&#39;]</code>:删除该行的数据</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">del_non</span><span class="params">(path)</span>:</span></span><br><span class="line">    <span class="comment">#path指csv文件的路径；encoding为编码，sep为分割符，skiprows指跳过第一行的内容，因为e-prime导出数据的第一行一般是文件的路径可以忽略</span></span><br><span class="line">    df = pd.read_csv(path, encoding=<span class="string">'utf-16'</span>, sep=<span class="string">'\t'</span>, skiprows=[<span class="number">0</span>])</span><br><span class="line">    <span class="comment">#清理不需要的数据行</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> df.columns[:<span class="number">24</span>]:</span><br><span class="line">        <span class="keyword">del</span> df[i]</span><br><span class="line">    <span class="comment">#可以直接用dataframe['name']在dataframe中加入新的行列</span></span><br><span class="line">    <span class="comment">#此处是验证被试计算和再认的正确与否，以布尔值表示</span></span><br><span class="line">    df[<span class="string">'Answer'</span>] = df[df.columns[<span class="number">0</span>]] == df[df.columns[<span class="number">1</span>]]</span><br><span class="line">    df[<span class="string">'Answer_2'</span>] = df[df.columns[<span class="number">28</span>]] == df[df.columns[<span class="number">32</span>]]</span><br><span class="line">    <span class="keyword">return</span> df</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_ratio_calculate</span><span class="params">(df,num,column_name,a,b)</span>:</span></span><br><span class="line">    n = <span class="number">0</span></span><br><span class="line">    <span class="comment"># 因为计算和再认不是全部，所以要先看好数据索引从哪里开始到哪里结束，即a,b。</span></span><br><span class="line">    <span class="keyword">for</span> answer <span class="keyword">in</span> df[column_name][a:b]:</span><br><span class="line">        <span class="keyword">if</span> answer == <span class="literal">True</span>:</span><br><span class="line">            n+=<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> float(n/int(num))</span><br></pre></td></tr></table></figure>
-<h4 id="将处理后的数据写入csv文件（即Dataframe写入csv）"><a href="#将处理后的数据写入csv文件（即Dataframe写入csv）" class="headerlink" title="将处理后的数据写入csv文件（即Dataframe写入csv）"></a>将处理后的数据写入csv文件（即Dataframe写入csv）</h4><p>流程是先把数据整理为一个字典内嵌套列表的形式，然后dataframe可以接受字典，直接以字典创建新的dateframe，然后使用to_csv方法写入csv，最后写出来的csv文件，字典的key就像excel中的第一行，value即列表中的数据就是纵向的数据了。</p>
-<p>其次由于字典内可能不会按顺序排序，所以在用字典形成DataFrame的时候需要定义columns=[]参数确定顺序</p>
-<ul>
-<li><code>d = {key1 : value1, key2 : value2} =》d = {属性1:具体数据, 属性2:具体数据}</code></li>
-<li><code>frame = pd.DataFrame(d, columns=[&#39;属性1&#39;，&#39;属性2&#39;])</code></li>
-<li><code>frame.to_csv(&#39;path&#39;)</code></li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> restore <span class="keyword">import</span> del_non, get_ratio_calculate</span><br><span class="line"></span><br><span class="line">serial_numbers = []</span><br><span class="line">list_ratio_calculates = []</span><br><span class="line">list_ratio_Recognises = []</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_to_list</span><span class="params">(path_csv)</span>:</span></span><br><span class="line">    csv_1 = del_non(<span class="string">'/Users/ywb/Desktop/Thesceonddate/'</span> + path_csv)</span><br><span class="line">    ratio_calculate = get_ratio_calculate(csv_1,column_name=<span class="string">'Answer'</span>,num=<span class="number">30</span>,a=<span class="number">68</span>,b=<span class="number">98</span>)</span><br><span class="line">    ratio_Recognise = get_ratio_calculate(csv_1,column_name=<span class="string">'Answer_2'</span>,num=<span class="number">60</span>,a=<span class="number">98</span>,b=<span class="number">158</span>)</span><br><span class="line">    serial_number = path_csv[:<span class="number">-4</span>]</span><br><span class="line">    serial_numbers.append(serial_number)</span><br><span class="line">    list_ratio_calculates.append(ratio_calculate)</span><br><span class="line">    list_ratio_Recognises.append(ratio_Recognise)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    filepath = <span class="string">'/Users/ywb/Desktop/Thesceonddate'</span></span><br><span class="line">    <span class="comment"># 获取目录下的文件名</span></span><br><span class="line">    l = os.listdir(filepath)</span><br><span class="line">    ll = []</span><br><span class="line">    <span class="comment">#筛选出含有csv的文件，因为有些隐藏文件可能也在其中</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> l:</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'csv'</span> <span class="keyword">in</span> i:</span><br><span class="line">            ll.append(i)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line">    <span class="comment"># 使用上述的add_to_list函数将数据加入list中</span></span><br><span class="line">    <span class="keyword">for</span> path_name <span class="keyword">in</span> ll:</span><br><span class="line">        add_to_list(path_csv=path_name)</span><br><span class="line">    <span class="comment"># 以字典内嵌套列表的方式建立字典</span></span><br><span class="line">    data_1 = &#123;</span><br><span class="line">        <span class="string">'serial_numbers'</span>: serial_numbers,</span><br><span class="line">        <span class="string">'ratio_calculates'</span>: list_ratio_calculates,</span><br><span class="line">        <span class="string">'ratio_Recognises'</span>: list_ratio_Recognises</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">#写入DataFrame并导出到csv</span></span><br><span class="line">    frame = pd.DataFrame(data_1,columns=[<span class="string">'serial_numbers'</span>, <span class="string">'ratio_calculates'</span>, <span class="string">'ratio_Recognises'</span>])</span><br><span class="line">    frame.to_csv(<span class="string">'/Users/ywb/Desktop/Thesceonddate/Pywzt/all.csv'</span>)</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>数据处理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>认知心理学：注意部分笔记</title>
     <url>/2020/02/02/%E8%AE%A4%E7%9F%A5%E5%BF%83%E7%90%86%E5%AD%A6%EF%BC%9A%E6%B3%A8%E6%84%8F%E9%83%A8%E5%88%86%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1 id="认知心理学：注意部分笔记"><a href="#认知心理学：注意部分笔记" class="headerlink" title="认知心理学：注意部分笔记"></a>认知心理学：注意部分笔记</h1><a id="more"></a>
@@ -768,5 +734,39 @@ categories: Read
 <p>&emsp;但终归要做出个决定，署名付出1500元，还是不署名也无需支付。每个月我省一些可以攒400元左右，1500其实3个月左右可以节省回来。这钱说多不多，说少也不少。实际上应该是自己的私心与碍于情面的各种考虑的一阵搏斗，我试想我如果出了这1500，我心里会舒服吗？当然可以肯定的是我会在X面前可以说上一两句坦然的话，我考虑了后我觉得还是要出这1500，等等之类的一些很大义凛然，承担责任的话语。但实际上真的会达到我心里所想的塑造自己负责任，敢担当的这么一个状态吗？在X面前，其实我从一开始提出来就已经没有这种形象了，在我自己的心里，我觉得付出1500的心理状态可能会盖过这几句大义凛然的话语所带来的心理效益。</p>
 <p>&emsp; 应该还是得接受自己在利益抉择面前的劣性表现吧！</p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>用Python处理E-prime导出的数据文件</title>
+    <url>/2020/02/19/%E7%94%A8Python%E5%A4%84%E7%90%86E-prime%E5%AF%BC%E5%87%BA%E7%9A%84%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6/</url>
+    <content><![CDATA[<h4 id="把txt格式的数据文件转为csv文件方便后续处理"><a href="#把txt格式的数据文件转为csv文件方便后续处理" class="headerlink" title="把txt格式的数据文件转为csv文件方便后续处理"></a>把txt格式的数据文件转为csv文件方便后续处理</h4><a id="more"></a>
+<p>从E-prime中选择把数据导出为Excel时，实际转换出的是txt的文本格式文件，虽然可以直接用excel打开，但是在Python中是无法直接用xlrd库进行处理。尝试了采用更改后缀名的形式，但是<strong>直接更改为xlsx时会破坏文件的格式</strong>，还是无法进行处理，因此选择将后缀名更改为csv。在文件夹中尝试将一个文件转换为csv文件后可以成功打开。批量更换文件名主要采用os模块的listdir方法和rename方法。</p>
+<ul>
+<li><code>os.listdir(dir)</code>: 获取指定目录下的所有子目录和文件名</li>
+<li><code>os.rename(原文件名，新文件名）</code>: 对文件或目录改名</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os, sys</span><br><span class="line"><span class="comment">#改变当前工作目录到指定的路径</span></span><br><span class="line">os.chdir(<span class="string">r'/Users/ywb/Desktop/sample'</span>)</span><br><span class="line"><span class="comment">#列出当前目录下所有的文件。但是这里面一般会存在一些隐藏文件，要进行清理</span></span><br><span class="line">file = os.listdir(<span class="string">'./'</span>)</span><br><span class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> file:</span><br><span class="line">    <span class="comment">#这一步将文件的名称与后缀名进行分割，portion[0]是文件名，portion[1]是后缀名</span></span><br><span class="line">    portion = os.path.splitext(filename)</span><br><span class="line">    <span class="comment">#判断后缀名是否是自己需要的</span></span><br><span class="line">    <span class="keyword">if</span> portion[<span class="number">1</span>] == <span class="string">'.csv'</span>:</span><br><span class="line">        <span class="comment">#进行文件后缀名的修改</span></span><br><span class="line">        name_new = portion[<span class="number">0</span>] + <span class="string">'.txt'</span></span><br><span class="line">        os.rename(filename, name_new)</span><br></pre></td></tr></table></figure>
+<h4 id="处理csv文件"><a href="#处理csv文件" class="headerlink" title="处理csv文件"></a>处理csv文件</h4><p>主要是用pandas将csv文件中的数据导入到DataFrame中。使用read_csv方法导入。这里有两个坑，一是一般的csv文件都是以逗号作为分隔符，<strong>但是e-prime的导出使用一段空格作为分割符</strong>所以在导入的时候需要在sep参数特别设置。然后是编码的方式，不适用于一般的‘utf-8’，<strong>需要将encoding参数设置为‘utf-16’</strong></p>
+<p>数据导入后需要将不需要的数据剔除，先获得不需要的数据的行序号,然后使用dataframe类的del方法结合columns方法进行删除，注意del中需要注明要删除的行全名，不能使用索引，所以要借助column方法（可以索引切片）。同时以dataframe[‘name’]的方式进行数据的判断。然后根据判断结果计算正确率。</p>
+<ul>
+<li><code>pandas.read_csv(path, encoding=&#39;utf-16&#39;,sep=&#39;\t&#39;,skiprows=[0])</code>:读取csv文件数据并以dataframe保存，如果在jupyter中会呈现较可读。</li>
+<li><code>DataFrame.columns</code>:会以Series的形式呈现数据所有的行标题</li>
+<li><code>del DataFrame[&#39;行名&#39;]</code>:删除该行的数据</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">del_non</span><span class="params">(path)</span>:</span></span><br><span class="line">    <span class="comment">#path指csv文件的路径；encoding为编码，sep为分割符，skiprows指跳过第一行的内容，因为e-prime导出数据的第一行一般是文件的路径可以忽略</span></span><br><span class="line">    df = pd.read_csv(path, encoding=<span class="string">'utf-16'</span>, sep=<span class="string">'\t'</span>, skiprows=[<span class="number">0</span>])</span><br><span class="line">    <span class="comment">#清理不需要的数据行</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> df.columns[:<span class="number">24</span>]:</span><br><span class="line">        <span class="keyword">del</span> df[i]</span><br><span class="line">    <span class="comment">#可以直接用dataframe['name']在dataframe中加入新的行列</span></span><br><span class="line">    <span class="comment">#此处是验证被试计算和再认的正确与否，以布尔值表示</span></span><br><span class="line">    df[<span class="string">'Answer'</span>] = df[df.columns[<span class="number">0</span>]] == df[df.columns[<span class="number">1</span>]]</span><br><span class="line">    df[<span class="string">'Answer_2'</span>] = df[df.columns[<span class="number">28</span>]] == df[df.columns[<span class="number">32</span>]]</span><br><span class="line">    <span class="keyword">return</span> df</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_ratio_calculate</span><span class="params">(df,num,column_name,a,b)</span>:</span></span><br><span class="line">    n = <span class="number">0</span></span><br><span class="line">    <span class="comment"># 因为计算和再认不是全部，所以要先看好数据索引从哪里开始到哪里结束，即a,b。</span></span><br><span class="line">    <span class="keyword">for</span> answer <span class="keyword">in</span> df[column_name][a:b]:</span><br><span class="line">        <span class="keyword">if</span> answer == <span class="literal">True</span>:</span><br><span class="line">            n+=<span class="number">1</span></span><br><span class="line">    <span class="keyword">return</span> float(n/int(num))</span><br></pre></td></tr></table></figure>
+<h4 id="将处理后的数据写入csv文件（即Dataframe写入csv）"><a href="#将处理后的数据写入csv文件（即Dataframe写入csv）" class="headerlink" title="将处理后的数据写入csv文件（即Dataframe写入csv）"></a>将处理后的数据写入csv文件（即Dataframe写入csv）</h4><p>流程是先把数据整理为一个字典内嵌套列表的形式，然后dataframe可以接受字典，直接以字典创建新的dateframe，然后使用to_csv方法写入csv，最后写出来的csv文件，字典的key就像excel中的第一行，value即列表中的数据就是纵向的数据了。</p>
+<p>其次由于字典内可能不会按顺序排序，所以在用字典形成DataFrame的时候需要定义columns=[]参数确定顺序</p>
+<ul>
+<li><code>d = {key1 : value1, key2 : value2} =》d = {属性1:具体数据, 属性2:具体数据}</code></li>
+<li><code>frame = pd.DataFrame(d, columns=[&#39;属性1&#39;，&#39;属性2&#39;])</code></li>
+<li><code>frame.to_csv(&#39;path&#39;)</code></li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> restore <span class="keyword">import</span> del_non, get_ratio_calculate</span><br><span class="line"></span><br><span class="line">serial_numbers = []</span><br><span class="line">list_ratio_calculates = []</span><br><span class="line">list_ratio_Recognises = []</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_to_list</span><span class="params">(path_csv)</span>:</span></span><br><span class="line">    csv_1 = del_non(<span class="string">'/Users/ywb/Desktop/Thesceonddate/'</span> + path_csv)</span><br><span class="line">    ratio_calculate = get_ratio_calculate(csv_1,column_name=<span class="string">'Answer'</span>,num=<span class="number">30</span>,a=<span class="number">68</span>,b=<span class="number">98</span>)</span><br><span class="line">    ratio_Recognise = get_ratio_calculate(csv_1,column_name=<span class="string">'Answer_2'</span>,num=<span class="number">60</span>,a=<span class="number">98</span>,b=<span class="number">158</span>)</span><br><span class="line">    serial_number = path_csv[:<span class="number">-4</span>]</span><br><span class="line">    serial_numbers.append(serial_number)</span><br><span class="line">    list_ratio_calculates.append(ratio_calculate)</span><br><span class="line">    list_ratio_Recognises.append(ratio_Recognise)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    filepath = <span class="string">'/Users/ywb/Desktop/Thesceonddate'</span></span><br><span class="line">    <span class="comment"># 获取目录下的文件名</span></span><br><span class="line">    l = os.listdir(filepath)</span><br><span class="line">    ll = []</span><br><span class="line">    <span class="comment">#筛选出含有csv的文件，因为有些隐藏文件可能也在其中</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> l:</span><br><span class="line">        <span class="keyword">if</span> <span class="string">'csv'</span> <span class="keyword">in</span> i:</span><br><span class="line">            ll.append(i)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line">    <span class="comment"># 使用上述的add_to_list函数将数据加入list中</span></span><br><span class="line">    <span class="keyword">for</span> path_name <span class="keyword">in</span> ll:</span><br><span class="line">        add_to_list(path_csv=path_name)</span><br><span class="line">    <span class="comment"># 以字典内嵌套列表的方式建立字典</span></span><br><span class="line">    data_1 = &#123;</span><br><span class="line">        <span class="string">'serial_numbers'</span>: serial_numbers,</span><br><span class="line">        <span class="string">'ratio_calculates'</span>: list_ratio_calculates,</span><br><span class="line">        <span class="string">'ratio_Recognises'</span>: list_ratio_Recognises</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">#写入DataFrame并导出到csv</span></span><br><span class="line">    frame = pd.DataFrame(data_1,columns=[<span class="string">'serial_numbers'</span>, <span class="string">'ratio_calculates'</span>, <span class="string">'ratio_Recognises'</span>])</span><br><span class="line">    frame.to_csv(<span class="string">'/Users/ywb/Desktop/Thesceonddate/Pywzt/all.csv'</span>)</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>数据处理</tag>
+      </tags>
   </entry>
 </search>
