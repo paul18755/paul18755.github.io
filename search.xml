@@ -34,7 +34,7 @@
   <entry>
     <title>2012年英语二小作文</title>
     <url>/2020/07/30/2012%E5%B9%B4%E8%8B%B1%E8%AF%AD%E4%BA%8C%E5%B0%8F%E4%BD%9C%E6%96%87/</url>
-    <content><![CDATA[<h2 id="范文原文"><a href="#范文原文" class="headerlink" title="范文原文"></a>范文原文</h2><p>Dear Sir or Madam,<br>&emsp; I brought an electronic dictionary from your online store on January 1st. But after using it for a short period time, I found it has some problems.</p>
+    <content><![CDATA[<h2 id="范文原文"><a href="#范文原文" class="headerlink" title="范文原文"></a>范文原文</h2><p>Dear Sir or Madam,<br>&emsp; I brought an electronic dictionary from your online store on January 1st. But after using it for a short period time, I found it has some problems.<br><a id="more"></a></p>
 <p>&emsp; In the begin with, the battery needs recharging after a mere 2 hours of use. This means that I need to carry my charger with me when I go out for a day. In addition, the buttons on the electronic dictionary are so small that is impossible to type anything with them. Personally, I find this to be completely unacceptable. </p>
 <p>&emsp; Therefore, I would like either to change for another model that works better or a full refund. Your help will greatly appreciate. </p>
 <p align="right">Your sincerely,
@@ -97,31 +97,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Python编程：从入门到实践3</title>
-    <url>/2020/02/04/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B53/</url>
-    <content><![CDATA[<h2 id="第三章-列表简介"><a href="#第三章-列表简介" class="headerlink" title="第三章 列表简介"></a>第三章 列表简介</h2><a id="more"></a>
-<h3 id="3-1-列表"><a href="#3-1-列表" class="headerlink" title="3.1 列表"></a>3.1 列表</h3><p><strong>Python用方括号（[ ]）表示列表，并用逗号分隔其中的元素</strong></p>
-<h4 id="3-1-1-访问列表元素"><a href="#3-1-1-访问列表元素" class="headerlink" title="3.1.1 访问列表元素"></a>3.1.1 访问列表元素</h4><blockquote>
-<p>提取元素从<strong>0</strong>开始<br>提取最后一个值可以让索引等于-1</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">bicycles = [<span class="string">'trek'</span>, <span class="string">'cannondale'</span>, <span class="string">'redline'</span>, <span class="string">'specialized'</span>]</span><br><span class="line">print(bicycles[<span class="number">0</span>])</span><br><span class="line">print(bicycles[<span class="number">0</span>].title())</span><br><span class="line">print(bicycles[<span class="number">1</span>]) <span class="comment">#索引1是第二个值</span></span><br><span class="line">print(bicycles[<span class="number">-1</span>])</span><br></pre></td></tr></table></figure>
-<h3 id="3-2-修改、添加和删除元素"><a href="#3-2-修改、添加和删除元素" class="headerlink" title="3.2 修改、添加和删除元素"></a>3.2 修改、添加和删除元素</h3><blockquote>
-<p>append()在列表末尾添加元素<br>insert(1,’<em>‘) 在列表[1]处添加</em>元素<br>del 列表名[索引] 该语句实现删除列表中的元素的作用<br>pop()方法用于即删除元素的同时又使用这个元素<br>remove()方法用于删除已知的值而不知道索引的情况下</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">motorcycles = [<span class="string">'honda'</span>, <span class="string">'yamaha'</span>, <span class="string">'suzuki'</span>]</span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles[<span class="number">0</span>] = <span class="string">'ducati'</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles[<span class="number">0</span>] = <span class="string">'honda'</span></span><br><span class="line">motorcycles.append(<span class="string">'ducati'</span>) <span class="comment">#添加在末尾</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles.insert(<span class="number">0</span>,<span class="string">'ducati2'</span>) <span class="comment">#指定位置添加</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line"><span class="keyword">del</span> motorcycles[<span class="number">0</span>]</span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">popped_motorcycles = motorcycles.pop() <span class="comment">#括号中可以指定索引，不指定则随机</span></span><br><span class="line">print(motorcycles)</span><br><span class="line">print(popped_motorcycles)</span><br></pre></td></tr></table></figure>
-<h3 id="3-3-组织列表"><a href="#3-3-组织列表" class="headerlink" title="3.3 组织列表"></a>3.3 组织列表</h3><h4 id="3-3-1-永久性排序"><a href="#3-3-1-永久性排序" class="headerlink" title="3.3.1 永久性排序"></a>3.3.1 永久性排序</h4><blockquote>
-<p>sort()方法实现列表的永久性排序,传递reverse=True则表示与字母顺序相反<br>sorted(列表名)方法实现暂时对列表的排序<br>reverse()方法实现对列表中元素的顺序的反转（不按字母表顺序）<br>len(列表名)确定列表长度</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cars = [<span class="string">'bmw'</span>, <span class="string">'audi'</span>, <span class="string">'toyota'</span>, <span class="string">'subaru'</span>]</span><br><span class="line">cars.sort()</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">cars.sort(reverse=<span class="literal">True</span>)</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">cars.reverse()</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">print(len(cars))</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python list</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Python编程：从入门到实践4</title>
     <url>/2020/02/18/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B54/</url>
     <content><![CDATA[<p>操作列表</p>
@@ -150,6 +125,31 @@
       </categories>
       <tags>
         <tag>PYTHON LIST</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python编程：从入门到实践3</title>
+    <url>/2020/02/04/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B53/</url>
+    <content><![CDATA[<h2 id="第三章-列表简介"><a href="#第三章-列表简介" class="headerlink" title="第三章 列表简介"></a>第三章 列表简介</h2><a id="more"></a>
+<h3 id="3-1-列表"><a href="#3-1-列表" class="headerlink" title="3.1 列表"></a>3.1 列表</h3><p><strong>Python用方括号（[ ]）表示列表，并用逗号分隔其中的元素</strong></p>
+<h4 id="3-1-1-访问列表元素"><a href="#3-1-1-访问列表元素" class="headerlink" title="3.1.1 访问列表元素"></a>3.1.1 访问列表元素</h4><blockquote>
+<p>提取元素从<strong>0</strong>开始<br>提取最后一个值可以让索引等于-1</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">bicycles = [<span class="string">'trek'</span>, <span class="string">'cannondale'</span>, <span class="string">'redline'</span>, <span class="string">'specialized'</span>]</span><br><span class="line">print(bicycles[<span class="number">0</span>])</span><br><span class="line">print(bicycles[<span class="number">0</span>].title())</span><br><span class="line">print(bicycles[<span class="number">1</span>]) <span class="comment">#索引1是第二个值</span></span><br><span class="line">print(bicycles[<span class="number">-1</span>])</span><br></pre></td></tr></table></figure>
+<h3 id="3-2-修改、添加和删除元素"><a href="#3-2-修改、添加和删除元素" class="headerlink" title="3.2 修改、添加和删除元素"></a>3.2 修改、添加和删除元素</h3><blockquote>
+<p>append()在列表末尾添加元素<br>insert(1,’<em>‘) 在列表[1]处添加</em>元素<br>del 列表名[索引] 该语句实现删除列表中的元素的作用<br>pop()方法用于即删除元素的同时又使用这个元素<br>remove()方法用于删除已知的值而不知道索引的情况下</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">motorcycles = [<span class="string">'honda'</span>, <span class="string">'yamaha'</span>, <span class="string">'suzuki'</span>]</span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles[<span class="number">0</span>] = <span class="string">'ducati'</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles[<span class="number">0</span>] = <span class="string">'honda'</span></span><br><span class="line">motorcycles.append(<span class="string">'ducati'</span>) <span class="comment">#添加在末尾</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">motorcycles.insert(<span class="number">0</span>,<span class="string">'ducati2'</span>) <span class="comment">#指定位置添加</span></span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line"><span class="keyword">del</span> motorcycles[<span class="number">0</span>]</span><br><span class="line">print(motorcycles)</span><br><span class="line"></span><br><span class="line">popped_motorcycles = motorcycles.pop() <span class="comment">#括号中可以指定索引，不指定则随机</span></span><br><span class="line">print(motorcycles)</span><br><span class="line">print(popped_motorcycles)</span><br></pre></td></tr></table></figure>
+<h3 id="3-3-组织列表"><a href="#3-3-组织列表" class="headerlink" title="3.3 组织列表"></a>3.3 组织列表</h3><h4 id="3-3-1-永久性排序"><a href="#3-3-1-永久性排序" class="headerlink" title="3.3.1 永久性排序"></a>3.3.1 永久性排序</h4><blockquote>
+<p>sort()方法实现列表的永久性排序,传递reverse=True则表示与字母顺序相反<br>sorted(列表名)方法实现暂时对列表的排序<br>reverse()方法实现对列表中元素的顺序的反转（不按字母表顺序）<br>len(列表名)确定列表长度</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">cars = [<span class="string">'bmw'</span>, <span class="string">'audi'</span>, <span class="string">'toyota'</span>, <span class="string">'subaru'</span>]</span><br><span class="line">cars.sort()</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">cars.sort(reverse=<span class="literal">True</span>)</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">cars.reverse()</span><br><span class="line">print(cars)</span><br><span class="line"></span><br><span class="line">print(len(cars))</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python list</tag>
       </tags>
   </entry>
   <entry>
@@ -242,12 +242,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《social psychology 11th》摘录</title>
-    <url>/2020/03/22/%E3%80%8Asocial-psychology-11th%E3%80%8B%E6%91%98%E5%BD%95/</url>
-    <content><![CDATA[<p>在老师要求的英语阅读的作业偶然摘抄到的，觉得挺有意思<a id="more"></a><br><img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200322093615.jpeg" ></p>
-]]></content>
-  </entry>
-  <entry>
     <title>《人类简史》-Yuval Noah Harari</title>
     <url>/2020/04/13/%E3%80%8A%E4%BA%BA%E7%B1%BB%E7%AE%80%E5%8F%B2%E3%80%8B-Yuval-Noah-Harari/</url>
     <content><![CDATA[<p>“自由主义政治的基本想法，是认为选民个人最知道好坏，我们没有必要由政府老大哥来告诉人民何者为善、何者为恶。<a id="more"></a>自由主义经济学的基本想法，是客户永远是对的。自由主义艺术的基本想法，是各花入各眼，看的人觉得美就是美。自由主义的学校和大学，叫学生要为自己多想想。广告叫我们：“做就对了！”就连动作片、舞台剧、八点档、小说和流行歌，都不断在洗脑着：“忠于自我”、“倾听你自己”、“顺从你的渴望”。对于这种观点，卢梭的说法称得上是经典：“我觉得好的，就是好的。我觉得坏的，就是坏的。”<br>如果我们从小到大不断被灌输这些口号，就很可能相信快乐是种主观的感受，而是否快乐当然就是每个人自己最清楚。然而，这不过是自由主义独有的一个观点而已。历史上大多数的宗教和意识形态认为，关于善、关于美、关于何事应为，都有客观的标准。在这些宗教和意识形态看来，一般人自己的自己的感觉和偏好可能并不可信。从老子到苏格拉底，哲学家不断告诫人们：“认识你自己！”但言下之意也就是一般人并不知道自己真实的自我，也因此很可能忽略了真正的快乐。弗洛伊德很可能也会这么想。”</p>
@@ -260,6 +254,12 @@
       <tags>
         <tag>主观幸福感矛盾</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>《social psychology 11th》摘录</title>
+    <url>/2020/03/22/%E3%80%8Asocial-psychology-11th%E3%80%8B%E6%91%98%E5%BD%95/</url>
+    <content><![CDATA[<p>在老师要求的英语阅读的作业偶然摘抄到的，觉得挺有意思<a id="more"></a><br><img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200322093615.jpeg" ></p>
+]]></content>
   </entry>
   <entry>
     <title>《人类简史》[以] 尤瓦尔·赫拉利 读书笔记</title>
