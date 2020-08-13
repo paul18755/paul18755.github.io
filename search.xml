@@ -211,35 +211,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Python编程：从入门到实践2</title>
-    <url>/2020/02/03/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B52/</url>
-    <content><![CDATA[<h1 id="Python编程：从入门到实践2"><a href="#Python编程：从入门到实践2" class="headerlink" title="Python编程：从入门到实践2"></a>Python编程：从入门到实践2</h1><a id="more"></a>
-<h2 id="第二章-变量和简单数据类型"><a href="#第二章-变量和简单数据类型" class="headerlink" title="第二章 变量和简单数据类型"></a>第二章 变量和简单数据类型</h2><h3 id="2-3-字符串"><a href="#2-3-字符串" class="headerlink" title="2.3 字符串"></a>2.3 字符串</h3><blockquote>
-<p>用引号括起的都是字符串（<strong>包括单引号和双引号</strong>）</p>
-</blockquote>
-<p>也就意味着如果要在字符串中使用引号和撇号可以这样:<code>&#39;I told my friend, &quot;Python is my favorite language!&quot;&#39;</code></p>
-<h4 id="2-3-1-修改字符串的大小写"><a href="#2-3-1-修改字符串的大小写" class="headerlink" title="2.3.1 修改字符串的大小写"></a>2.3.1 修改字符串的大小写</h4><blockquote>
-<p>.title方法 将以首字母大写的方式显示每个单词<br>.upper方法，将字符串改为全部大写<br>.lower方法，将字符串改为全部小写</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">name = <span class="string">"ada lovelace"</span></span><br><span class="line">print(name.title())</span><br><span class="line">print(b.upper()) <span class="comment">#全部大写</span></span><br><span class="line">print(b.lower()) <span class="comment">#全部小写</span></span><br></pre></td></tr></table></figure>
-<h4 id="2-3-2-使用-合并字符串"><a href="#2-3-2-使用-合并字符串" class="headerlink" title="2.3.2 使用+合并字符串"></a>2.3.2 使用+合并字符串</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">first_name = <span class="string">"ada"</span></span><br><span class="line">last_name = <span class="string">"lovelace"</span></span><br><span class="line">full_name = first_name + <span class="string">" "</span> + last_name</span><br><span class="line">print(<span class="string">"Hello, "</span> + full_name.title() + <span class="string">"!"</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="2-3-3-使用制表符或换行符添加空白"><a href="#2-3-3-使用制表符或换行符添加空白" class="headerlink" title="2.3.3 使用制表符或换行符添加空白"></a>2.3.3 使用制表符或换行符添加空白</h4><blockquote>
-<p>\t表示添加制表符<br>\n表示添加换行符</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">"\tpython"</span>)</span><br><span class="line">print(<span class="string">"languages:\nPython\nC\nJavaScript"</span>)</span><br></pre></td></tr></table></figure>
-<h4 id="2-3-4-删除空白"><a href="#2-3-4-删除空白" class="headerlink" title="2.3.4 删除空白"></a>2.3.4 删除空白</h4><blockquote>
-<p>rstrip()方法能够删除字符串末尾的空格<br>lstrip()剔除字符串开头空白<br>strip()同时剔除两端空白</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">favorite_language = <span class="string">' python '</span></span><br><span class="line">print(favorite_language.rstrip()) <span class="comment">#原变量还是不变的</span></span><br><span class="line">print(favorite_language.lstrip()) </span><br><span class="line">print(favorite_language.strip())</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Python</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2019年英语二 建议信+交通</title>
     <url>/2020/08/08/2019%E5%B9%B4%E8%8B%B1%E8%AF%AD%E4%BA%8C-%E5%BB%BA%E8%AE%AE%E4%BF%A1-%E4%BA%A4%E9%80%9A/</url>
     <content><![CDATA[<p>Dear Professor Smith,<br>&emsp; It is my honor to plan a debate on the theme of city traffic. My suggestion is that the specific topic of the debate is: Private Cars—A Blessing or Curse?<a id="more"></a><br>&emsp; My primary reasons are as follows. On the one hand, some claims that there are many advantages in possessing cars. It gives much greater degree of comfort and mobility. On the other hand, others strongly object to developing private cars. They maintain that private cars contribute to traffic congestion so greatly that the advantages gained in comfort and freedom are cancelled out by the frustration cause by traffic jams.<br>&emsp; My arrangement is that the debate will be held in the Students’ Recreational Center on December 22, 2018. I am looking forward to your reply.</p>
@@ -270,6 +241,35 @@
       </categories>
       <tags>
         <tag>建议信</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Python编程：从入门到实践2</title>
+    <url>/2020/02/03/Python%E7%BC%96%E7%A8%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E8%B7%B52/</url>
+    <content><![CDATA[<h1 id="Python编程：从入门到实践2"><a href="#Python编程：从入门到实践2" class="headerlink" title="Python编程：从入门到实践2"></a>Python编程：从入门到实践2</h1><a id="more"></a>
+<h2 id="第二章-变量和简单数据类型"><a href="#第二章-变量和简单数据类型" class="headerlink" title="第二章 变量和简单数据类型"></a>第二章 变量和简单数据类型</h2><h3 id="2-3-字符串"><a href="#2-3-字符串" class="headerlink" title="2.3 字符串"></a>2.3 字符串</h3><blockquote>
+<p>用引号括起的都是字符串（<strong>包括单引号和双引号</strong>）</p>
+</blockquote>
+<p>也就意味着如果要在字符串中使用引号和撇号可以这样:<code>&#39;I told my friend, &quot;Python is my favorite language!&quot;&#39;</code></p>
+<h4 id="2-3-1-修改字符串的大小写"><a href="#2-3-1-修改字符串的大小写" class="headerlink" title="2.3.1 修改字符串的大小写"></a>2.3.1 修改字符串的大小写</h4><blockquote>
+<p>.title方法 将以首字母大写的方式显示每个单词<br>.upper方法，将字符串改为全部大写<br>.lower方法，将字符串改为全部小写</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">name = <span class="string">"ada lovelace"</span></span><br><span class="line">print(name.title())</span><br><span class="line">print(b.upper()) <span class="comment">#全部大写</span></span><br><span class="line">print(b.lower()) <span class="comment">#全部小写</span></span><br></pre></td></tr></table></figure>
+<h4 id="2-3-2-使用-合并字符串"><a href="#2-3-2-使用-合并字符串" class="headerlink" title="2.3.2 使用+合并字符串"></a>2.3.2 使用+合并字符串</h4><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">first_name = <span class="string">"ada"</span></span><br><span class="line">last_name = <span class="string">"lovelace"</span></span><br><span class="line">full_name = first_name + <span class="string">" "</span> + last_name</span><br><span class="line">print(<span class="string">"Hello, "</span> + full_name.title() + <span class="string">"!"</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="2-3-3-使用制表符或换行符添加空白"><a href="#2-3-3-使用制表符或换行符添加空白" class="headerlink" title="2.3.3 使用制表符或换行符添加空白"></a>2.3.3 使用制表符或换行符添加空白</h4><blockquote>
+<p>\t表示添加制表符<br>\n表示添加换行符</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">print(<span class="string">"\tpython"</span>)</span><br><span class="line">print(<span class="string">"languages:\nPython\nC\nJavaScript"</span>)</span><br></pre></td></tr></table></figure>
+<h4 id="2-3-4-删除空白"><a href="#2-3-4-删除空白" class="headerlink" title="2.3.4 删除空白"></a>2.3.4 删除空白</h4><blockquote>
+<p>rstrip()方法能够删除字符串末尾的空格<br>lstrip()剔除字符串开头空白<br>strip()同时剔除两端空白</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">favorite_language = <span class="string">' python '</span></span><br><span class="line">print(favorite_language.rstrip()) <span class="comment">#原变量还是不变的</span></span><br><span class="line">print(favorite_language.lstrip()) </span><br><span class="line">print(favorite_language.strip())</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
@@ -628,6 +628,34 @@ categories: Read
       </tags>
   </entry>
   <entry>
+    <title>心理统计学：绪论笔记</title>
+    <url>/2020/02/18/%E5%BF%83%E7%90%86%E7%BB%9F%E8%AE%A1%E5%AD%A6%EF%BC%9A%E7%BB%AA%E8%AE%BA%E7%AC%94%E8%AE%B0%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/</url>
+    <content><![CDATA[<h4 id="心理与教育统计的定义、目的以及数据特点"><a href="#心理与教育统计的定义、目的以及数据特点" class="headerlink" title="心理与教育统计的定义、目的以及数据特点"></a>心理与教育统计的定义、目的以及数据特点</h4><a id="more"></a>
+<p>心理与教育统计学是专门研究如何运用统计学方法处理心理与教育科学研究中的随机性数据，其目的是为了从样本数据推论出总体的规律，处理的数据多以数字化呈现，具有随机性、变异性和规律性的特点</p>
+<h4 id="应用统计和理论统计"><a href="#应用统计和理论统计" class="headerlink" title="应用统计和理论统计"></a>应用统计和理论统计</h4><p>统计学分为数理统计和应用统计，数理统计多专注于统计理论的数理证明，应用理论则关注于统计理论在各学科的具体应用，心理与教育统计是应用统计的分支。</p>
+<h4 id="描述统计"><a href="#描述统计" class="headerlink" title="描述统计"></a>描述统计</h4><p>描述统计主要是整理心理和教育科学研究的数据，描述数据的全貌，表述事件的一般性质。其内容主要有<strong>统计图表、集中量数、差异量数和相关关系的分析</strong>。集中量数表达数据的集中趋势，差异量数则相对离中趋势，即数据的变异性。统计图表主要是表现数据的分布情况。</p>
+<h4 id="推论统计"><a href="#推论统计" class="headerlink" title="推论统计"></a>推论统计</h4><p>推论统计主要是关于如何从局部样本数据中推论出总体的一般性特征和规律。其主要内容有<strong>概率论基础、假设检验、参数估计、方差分析</strong>、卡方检验、非参数检验、一元线性回归和初步多元分析。</p>
+<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><ol>
+<li>按<strong>数据来源</strong>分可分为<strong>计数数据和测量数据</strong>，两者的主要区别在于测量数据主要依靠测量工具或者特定的测量标准，而计数数据指计算个数的数据，有独立的分类单位。</li>
+<li>按<strong>测量反映水平</strong>可分为<strong>称名数据、顺序数据、等距数据和比率数据</strong>。称名数据只说明事物之间在属性上或类别上的差异，有独立的分类单位；顺序数据在称名数据的基础上按事物属性的大小次序排列，无相等单位和绝对零；等距数据有相等单位，代表数据之间的差数关系（可+-）；比率数据则两者兼有，代表数据的倍数关系（可+-$<em>$/）。 <em>*在这类数据的判断上，应该先回归数据本身，例如工资应回归于1元、10元、100元在进行差数倍数关系的判断。</em></em></li>
+<li>按<strong>数据的连续性</strong>可分为<strong>离散数据和连续数据</strong>。两者的区别在于是否可以无限细分。例如<img src="https://raw.githubusercontent.com/paul18755/ppppp/master/20200219120815.png" alt="图片名称" align=center /></li>
+</ol>
+<h4 id="常见概念"><a href="#常见概念" class="headerlink" title="常见概念"></a>常见概念</h4><ul>
+<li>变量：指可以任意取值的事物的属性或事件，而随机变量则是在变量的基础上取值前无法对值进行预测。</li>
+<li>随机样本于样本的区别在于每个项目被选中的概率相同</li>
+<li>参数是总体的统计指标；统计量是样本的特征值</li>
+<li>次数的概念与频数相等，都是事件出现的计数值</li>
+<li>比率与频率的区别在于频率的分母是总体；而频率和概率的区别在于概率是在无限多次尝试后得出的频率值。</li>
+</ul>
+<div><img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200223145620.png"/></div>]]></content>
+      <categories>
+        <category>Psychology</category>
+      </categories>
+      <tags>
+        <tag>心理统计</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>心理统计公式备忘</title>
     <url>/2020/07/28/%E5%BF%83%E7%90%86%E7%BB%9F%E8%AE%A1%E5%85%AC%E5%BC%8F%E5%A4%87%E5%BF%98/</url>
     <content><![CDATA[<h2 id="第三章-集中量数"><a href="#第三章-集中量数" class="headerlink" title="第三章 集中量数"></a>第三章 集中量数</h2><h3 id="算术平均数"><a href="#算术平均数" class="headerlink" title="算术平均数"></a>算术平均数</h3><ol>
@@ -795,34 +823,6 @@ categories: Read
       </tags>
   </entry>
   <entry>
-    <title>心理统计学：绪论笔记</title>
-    <url>/2020/02/18/%E5%BF%83%E7%90%86%E7%BB%9F%E8%AE%A1%E5%AD%A6%EF%BC%9A%E7%BB%AA%E8%AE%BA%E7%AC%94%E8%AE%B0%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/</url>
-    <content><![CDATA[<h4 id="心理与教育统计的定义、目的以及数据特点"><a href="#心理与教育统计的定义、目的以及数据特点" class="headerlink" title="心理与教育统计的定义、目的以及数据特点"></a>心理与教育统计的定义、目的以及数据特点</h4><a id="more"></a>
-<p>心理与教育统计学是专门研究如何运用统计学方法处理心理与教育科学研究中的随机性数据，其目的是为了从样本数据推论出总体的规律，处理的数据多以数字化呈现，具有随机性、变异性和规律性的特点</p>
-<h4 id="应用统计和理论统计"><a href="#应用统计和理论统计" class="headerlink" title="应用统计和理论统计"></a>应用统计和理论统计</h4><p>统计学分为数理统计和应用统计，数理统计多专注于统计理论的数理证明，应用理论则关注于统计理论在各学科的具体应用，心理与教育统计是应用统计的分支。</p>
-<h4 id="描述统计"><a href="#描述统计" class="headerlink" title="描述统计"></a>描述统计</h4><p>描述统计主要是整理心理和教育科学研究的数据，描述数据的全貌，表述事件的一般性质。其内容主要有<strong>统计图表、集中量数、差异量数和相关关系的分析</strong>。集中量数表达数据的集中趋势，差异量数则相对离中趋势，即数据的变异性。统计图表主要是表现数据的分布情况。</p>
-<h4 id="推论统计"><a href="#推论统计" class="headerlink" title="推论统计"></a>推论统计</h4><p>推论统计主要是关于如何从局部样本数据中推论出总体的一般性特征和规律。其主要内容有<strong>概率论基础、假设检验、参数估计、方差分析</strong>、卡方检验、非参数检验、一元线性回归和初步多元分析。</p>
-<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><ol>
-<li>按<strong>数据来源</strong>分可分为<strong>计数数据和测量数据</strong>，两者的主要区别在于测量数据主要依靠测量工具或者特定的测量标准，而计数数据指计算个数的数据，有独立的分类单位。</li>
-<li>按<strong>测量反映水平</strong>可分为<strong>称名数据、顺序数据、等距数据和比率数据</strong>。称名数据只说明事物之间在属性上或类别上的差异，有独立的分类单位；顺序数据在称名数据的基础上按事物属性的大小次序排列，无相等单位和绝对零；等距数据有相等单位，代表数据之间的差数关系（可+-）；比率数据则两者兼有，代表数据的倍数关系（可+-$<em>$/）。 <em>*在这类数据的判断上，应该先回归数据本身，例如工资应回归于1元、10元、100元在进行差数倍数关系的判断。</em></em></li>
-<li>按<strong>数据的连续性</strong>可分为<strong>离散数据和连续数据</strong>。两者的区别在于是否可以无限细分。例如<img src="https://raw.githubusercontent.com/paul18755/ppppp/master/20200219120815.png" alt="图片名称" align=center /></li>
-</ol>
-<h4 id="常见概念"><a href="#常见概念" class="headerlink" title="常见概念"></a>常见概念</h4><ul>
-<li>变量：指可以任意取值的事物的属性或事件，而随机变量则是在变量的基础上取值前无法对值进行预测。</li>
-<li>随机样本于样本的区别在于每个项目被选中的概率相同</li>
-<li>参数是总体的统计指标；统计量是样本的特征值</li>
-<li>次数的概念与频数相等，都是事件出现的计数值</li>
-<li>比率与频率的区别在于频率的分母是总体；而频率和概率的区别在于概率是在无限多次尝试后得出的频率值。</li>
-</ul>
-<div><img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200223145620.png"/></div>]]></content>
-      <categories>
-        <category>Psychology</category>
-      </categories>
-      <tags>
-        <tag>心理统计</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>普心第一章 错题</title>
     <url>/2020/08/12/%E6%99%AE%E5%BF%83%E7%AC%AC%E4%B8%80%E7%AB%A0-%E9%94%99%E9%A2%98/</url>
     <content><![CDATA[<ul>
@@ -843,6 +843,87 @@ categories: Read
 <ul>
 <li>调查法中<strong><font color='purple'>常用</font></strong>的是（AD）<br>  A.访谈法 B.测查法 C.书面材料分析法 D.问卷法<br>  $\Delta$：调查法不同于测验法需要使用标准化量表，其主要包括访谈法、问卷法、测查法、评价法、书面材料分析法，但是记住题干所问的是<strong>常用的</strong>，常用的只有访谈法和问卷法    </li>
 </ul>
+]]></content>
+      <categories>
+        <category>Learning</category>
+      </categories>
+      <tags>
+        <tag>错题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>普心第二章 错题</title>
+    <url>/2020/08/13/%E6%99%AE%E5%BF%83%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E9%94%99%E9%A2%98/</url>
+    <content><![CDATA[<ul>
+<li>有关大脑两半球功能单侧化的研究表明，大多数人的言语活动中枢在（C）<br>A.杏仁核 B.边缘系统 C.大脑左半球 D.大脑右半期</li>
+<li>对于右利手的人来说，属于大脑右半球功能的是（A）<br>A.空间关系知觉 B.阅读 C.书写 D.逻辑推理<a id="more"></a>
+</li>
+</ul>
+<p>$\Delta$：斯佩里和加扎尼加的裂脑人研究发现，大脑左半球主要负责言语、阅读、书写、数学逻辑运算推理；而右半球主要负责空间识别、情绪感受、艺术鉴赏和面部识别</p>
+<hr>
+<ul>
+<li>神经元中具有信息整合功能的部位是（B）<br>A.树突 B.胞体 C.突触 D.轴突</li>
+<li>下列说法正确的是（B）<br>A. <strong>神经元胞体</strong>是系统神经结构和机能的单位<br>B. 对接受的外部信息进行整合的是胞体<br>C. 一个神经元细胞可以由多条轴突传出信息<br>D.  一个神经元细胞有多余树突和多余轴突，树突较短，轴突较长</li>
+</ul>
+<p><img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200813113749.jpg" width=130/></p>
+<p>$\Delta$：神经元是神经系统结构和功能的基本单位，基本作用是接收和传递信息。各自组成的三个部分中，<strong>树突较短</strong>但可以有多个，负责接收刺激；轴突较长但只有一根，主要负责传出神经冲动。而突触是神经元彼此接触的部位，包含突触前、突触间隙和突触后，不属于神经元中的结构。同时要注意区分选项的用词，<strong>神经元是单位但是神经元胞体不是单位</strong></p>
+<hr>
+<ul>
+<li>人体的躯体感觉中枢位于（D）<br>A.额叶 B.颞叶 C.枕叶 D.顶叶</li>
+<li>躯体运动中枢位于大脑皮层的（）<br>A.扣带回 B.中央后回 C.中央前回 D.角回</li>
+<li>体表感觉区位于（B）<br>A.中央前回 B.中央后回 C.角回 D.额横回</li>
+</ul>
+<p>$\Delta$：主要注意四个区域的联系以及具体位置。其中：</p>
+<ol>
+<li>额叶=“初级运动区”，主要位于中央前回和旁中央小叶前部，属于布鲁德曼第4区；</li>
+<li>顶叶=“机体感觉区”，主要位于中央后回，属于布鲁德曼第1、2、3区；</li>
+<li>枕叶=“初级视觉区”，主要位于枕极，属于布鲁德曼第17区；</li>
+<li>颞叶=“触及听觉区”，主要位于颞横回，属于布鲁德曼第41、42区。</li>
+</ol>
+<hr>
+<ul>
+<li>神经系统可以分为哪两个种类（C）<br>A.中枢神经系统和躯体神经系统<br>B.周围神经系统和感觉神经系统<br>C.中枢神经系统和周围神经系统<br>D.周围神经系统和躯体神经系统</li>
+</ul>
+<p>$\Delta$：<img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200813120010.png"/></p>
+<hr>
+<ul>
+<li>脑内神经元信号传递的主要方式是（B）<br>A.电传导 B.化学传导 C.反射 D.神经回路</li>
+</ul>
+<p>$\Delta$：神经元传递的方式有两种：电传导和化学传导。（看清题干）</p>
+<pre><code>1. 电传导是**同一细胞内**信号的传递方式，依靠动作电位，静息电位差为-70，动作电位差为+40
+2. 化学传导是各个神经元之间的传导方式，依靠突触并借助神经递质来完成，是**脑内神经元**信号传递的主要方式
+</code></pre><hr>
+<ul>
+<li>最直接影响摄食和身体温度的神经结构是（B）<br>A.内分泌系统 B.下丘脑 C.海马回 D.杏仁核</li>
+<li>下列生理部位与功能对应正确的有（ACD）<br>A. 延脑：生命中枢<br>B. 丘脑：嗅觉等感觉信息经此传往大脑皮层（除了嗅觉）<br>C. 中脑：瞳孔、眼球控制（视听反射中枢）<br>D. 间脑：调节植物性神经系统（下丘脑负责，而下丘脑属于间脑）</li>
+<li>与情绪有关的脑区主要有（<font color='purple'>ABCD</font>）<br>A.边缘系统 B.下丘脑 C.杏仁核 D.海马</li>
+</ul>
+<p>$\Delta$：下丘脑属于间脑的一部分，主要负责调节自主神经系统和内脏及内分泌活动。其中自主神经系统的调节涉及体温、摄食、睡眠、生殖、内脏活动以及情绪；而内分泌活动的挑战主要涉及不同激素的调节。<br>$\Delta$：而<a href="https://zh.wikipedia.org/wiki/內分泌系統" target="_blank" rel="noopener">内分泌系统</a>与题目有关系但是不属于神经结构，是神经系统以外的另一机能调节系统，内分泌系统与神经系统共同控制机体。海马主要影响记忆，杏仁核影响情绪，扣带回影响注意。<br>$\Delta$：<strong>虽然海马主要影响记忆，但是与情绪有关系</strong>。边缘系统包括了下丘脑、杏仁核和海马，其中下丘脑中存在愉快中枢和痛苦中枢；杏仁核主要对知觉和产生消极情绪有关；海马在情绪调节中也有作用。</p>
+<hr>
+<ul>
+<li>下列对于正确的是（<font color='purple'>AC</font>）<br>A.布洛卡-运动性失语症 B.威尔尼克-<strong>视觉性失语症</strong> C.角回-失读症 D.书写中枢-失读症</li>
+</ul>
+<p>$\Delta$：<img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200813122445.jpg"/></p>
+<hr>
+<ul>
+<li>根据鲁利亚技能系统说，下列说法正确的是（AD）<br>A. 第二机能系统一级区：刺激的直接投射区<br>B. 第二机能系统二级区：受损将失去初级感觉能力<br>C. 第三机能系统二级区：直接调节身体各部位的运动<br>D. 第三机能系统三级区：受损将产生行为障碍</li>
+</ul>
+<p>$\Delta$：鲁利亚机能系统说：</p>
+<ol>
+<li>动力系统，主要包括网状结构和边缘系统，主要功能是保持大脑皮层的觉醒，系统受损会导致兴奋水平普遍下降，影响对外界信息加工和调节</li>
+<li>信息接收、加工和存储系统：主要包括枕叶、颞叶、顶叶，主要功能是接收刺激实施整合并保存，结合知觉一章，<ol>
+<li>一级区受损会导致对应的<strong>感受丧失</strong>；</li>
+<li>二级区对一级区进行整合，受损会机体仍可保留初级的感觉能力，但是将产生各种形式的<strong>不识症</strong>；</li>
+<li>三级区受损会丧失<strong>同时性空间整合</strong>能力</li>
+</ol>
+</li>
+<li>行为调节系统：包括额叶广大脑区，主要功能是产生活动意图和对复杂行为的调节与控制。系统受损会导致行为障碍，丧失主动知觉的意图和行为结果的判断和矫正能力。<ol>
+<li>一级区直接调节各个部位的运动</li>
+<li>二级区实现对运动的组织</li>
+<li>三级区产生活动的意图</li>
+</ol>
+</li>
+</ol>
 ]]></content>
       <categories>
         <category>Learning</category>
