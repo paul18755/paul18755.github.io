@@ -31,6 +31,18 @@
       </tags>
   </entry>
   <entry>
+    <title>2001年 大作文</title>
+    <url>/2020/08/22/2001%E5%B9%B4-%E5%A4%A7%E4%BD%9C%E6%96%87/</url>
+    <content><![CDATA[<p>&emsp; When we use the word “love”, we do not simply mean an attraction to a person of the opposite sex, which is a very narrow definition of the word.<a id="more"></a> The picture below illustrates the real meaning of love, by stressing the fact that love is emotional strength, which can support us no matter how dark the world around us becomes. As a matter of fact, throughout history people of many different cultures have regarded love as the most sublime of human emotions.<br>&emsp; Take an example to illustrate the power of love. We should remember how Chinese people of all ethnicities responded to the call to help the victims of the deadly earthquake in Sichuan Province in 2008. </p>
+]]></content>
+      <categories>
+        <category>Learning</category>
+      </categories>
+      <tags>
+        <tag>爱心</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2012年英语一小作文</title>
     <url>/2020/07/28/2012%E5%B9%B4%E8%8B%B1%E8%AF%AD%E4%B8%80%E5%B0%8F%E4%BD%9C%E6%96%87/</url>
     <content><![CDATA[<h2 id="范文原文"><a href="#范文原文" class="headerlink" title="范文原文"></a>范文原文</h2><p>Dear Friends,<br>&emsp; On the behalf of Students’ Union of Beijing foreign studies university,  I would like to extend <strong>heartfelt</strong> welcome to all the overseas students who will study in our university.<br><a id="more"></a></p>
@@ -825,34 +837,6 @@ categories: Read
       </tags>
   </entry>
   <entry>
-    <title>心理统计学：绪论笔记</title>
-    <url>/2020/02/18/%E5%BF%83%E7%90%86%E7%BB%9F%E8%AE%A1%E5%AD%A6%EF%BC%9A%E7%BB%AA%E8%AE%BA%E7%AC%94%E8%AE%B0%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/</url>
-    <content><![CDATA[<h4 id="心理与教育统计的定义、目的以及数据特点"><a href="#心理与教育统计的定义、目的以及数据特点" class="headerlink" title="心理与教育统计的定义、目的以及数据特点"></a>心理与教育统计的定义、目的以及数据特点</h4><a id="more"></a>
-<p>心理与教育统计学是专门研究如何运用统计学方法处理心理与教育科学研究中的随机性数据，其目的是为了从样本数据推论出总体的规律，处理的数据多以数字化呈现，具有随机性、变异性和规律性的特点</p>
-<h4 id="应用统计和理论统计"><a href="#应用统计和理论统计" class="headerlink" title="应用统计和理论统计"></a>应用统计和理论统计</h4><p>统计学分为数理统计和应用统计，数理统计多专注于统计理论的数理证明，应用理论则关注于统计理论在各学科的具体应用，心理与教育统计是应用统计的分支。</p>
-<h4 id="描述统计"><a href="#描述统计" class="headerlink" title="描述统计"></a>描述统计</h4><p>描述统计主要是整理心理和教育科学研究的数据，描述数据的全貌，表述事件的一般性质。其内容主要有<strong>统计图表、集中量数、差异量数和相关关系的分析</strong>。集中量数表达数据的集中趋势，差异量数则相对离中趋势，即数据的变异性。统计图表主要是表现数据的分布情况。</p>
-<h4 id="推论统计"><a href="#推论统计" class="headerlink" title="推论统计"></a>推论统计</h4><p>推论统计主要是关于如何从局部样本数据中推论出总体的一般性特征和规律。其主要内容有<strong>概率论基础、假设检验、参数估计、方差分析</strong>、卡方检验、非参数检验、一元线性回归和初步多元分析。</p>
-<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><ol>
-<li>按<strong>数据来源</strong>分可分为<strong>计数数据和测量数据</strong>，两者的主要区别在于测量数据主要依靠测量工具或者特定的测量标准，而计数数据指计算个数的数据，有独立的分类单位。</li>
-<li>按<strong>测量反映水平</strong>可分为<strong>称名数据、顺序数据、等距数据和比率数据</strong>。称名数据只说明事物之间在属性上或类别上的差异，有独立的分类单位；顺序数据在称名数据的基础上按事物属性的大小次序排列，无相等单位和绝对零；等距数据有相等单位，代表数据之间的差数关系（可+-）；比率数据则两者兼有，代表数据的倍数关系（可+-$<em>$/）。 <em>*在这类数据的判断上，应该先回归数据本身，例如工资应回归于1元、10元、100元在进行差数倍数关系的判断。</em></em></li>
-<li>按<strong>数据的连续性</strong>可分为<strong>离散数据和连续数据</strong>。两者的区别在于是否可以无限细分。例如<img src="https://raw.githubusercontent.com/paul18755/ppppp/master/20200219120815.png" alt="图片名称" align=center /></li>
-</ol>
-<h4 id="常见概念"><a href="#常见概念" class="headerlink" title="常见概念"></a>常见概念</h4><ul>
-<li>变量：指可以任意取值的事物的属性或事件，而随机变量则是在变量的基础上取值前无法对值进行预测。</li>
-<li>随机样本于样本的区别在于每个项目被选中的概率相同</li>
-<li>参数是总体的统计指标；统计量是样本的特征值</li>
-<li>次数的概念与频数相等，都是事件出现的计数值</li>
-<li>比率与频率的区别在于频率的分母是总体；而频率和概率的区别在于概率是在无限多次尝试后得出的频率值。</li>
-</ul>
-<div><img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200223145620.png"/></div>]]></content>
-      <categories>
-        <category>Psychology</category>
-      </categories>
-      <tags>
-        <tag>心理统计</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>普心第一章 错题</title>
     <url>/2020/08/12/%E6%99%AE%E5%BF%83%E7%AC%AC%E4%B8%80%E7%AB%A0-%E9%94%99%E9%A2%98/</url>
     <content><![CDATA[<ul>
@@ -879,6 +863,34 @@ categories: Read
       </categories>
       <tags>
         <tag>错题</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>心理统计学：绪论笔记</title>
+    <url>/2020/02/18/%E5%BF%83%E7%90%86%E7%BB%9F%E8%AE%A1%E5%AD%A6%EF%BC%9A%E7%BB%AA%E8%AE%BA%E7%AC%94%E8%AE%B0%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/</url>
+    <content><![CDATA[<h4 id="心理与教育统计的定义、目的以及数据特点"><a href="#心理与教育统计的定义、目的以及数据特点" class="headerlink" title="心理与教育统计的定义、目的以及数据特点"></a>心理与教育统计的定义、目的以及数据特点</h4><a id="more"></a>
+<p>心理与教育统计学是专门研究如何运用统计学方法处理心理与教育科学研究中的随机性数据，其目的是为了从样本数据推论出总体的规律，处理的数据多以数字化呈现，具有随机性、变异性和规律性的特点</p>
+<h4 id="应用统计和理论统计"><a href="#应用统计和理论统计" class="headerlink" title="应用统计和理论统计"></a>应用统计和理论统计</h4><p>统计学分为数理统计和应用统计，数理统计多专注于统计理论的数理证明，应用理论则关注于统计理论在各学科的具体应用，心理与教育统计是应用统计的分支。</p>
+<h4 id="描述统计"><a href="#描述统计" class="headerlink" title="描述统计"></a>描述统计</h4><p>描述统计主要是整理心理和教育科学研究的数据，描述数据的全貌，表述事件的一般性质。其内容主要有<strong>统计图表、集中量数、差异量数和相关关系的分析</strong>。集中量数表达数据的集中趋势，差异量数则相对离中趋势，即数据的变异性。统计图表主要是表现数据的分布情况。</p>
+<h4 id="推论统计"><a href="#推论统计" class="headerlink" title="推论统计"></a>推论统计</h4><p>推论统计主要是关于如何从局部样本数据中推论出总体的一般性特征和规律。其主要内容有<strong>概率论基础、假设检验、参数估计、方差分析</strong>、卡方检验、非参数检验、一元线性回归和初步多元分析。</p>
+<h4 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h4><ol>
+<li>按<strong>数据来源</strong>分可分为<strong>计数数据和测量数据</strong>，两者的主要区别在于测量数据主要依靠测量工具或者特定的测量标准，而计数数据指计算个数的数据，有独立的分类单位。</li>
+<li>按<strong>测量反映水平</strong>可分为<strong>称名数据、顺序数据、等距数据和比率数据</strong>。称名数据只说明事物之间在属性上或类别上的差异，有独立的分类单位；顺序数据在称名数据的基础上按事物属性的大小次序排列，无相等单位和绝对零；等距数据有相等单位，代表数据之间的差数关系（可+-）；比率数据则两者兼有，代表数据的倍数关系（可+-$<em>$/）。 <em>*在这类数据的判断上，应该先回归数据本身，例如工资应回归于1元、10元、100元在进行差数倍数关系的判断。</em></em></li>
+<li>按<strong>数据的连续性</strong>可分为<strong>离散数据和连续数据</strong>。两者的区别在于是否可以无限细分。例如<img src="https://raw.githubusercontent.com/paul18755/ppppp/master/20200219120815.png" alt="图片名称" align=center /></li>
+</ol>
+<h4 id="常见概念"><a href="#常见概念" class="headerlink" title="常见概念"></a>常见概念</h4><ul>
+<li>变量：指可以任意取值的事物的属性或事件，而随机变量则是在变量的基础上取值前无法对值进行预测。</li>
+<li>随机样本于样本的区别在于每个项目被选中的概率相同</li>
+<li>参数是总体的统计指标；统计量是样本的特征值</li>
+<li>次数的概念与频数相等，都是事件出现的计数值</li>
+<li>比率与频率的区别在于频率的分母是总体；而频率和概率的区别在于概率是在无限多次尝试后得出的频率值。</li>
+</ul>
+<div><img src="https://zuibang-1257431557.cos.ap-guangzhou.myqcloud.com/20200223145620.png"/></div>]]></content>
+      <categories>
+        <category>Psychology</category>
+      </categories>
+      <tags>
+        <tag>心理统计</tag>
       </tags>
   </entry>
   <entry>
